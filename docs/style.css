@@ -8,6 +8,14 @@
     background-color: rgb(107, 107, 107);
 }
 
+p {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
 .acsent {
     color: rgb(255, 255, 57);
 }
