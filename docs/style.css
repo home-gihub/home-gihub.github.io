@@ -1,0 +1,18 @@
+.grbox-lvl-1 {
+    border-radius: 2cm;
+    color: rgb(91, 91, 91);
+}
+
+.grbox-lvl-2 {
+    border-radius: 2cm;
+    color: rgb(107, 107, 107);
+}
+
+.acsent {
+    color: rgb(255, 255, 57);
+}
+
+body {
+    text-align: center;
+    background-color: rgb(55, 55, 55);
+}
