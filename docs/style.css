@@ -1,19 +1,21 @@
 .grbox-lvl-1 {
-    border-radius: 2cm;
+    border-radius: 1cm;
     background-color: rgb(91, 91, 91);
 }
 
 .grbox-lvl-2 {
-    border-radius: 2cm;
+    border-radius: 1cm;
     background-color: rgb(107, 107, 107);
 }
 
 p {
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .acsent {
