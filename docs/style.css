@@ -35,6 +35,11 @@
  * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
+.middle {
+    text-align: center;
+    text-anchor: middlealign link to center
+}
+
 /* .clearfix {{{ */
 .clearfix:after {
     content: ".";
