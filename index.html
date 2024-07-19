@@ -3,106 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>
+        My awesome site!
+    </title>
+    <!-- just embed bcz lazy -->
+     <style>
+        body {
+            background-color: black;
+        }
+
+        div.pageheader {
+            width: 100vw;
+            color: orange;
+            font-family: sans-serif;
+            font-size: xx-large;
+            border-bottom: 1px solid white;
+            text-align: center;
+        }
+
+
+        div.sectionbox {
+            width: fit-content;
+            padding: 0;
+            background-color: white;
+            border: 1px solid white;
+            margin: auto;
+        }
+
+        div.sectionbox > div.header {
+            background-color: orange;
+            color: white;
+            font-family: sans-serif;
+            font-size: large;
+            padding-left: 5%;
+        }
+
+        div.sectionbox > div.content {
+            font-family: sans-serif;
+            padding: 5%;
+        }
+
+        div.sectionbox > p {
+            color: rgb(0, 0, 0);
+            font-family: sans-serif;
+        }
+
+        marquee {
+            color: rgb(0, 0, 0);
+            font-family: sans-serif;
+        }
+
+
+        a {
+            font-family: sans-serif;
+        }
+
+        img.blinkie {
+            width: 150px;
+            height: 20px;
+        }
+     </style>
 </head>
 <body>
-    <div class="centercontent">
-        <div>
-            <br>
-            <br>
-
-
-
-        <table>
-        <td>
-        <div class="container" style="width: 450px;">
-            <div class="label">
-            <label>Home-Github</label>
-        </div>
-            <div>
-            <table>
-                <tr>
-                    <td>
-                        <img src="./pfp.png">
-                    </td>
-                    <td>
-                        <p class="site-text">coding.</p>
-                        <p class="site-text"><i>probably in python.</i></p>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        </div>
-
-        </td>
-        <td>
-
-
-        <div class="container" style="width: 450px;">
-            <div class="label">
-            <label>Programing Languages</label>
-        </div>
-            <div>
-                <p class="site-text">Python</p>
-                 <p class="site-text">HTML + js</p>
-                <p class="site-text">Rust</p>
-                <p class="site-text">Bad at C</p>
-                <br>
-                <br>
-                <p class="site-text">NOTE: just because i put them here doesn't mean i'm good at them.</p>
+<div style="text-align: center;width: fit-content;margin: auto;">
+<div style="text-align: left;">
+            <div class="pageheader">
+                <p>Theo's cool site!</p>
             </div>
-        </div>
 
+            <br>
 
-        </td>
-        </tr>
+            <div class="sectionbox"><div class="header">Welcome!</div><div class="content">
+            <p>Hi viewer! Im Theo, i like playing video games and programing.</p>
+            <p>Thank's for visiting my little site.</p>
+            <p>Here are some links for you.</p>
+            </div></div>
 
+            <br>
+            
+            <div class="sectionbox">
+            <div class="header">Links</div><div class="content">
 
-        <tr>
-        <td>
-            <div class="container" style="width: 450px;">
-                <div class="label">
-                <label>Intresting Things</label>
-            </div>
-            <div>
-                    <p class="site-text">Team Fortress 2</p>
-                    <p class="site-text">Coding/Computers</p>
-                    <a href="https://www.youtube.com" class="site-text">Youtube</a>
-                    <p class="site-text">Games</p>
-                                    <!-- The Old Net Embed Code -->
-                    <p>
-                    <a href="http://www.theoldnet.com/#frombadge" title="Are you tired of this new Internet yet? Time to Get TheOldNet!">
-                    <img src="//theoldnet.com/images/theoldnetanimblur2.gif" width="88" height="31" border=0>
-                    </a>
-                    </p>
-                    <!-- End The Old Net Embed Code -->
+            <a class="button" href="https://github.com/home-gihub">Github</a>
+            <a class="button" href="https://steamcommunity.com/id/walterstoptryingtogetmysteamid/">Steam</a>
+            
+            </div></div>
+
+            <br>
+
+            <div class="sectionbox">
+            <div class="header">Buttons!</div><div  class="content">
+
+            <!-- The Old Net Embed Code -->
+            <a href="http://www.theoldnet.com/#frombadge" title="Are you tired of this new Internet yet? Time to Get TheOldNet!">
+            <img src="http://www.theoldnet.com/images/theoldnetanimblur2.gif" width="88" height="31">
+            </a>
+            <!-- End The Old Net Embed Code -->
+            <a href="https://voupie.lol/"><img src="https://voupie.lol/index/voupiesite.gif"></a>
+            <a href="https://sunny-cities.neocities.org/"><img src="https://sunny-cities.neocities.org/sunny/graphics/decor/buttons/site%20buttons/sunny_cities_button.gif"></a> 
+            <a href='https://blinkies.cafe' target='_blank'><img src='https://blinkies.cafe/b/display/blinkiesCafe-badge.gif' alt='blinkies.cafe | make your own blinkies!'></a>
+            <p>If i find a button, i will most likely put it here.</p>
+        </div></div>
+
+            <br>
+
+            <div class="sectionbox"><div class="header">Blinkies!</div><div class="content">
+            <img src="./blinkiesCafe-yQ.gif" class="blinkie" title="credit: https://transbro.tumblr.com/" />
+            <img src="./blinkiesCafe-8N.gif" class="blinkie" title="credit: https://graphics-cafe.tumblr.com/" />
+            </div></div>
+
+            <br>
+
+            <div class="sectionbox"><div class="header">My button.</div><div class="content">
+                <p>Save this image:</p>
+                <img src="./button.png"/>
+                <p>then, name it "button.png" and place it into your site folder with your html file. </p>
+                <p>Now, put this code into your html:</p>
+                <textarea><a href="bruh"><img src="./button.png"/></a></textarea>
                 
-                <a href='https://blinkies.cafe' target='_blank'><img src='https://blinkies.cafe/b/display/blinkiesCafe-badge.gif' alt='blinkies.cafe | make your own blinkies!'></a>
-            </div>
-        </td>
+            </div></div>
 
-        <td>
-            <div class="container" style="width: 450px;">
-                <div class="label">
-                <label>Cool Repos</label>
-            </div>
-            <div>
-                <br>
-                <a href="https://github.com/rust-lang/rust" class="site-text">Rust</a>
-                <p></p>
-                <a href="https://github.com/SideStore/SideStore" class="site-text">SideStore</a>
-                <p></p>
-            </div>
-        </td>
-        </tr>
+            <br>
+            <br>
 
-
-    </table>
-
-
+            <P style="color: white;font-family: sans-serif;">Under Construction.</P>
 
         </div>
-    </div>
+</div>  
+<div id="webamp"></div>
+
+<!-- Begin webamp -->
+<script src="https://unpkg.com/webamp"></script>
+<script>
+    const app = document.getElementById("webamp")
+    const webamp = new Webamp();
+    webamp.renderWhenReady(app);
+</script>
+<!-- END -->
 </body>
 </html>
