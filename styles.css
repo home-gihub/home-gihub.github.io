@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+}
+
+div.pageheader {
+    width: 100vw;
+    color: orange;
+    font-family: sans-serif;
+    font-size: xx-large;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+
+div.sectionbox {
+    width: fit-content;
+    padding: 0;
+    background-color: white;
+    border: 1px solid white;
+    margin: auto;
+}
+
+div.sectionbox > div.header {
+    background-color: orange;
+    color: white;
+    font-family: sans-serif;
+    font-size: large;
+    padding-left: 1%;
+}
+
+
+
+div.sectionbox > div.content {
+    font-family: sans-serif;
+    padding: 5%;
+}
+
+div.sectionbox > p {
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+}
+
+marquee {
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+}
+
+
+a {
+    font-family: sans-serif;
+}
+
+img.blinkie {
+    width: 150px;
+    height: 20px;
+    image-rendering: pixelated;
+}

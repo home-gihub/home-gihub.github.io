@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        My awesome site!
+    </title>
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+<div style="text-align: center;width: fit-content;margin: auto;">
+<div style="text-align: left;">
+            <div class="pageheader">
+                <p>Theo's cool site!</p>
+                <div style="font-size: medium;border-top: 1px solid white;padding-top: 1%;padding-bottom: 1%;">
+                    <a style="color: orange;" href="./index.html">Home</a>
+                    •
+                    <a style="color: orange;" href="./stuff.html">Stuff</a>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="sectionbox"><div class="header">Stuff. </div><div class="content">
+            <p>Because where am i going to put it.</p>
+            <p>If you want an accesible page, click this:</p>
+            <button id="hc-btn">accessible site NOW!</button>
+            </div></div>
+
+            <br>
+
+            <div class="sectionbox"><div class="header">Cool websites.</div><div class="content">
+                <ul>
+                <li>MS Paint Online <a href="https://jspaint.app/">Take me there!</a></li>
+                <li>Neocities - Make a free website. <a href="https://neocities.org/">Take me there!</a></li>
+                </ul>
+            </div></div>
+
+            <br>
+
+            <div class="sectionbox"><div class="header">Emoji combos.</div><div class="content">
+                <p>Drama going down:</p>
+                <p>🍿🤏😮</p>
+                <p>Turtle astronomy:</p>
+                <p>🔭🐢</p>
+                <p>Leave:</p>
+                <p>😀👉🚪</p>
+                <p>w h a t?:</p>
+                <p>😮🕶🤏</p>
+            </div></div>
+    
+
+
+            <br>
+            <br>
+
+            <P style="color: white;font-family: sans-serif;">Under Construction.</P>
+        </div>
+</div>  
+
+<script>
+    document.getElementById("hc-btn").addEventListener("click", () => {
+        hc_style = document.createElement("style")
+        hc_style.innerText = "* {color: yellow;background-color: black;font-size: x-large;border: 1px solid yellow;} a {color: cyan;}"
+        document.head.appendChild(hc_style)
+    })
+</script>
+</body>
+</html>

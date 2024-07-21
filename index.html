@@ -6,86 +6,34 @@
     <title>
         My awesome site!
     </title>
-    <!-- just embed bcz lazy -->
-     <style>
-        body {
-            background-color: black;
-        }
-
-        div.pageheader {
-            width: 100vw;
-            color: orange;
-            font-family: sans-serif;
-            font-size: xx-large;
-            border-bottom: 1px solid white;
-            text-align: center;
-        }
-
-
-        div.sectionbox {
-            width: fit-content;
-            padding: 0;
-            background-color: white;
-            border: 1px solid white;
-            margin: auto;
-        }
-
-        div.sectionbox > div.header {
-            background-color: orange;
-            color: white;
-            font-family: sans-serif;
-            font-size: large;
-            padding-left: 1%;
-        }
-
-
-
-        div.sectionbox > div.content {
-            font-family: sans-serif;
-            padding: 5%;
-        }
-
-        div.sectionbox > p {
-            color: rgb(0, 0, 0);
-            font-family: sans-serif;
-        }
-
-        marquee {
-            color: rgb(0, 0, 0);
-            font-family: sans-serif;
-        }
-
-
-        a {
-            font-family: sans-serif;
-        }
-
-        img.blinkie {
-            width: 150px;
-            height: 20px;
-            image-rendering: pixelated;
-        }
-     </style>
+    <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
 <div style="text-align: center;width: fit-content;margin: auto;">
 <div style="text-align: left;">
             <div class="pageheader">
                 <p>Theo's cool site!</p>
+                <div style="font-size: medium;border-top: 1px solid white;padding-top: 1%;padding-bottom: 1%;">
+                    <a style="color: orange;" href="./index.html">Home</a>
+                    •
+                    <a style="color: orange;" href="./stuff.html">Stuff</a>
+                </div>
             </div>
 
             <br>
 
-            <div class="sectionbox"><div class="header">Welcome!</div><div class="content">
+            <div class="sectionbox"><div class="header">Welcome! </div><div class="content">
             <p>Hi viewer! Im Theo, i like playing video games and programing.</p>
             <p>Thank's for visiting my little site.</p>
-            <p>Here are some links for you.</p>
+            <p>If you want an accesible page, click this:</p>
+            <button id="hc-btn">accessible site NOW!</button>
+            <p>Now that we've got that out of the way, here are some links for you.</p>
             </div></div>
 
             <br>
             
             <div class="sectionbox">
-            <div class="header">Links</div><div class="content">
+            <div class="header"> Links</div><div class="content">
 
             <a class="button" href="https://github.com/home-gihub">Github</a>
             <a class="button" href="https://steamcommunity.com/id/walterstoptryingtogetmysteamid/">Steam</a>
@@ -102,22 +50,22 @@
             <img src="http://www.theoldnet.com/images/theoldnetanimblur2.gif" width="88" height="31">
             </a>
             <!-- End The Old Net Embed Code -->
-            <a href="https://ultra0.xyz/"><img src="./basement_button.gif"/></a>
+            <a href="https://ultra0.xyz/"><img src="./buttons/basement_button.gif"/></a>
             <a href="https://voupie.lol/"><img src="https://voupie.lol/index/voupiesite.gif"></a>
             <a href="https://sunny-cities.neocities.org/"><img src="https://sunny-cities.neocities.org/sunny/graphics/decor/buttons/site%20buttons/sunny_cities_button.gif"></a> 
             <a href='https://blinkies.cafe' target='_blank'><img src='https://blinkies.cafe/b/display/blinkiesCafe-badge.gif' alt='blinkies.cafe | make your own blinkies!'></a>
-            <img src="./desktop.gif" />
-            <img src="./firefox4.gif" />
-            <img src="./html.gif" />
-            <img src="./web3.gif" />
-            <img src="./comp.png" />
-            <img src="./bestvw.gif" />
-            <img src="./anythingbut.gif" />
-            <img src="./firefoxnow.gif" />
-            <img src="./chrmevil.gif" />
-            <img src="./mswinmediaplayer7.gif" />
-            <img src="./notepad.gif" />
-            <img src="./nowebp.gif" />
+            <img src="./buttons/desktop.gif" />
+            <img src="./buttons/firefox4.gif" />
+            <img src="./buttons/html.gif" />
+            <img src="./buttons/web3.gif" />
+            <img src="./buttons/comp.png" />
+            <img src="./buttons/bestvw.gif" />
+            <img src="./buttons/anythingbut.gif" />
+            <img src="./buttons/firefoxnow.gif" />
+            <img src="./buttons/chrmevil.gif" />
+            <img src="./buttons/mswinmediaplayer7.gif" />
+            <img src="./buttons/notepad.gif" />
+            <img src="./buttons/nowebp.gif" />
         </div></div>
 
             <br>
@@ -142,8 +90,15 @@
             <br>
 
             <P style="color: white;font-family: sans-serif;">Under Construction.</P>
-
         </div>
 </div>  
+
+<script>
+    document.getElementById("hc-btn").addEventListener("click", () => {
+        hc_style = document.createElement("style")
+        hc_style.innerText = "* {color: yellow;background-color: black;font-size: x-large;border: 1px solid yellow;} a {color: cyan;}"
+        document.head.appendChild(hc_style)
+    })
+</script>
 </body>
 </html>
