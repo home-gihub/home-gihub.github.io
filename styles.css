@@ -1,25 +1,60 @@
+/*
+blue gloss:
+    background: linear-gradient(0deg, rgb(0,100,200) 0%, rgb(0,50,150) 48%, rgb(0,128,255) 50%, rgb(0,50,150) 100%);
+orange gloss:
+   background: linear-gradient(0deg, rgb(200,100,0) 0%, rgb(150,50,0) 48%, rgb(255,128,0) 50%, rgb(150,50,0) 100%);
+*/
+
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(200, 200, 200);
+    padding: 0;
+    margin: 0;
 }
 
-h1 {
-    color: orange;
-    font-family: sans-serif;
+html {
+    padding: 0;
+    margin: 0;
 }
 
-h2 {
-    color: orange;
-    font-family: sans-serif;
+div.separator {
+    border-bottom: 1px solid rgb(100, 100, 100);
+    width: 100%;
 }
 
 div.pageheader {
     width: 100vw;
-    color: orange;
+    color: blue;
     font-family: sans-serif;
     font-size: xx-large;
     border-bottom: 1px solid rgb(0, 0, 0);
     text-align: center;
 }
+
+div.pagecontent {
+    text-align: center;
+}
+
+div.sectionbox {
+    border:1px solid white;
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+}
+
+div.sectionbox > div.header {
+    font-family: sans-serif;
+    color: white;
+    text-align: left;
+    background: linear-gradient(0deg, rgb(0,100,200) 0%, rgb(0,50,150) 48%, rgb(0,128,255) 50%, rgb(0,50,150) 100%);
+    padding-left: 1%;
+}
+
+div.sectionbox > div.content {
+    font-family: sans-serif;
+    color: white;
+    width: fit-content;
+}
+
 
 p {
     color: rgb(0, 0, 0);
