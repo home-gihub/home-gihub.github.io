@@ -45,6 +45,7 @@ div.sectionbox > div.header {
     font-family: sans-serif;
     color: white;
     text-align: left;
+    background-color: blue;
     background: linear-gradient(0deg, rgb(0,100,200) 0%, rgb(0,50,150) 48%, rgb(0,128,255) 50%, rgb(0,50,150) 100%);
     padding-left: 1%;
 }
