@@ -1,8 +1,12 @@
 /*
-blue gloss:
-    background: linear-gradient(0deg, rgb(0,100,200) 0%, rgb(0,50,150) 48%, rgb(0,128,255) 50%, rgb(0,50,150) 100%);
+blue matte:
+    background: linear-gradient(0deg, rgb(0,50,150) 0%, rgb(0,100,200) 20%, rgb(0,50,150) 50%,rgb(0,50,150) 79%, rgb(0,100,200) 80%, rgb(0,50,150) 100%)l
+green gloss:
+    background: linear-gradient(0deg, rgb(50,150,0) 0%, rgb(50,150,0) 48%, rgb(128,255,0) 50%, rgb(70,170,0) 100%);
+ blue gloss:
+    background: linear-gradient(0deg, rgb(0,50,150) 0%, rgb(0,50,150) 48%, rgb(0,128,255) 50%, rgb(0,70,170) 100%);
 orange gloss:
-   background: linear-gradient(0deg, rgb(200,100,0) 0%, rgb(150,50,0) 48%, rgb(255,128,0) 50%, rgb(150,50,0) 100%);
+    background: linear-gradient(0deg, rgb(150,50,0) 0%, rgb(150,50,0) 48%, rgb(255,128,0) 50%, rgb(170,70,0) 100%);
 */
 
 body {
@@ -46,7 +50,7 @@ div.sectionbox > div.header {
     color: white;
     text-align: left;
     background-color: blue;
-    background: linear-gradient(0deg, rgb(0,100,200) 0%, rgb(0,50,150) 48%, rgb(0,128,255) 50%, rgb(0,50,150) 100%);
+    background: linear-gradient(0deg, rgb(50,150,0) 0%, rgb(50,150,0) 48%, rgb(128,255,0) 50%, rgb(70,170,0) 100%);
     padding-left: 1%;
 }
 
