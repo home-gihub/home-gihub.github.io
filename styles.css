@@ -50,7 +50,10 @@ div.sectionbox > div.header {
     color: white;
     text-align: left;
     background-color: blue;
-    background: linear-gradient(0deg, rgb(50,150,0) 0%, rgb(50,150,0) 48%, rgb(128,255,0) 50%, rgb(70,170,0) 100%);
+    background-image: url(./bar.svg);
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+    background-position: 0%,0%;
     padding-left: 1%;
 }
 
