@@ -1,86 +1,143 @@
-/*
-blue matte:
-    background: linear-gradient(0deg, rgb(0,50,150) 0%, rgb(0,100,200) 20%, rgb(0,50,150) 50%,rgb(0,50,150) 79%, rgb(0,100,200) 80%, rgb(0,50,150) 100%)l
-green gloss:
-    background: linear-gradient(0deg, rgb(50,150,0) 0%, rgb(50,150,0) 48%, rgb(128,255,0) 50%, rgb(70,170,0) 100%);
- blue gloss:
-    background: linear-gradient(0deg, rgb(0,50,150) 0%, rgb(0,50,150) 48%, rgb(0,128,255) 50%, rgb(0,70,170) 100%);
-orange gloss:
-    background: linear-gradient(0deg, rgb(150,50,0) 0%, rgb(150,50,0) 48%, rgb(255,128,0) 50%, rgb(170,70,0) 100%);
-*/
+ 
+            body {
+                font-family: sans-serif;
+                margin: 0;
+                background-color: #3366ff;
+                /* you can delete the line below if you'd prefer to not use an image */
+                background-size: 65px;
+                color: #fceaff;
+            }
 
-body {
-    background-color: rgb(200, 200, 200);
-    padding: 0;
-    margin: 0;
-}
-
-html {
-    padding: 0;
-    margin: 0;
-}
-
-div.separator {
-    border-bottom: 1px solid rgb(100, 100, 100);
-    width: 100%;
-}
-
-div.pageheader {
-    width: 100vw;
-    color: blue;
-    font-family: sans-serif;
-    font-size: xx-large;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    text-align: center;
-}
-
-div.pagecontent {
-    text-align: center;
-}
-
-div.sectionbox {
-    border:1px solid white;
-    background-color: white;
-    width: fit-content;
-    margin: auto;
-}
-
-div.sectionbox > div.header {
-    font-family: sans-serif;
-    color: white;
-    text-align: left;
-    background-color: blue;
-    background-image: url(./bar.svg);
-    background-size: 100% 100%;
-    background-repeat: repeat-x;
-    background-position: 0%,0%;
-    padding-left: 1%;
-}
-
-div.sectionbox > div.content {
-    font-family: sans-serif;
-    color: white;
-    width: fit-content;
-}
+            * {
+                box-sizing: border-box;
+            }
 
 
-p {
-    color: rgb(0, 0, 0);
-    font-family: sans-serif;
-}
+            #container {
+                max-width: 900px;
+                margin: 0 auto;
+            }
 
-marquee {
-    color: rgb(0, 0, 0);
-    font-family: sans-serif;
-}
+            #container a {
+                color: #36ff63;
+                font-weight: bold;
+            
+            }
+
+            #header {
+                width: 100%;
+                background-color: #ffffff;
+                /* header color here! */
+                height: 150px;
+                background-size: 100%;
+            }
+
+            #navbar {
+                height: 40px;
+                background-color: #933110;
+                /* navbar color */
+                width: 100%;
+            }
+
+            #navbar ul {
+                display: flex;
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                justify-content: space-evenly;
+            }
+
+            #navbar li {
+                padding-top: 10px;
+            }
+
+            #navbar li a {
+                color: #f66000;
+                /* navbar text color */
+                font-weight: 800;
+                text-decoration: none;
+                /* this removes the underline */
+            }
+
+            #navbar li a:hover {
+                color: #a49cba;
+                text-decoration: underline;
+            }
+
+            #flex {
+                display: flex;
+            }
+
+            aside {
+                background-color: #f96600;
+                width: 200px;
+                padding: 20px;
+                font-size: smaller;
+                /* this makes the sidebar text slightly smaller */
+            }
+
+            main {
+                background-color: #ff6633;
+                flex: 1;
+                padding: 20px;
+                order: 2;
+            }
+
+            */ #leftSidebar {
+                order: 1;
+            }
+
+            #rightSidebar {
+                order: 3;
+            }
 
 
-a {
-    font-family: sans-serif;
-}
 
-img.blinkie {
-    width: 150px;
-    height: 20px;
-    image-rendering: pixelated;
-}
+            /* this is just a cool box, it's the darker colored one */
+            .box {
+                background-color: #000000;
+                border: 1px solid #ff9900;
+                padding: 10px;
+            }
+
+            /* CSS for extras */
+
+            #topBar {
+                width: 100%;
+                height: 30%;
+                padding: 10px;
+                font-size: smaller;
+                background-color: #13092D;
+            }
+
+
+
+            @media only screen and (max-width: 800px) {
+                #flex {
+                    flex-wrap: wrap;
+                }
+
+                aside {
+                    width: 100%;
+                }
+
+                /* the order of the items is adjusted here for responsiveness!
+      since the sidebars would be too small on a mobile device.
+      feel free to play around with the order!
+      */
+                main {
+                    order: 1;
+                }
+
+                #leftSidebar {
+                    order: 2;
+                }
+
+                #rightSidebar {
+                    order: 3;
+                }
+
+                #navbar ul {
+                    flex-wrap: wrap;
+                }
+            }
