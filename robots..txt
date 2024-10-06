@@ -1,5 +1,0 @@
-Googlebot Smartphone
-dissallow /
-
-User-agent: *
-allow index.html

@@ -1,170 +1,88 @@
- 
-            body {
-                font-family: sans-serif;
-                margin: 0;
-                background-color: #303030;
-                /* you can delete the line below if you'd prefer to not use an image */
-                background-size: 65px;
-                color: #ffffff;
-            }
-
-            * {
-                box-sizing: border-box;
-            }
-
-
-            #container {
-                max-width: 900px;
-                margin: 0 auto;
-            }
-
-            #container a {
-                color: #00ff99;
-                font-weight: bold;
-            
-            }
-
-            #header {
-                width: 100%;
-                background-color: #ffffff;
-                /* header color here! */
-                height: 150px;
-                background-size: 100%;
-		color: #0099ff;
-            }
-
-            #navbar {
-                height: 40px;
-                background-color: #933110;
-		background-position: 0 0;
-		background-image: url("./bar.svg");
-		background-repeat: repeat-x;
-		background-size: 100% 100%;
-                /* navbar color */
-                width: 100%;
-            }
-
-            #navbar ul {
-                display: flex;
-                padding: 0;
-                margin: 0;
-                list-style-type: none;
-                justify-content: space-evenly;
-            }
-
-            #navbar li {
-                padding-top: 10px;
-            }
-
-            #navbar li a {
-                color: white;
-                /* navbar text color */
-                font-weight: 800;
-                text-decoration: none;
-                /* this removes the underline */
-            }
-
-            #navbar li a:hover {
-                color: #a49cba;
-                text-decoration: underline;
-            }
-
-            #flex {
-                display: flex;
-            }
-
-            aside {
-                background-color: rgb(190,90,0);
-                width: 200px;
-                padding: 20px;
-                font-size: smaller;
-                /* this makes the sidebar text slightly smaller */
-            }
-
-            main {
-                background-color: rgb(155,55,0);
-                flex: 1;
-                padding: 20px;
-                order: 2;
-            }
-
-            */ #leftSidebar {
-                order: 1;
-            }
-
-            #rightSidebar {
-                order: 3;
-            }
-
-
-
-            /* this is just a cool box, it's the darker colored one */
-            .box {
-                background-color: #000000;
-                border: 1px solid #ff9900;
-                padding: 10px;
-            }
-
-            /* CSS for extras */
-
-            #topBar {
-                width: 100%;
-                height: 30%;
-                padding: 10px;
-                font-size: smaller;
-                background-color: #13092D;
-            }
-
-
-
-            @media only screen and (max-width: 800px) {
-                #flex {
-                    flex-wrap: wrap;
-                }
-
-                aside {
-                    width: 100%;
-                }
-
-                /* the order of the items is adjusted here for responsiveness!
-      since the sidebars would be too small on a mobile device.
-      feel free to play around with the order!
-      */
-                main {
-                    order: 1;
-                }
-
-                #leftSidebar {
-                    order: 2;
-                }
-
-                #rightSidebar {
-                    order: 3;
-                }
-
-                #navbar ul {
-                    flex-wrap: wrap;
-                }
-            }
-
-a.button {
-	background-color: rgb(255,0,255);
-    display: inline-block;
-	padding-left: 15px;
-	padding-right: 15px;
-	border-radius: 5px;
-    height: 20px;
-	text-decoration: none;
-    color: white !important;
+body {
+    background-color: black;
 }
 
-a.button.matte {
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+    height: 500px;
+}
+
+#header {
+    width: 100%;
+    background-color: #ffffff;
+    /* header color here! */
+    height: 150px;
+    background-size: 100%;
+    color: #0099ff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+aside {
+    background-color: #933110;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    height: 100%;
+}
+
+aside#left {
+    float: left;
+}
+
+aside#right {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    float: right;
+}
+
+
+aside#left > ul {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    height: max-content;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside#left > ul > li {
+    padding: 2px;
+}
+
+aside#left > ul > li > a {
+    text-decoration: none;
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    border: #993300 5px solid;
     background-position: 0 0;
-    background-image: url("./shine-white-inner.svg");
+    color: white;
+    background-image: url("./button-fill.svg");
     background-repeat: repeat-x;
     background-size: 100% 100%;
 }
 
-a.button.blue {
-    background-color: #0099ff;
+main {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    height: 100%;
+}
+
+main > iframe#content {
+    background-color: #663300;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 600px;
+}
+
+h2 {
+    color: white;
+    font-family: sans-serif;
 }
