@@ -48,21 +48,17 @@ aside#left > ul {
 }
 
 aside#left > ul > li {
-    padding: 2px;
+    padding: 4px;
+    background-image: url("./button-fill.svg");
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
 }
 
 aside#left > ul > li > a {
     text-decoration: none;
     font-family: sans-serif;
-    padding: 10px;
-    border-radius: 10px;
     display: inline-block;
-    border: #993300 5px solid;
-    background-position: 0 0;
     color: white;
-    background-image: url("./button-fill.svg");
-    background-repeat: repeat-x;
-    background-size: 100% 100%;
 }
 
 main {
