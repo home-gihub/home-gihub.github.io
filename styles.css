@@ -19,7 +19,7 @@ body {
 }
 
 aside {
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(0, 70, 0);
     margin: 0;
     padding: 0;
     width: 150px;
@@ -70,7 +70,7 @@ main {
 }
 
 main > iframe#content {
-    background-color: #333333;
+    background-color: #336633;
     display: inline;
     padding: 0;
     margin: 0;
