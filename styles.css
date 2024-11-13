@@ -27,3 +27,7 @@ h2 {
     color: white;
     font-family: sans-serif;
 }
+
+.blinkie {
+    width: 150;height: 20px;image-rendering: pixelated;
+}
