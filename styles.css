@@ -5,7 +5,7 @@ body {
 }
 
 #container {
-    max-width: 930px;
+    max-width: 900px;
     margin: 0 auto;
     height: 500px;
 }
@@ -18,12 +18,11 @@ body {
     background-size: 100%;
     color: #0099ff;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 5px;
 }
 
 aside {
     background-color: rgb(0, 70, 0);
-    margin: 5px;
+    margin: 0;
     padding: 0;
     width: 150px;
     height: 100%;
@@ -76,7 +75,7 @@ main > iframe#content {
     background-color: #336633;
     display: inline;
     padding: 0;
-    margin: 5px;
+    margin: 0;
     height: 100%;
     width: 600px;
 }
