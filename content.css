@@ -1,4 +1,25 @@
 * {
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: sans-serif;
+}
+
+
+div.showcase > p {
+    font-family: sans-serif;
+    background-color: #1e912d;
+    color:white;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+div.showcase > div {
+    margin:4px;
+}
+
+div.showcase {
+    width: fit-content;
+    background-color: #2f9d3f;
+    border: 2px solid #3bbd4a;
+    margin: auto;
 }

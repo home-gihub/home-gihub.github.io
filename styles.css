@@ -4,13 +4,13 @@ body {
     padding: 0;
 }
 
-#container {
-    max-width: 930px;
+main {
+    max-width: 900px;
     margin: 0 auto;
     height: 500px;
 }
 
-#header {
+header {
     width: 100%;
     background-color: #ffffff;
     /* header color here! */
@@ -18,20 +18,26 @@ body {
     background-size: 100%;
     color: #0099ff;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 5px;
 }
 
 aside {
-    background-color: rgb(0, 70, 0);
-    width: 150px;
-    height: 500px;
     margin: 0;
     padding: 0;
+    width: 150px;
+    height: 100%;
+    background-color: rgb(0, 60, 5);
+    color: white;
+}
+
+aside#left {
+    float: left;
 }
 
 aside#right {
     scroll-behavior: smooth;
     overflow-y: scroll;
+    float: right;
+    color: white;
 }
 
 
@@ -47,34 +53,53 @@ aside#left > ul {
 
 aside#left > ul > li {
     padding: 4px;
-    background-image: url("./button-fill.svg");
-    background-repeat: repeat-x;
-    background-size: 100% 100%;
+    background-color: rgb(0, 98, 8);
+    border-bottom: black solid 2px;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+aside#left > ul > li:hover {
+    border-bottom: black solid 0px;
+    border-top: #000000 solid 2px;
 }
 
 aside#left > ul > li > a {
     text-decoration: none;
     font-family: sans-serif;
     display: inline-block;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
-main {
+
+aside#left > section#Music_Player {
+    padding: 4px;
+    font-family: sans-serif;
+    background-color: rgb(0, 98, 8);
+    border-bottom: black solid 2px;
+    color:white;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+article {
     display: inline;
     margin: 0;
     padding: 0;
     width: 600px;
-    height: 500px;
+    height: 100%;
 }
 
-main > iframe#content {
-    background-color: #336633;
+article > iframe#content {
+    background-color:#4e4e4e;
     display: inline;
-    height: 500px;
+    padding: 0;
+    margin: 0;
+    height: 100%;
     width: 600px;
 }
 
 h2 {
-    color: white;
+    color: black;
     font-family: sans-serif;
 }
