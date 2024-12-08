@@ -13,6 +13,10 @@
         </iframe>
     </noscript>
 
+
+
+
+ 
     <div id="container">
     <div id="header" style="height: 171px;"><h1 style="font-size:6em;">Theo's cool site!</h1></div>
     <aside id="left">
@@ -22,6 +26,17 @@
             <li><a target="content" href="./mybtns.html">My buttons</a></li>
             <li><a target="content" href="./stuff.html">Stuff</a></li>
           </ul>
+          <div style="margin: auto;text-align: center;background-color: #036630;">
+            <p style="font-family: sans-serif; color: white;margin: 0;">Music Player</p>
+                            <!-- This is for music ! -->
+    <div id="player"></div>
+            <div>
+            <button id="Music_PL">⏵</button>
+            <button id="Music_P">⏸</button>
+            <button id="Music_PR">⏮</button>
+            <button id="Music_N">⏭</button>
+            </div>
+          </div>
     </aside>
     <main>
         <iframe id="content" name="content" src="./main.html" frameborder="0">
@@ -55,6 +70,108 @@
     </aside>
     </div>
 </body>
+<!-- This is for music ! -->
+<script>
+    var tag = document.createElement('script');
 
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// put video ids in the playlist array to add songs/videos (why would you watch a video in 100x100 res tho)
+// Paper Airplane Chase DSiWare - Main Menu Theme
+// Art of Balance Wii U - Title Screen Music
+// Options - Mario Kart Wii
+// Humming The Bassline
+// Manuel - Gas Gas Gas
+// James Shimoji - Pepsi Man Theme Song (ORIGINAL)
+// Coconut Mall - Mario Kart Wii OST
+// Spider-Man 2: The Game Pizza Theme
+// Undertale OST - sans. Extended
+// Can You Feel the Sunshine Resort Island) Sonic R Music Extended [Music OST][Original Soundtrack]
+// Driftveil City - Pokémon Black & Pokémon White (OST)
+var playlist = ["-a4jmu-lED0", "eRYLaRBK7YY", "xHV2n-0QMac", "IJYK5tkgtvk", "atuFSv2bLa8", "z54MpfR3XE4", "cscuCIzItZQ", "czTksCF6X8Y", "N1-RyLUQUrA", "ieMqJi6UOK8", "9hZ7gYB4E_c"]
+// it starts at the 0th element
+var currVid;
+currVid = 0;
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
+function onYouTubeIframeAPIReady() {
+player = new YT.Player('player', {
+height: '100',
+width: '100',
+videoId: playlist[currVid],
+playerVars: {
+ 'playsinline': 1,
+ 'controls':0,
+ 'enablejsapi':1,
+ 'disablekb':1
+},
+events: {
+ 'onReady': onPlayerReady,
+ 'onStateChange': onPlayerStateChange
+}
+});
+}
+
+function onPlayerStateChange(event) {
+    if (event == YT.PlayerState.ENDED) {
+        currVid = currVid + 1;
+if (currVid > playlist.length) {
+   currVid = 0;
+}
+player.cueVideoById(playlist[currVid],0)
+player.playVideo();
+    }
+      }
+
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+event.target.playVideo();
+}
+
+function getNextInPlaylistLoadAndPlay() {
+    currVid = currVid + 1
+if (currVid > playlist.length) {
+   currVid = 0;
+}
+player.cueVideoById(playlist[currVid],0)
+player.playVideo();
+}
+function getPrevInPlaylistLoadAndPlay() {
+currVid = currVid + -1;
+if (currVid < 0) {
+   currVid = playlist.length;
+}
+player.cueVideoById(playlist[currVid],0)
+player.playVideo();
+}
+function stopVideo() {
+player.stopVideo();
+}
+
+// buttons 
+/*
+<button id="Music_PL">Play</button>
+            <button id="Music_P">Pause</button>
+            <button id="Music_N">Next</button>
+            <button id="Music_PR">Prev</button>
+            */
+
+document.getElementById("Music_PL").addEventListener("click", function(){
+    player.playVideo();
+})
+document.getElementById("Music_P").addEventListener("click", function(){
+    player.pauseVideo();
+})
+document.getElementById("Music_N").addEventListener("click", function(){
+    getNextInPlaylistLoadAndPlay();
+})
+document.getElementById("Music_PR").addEventListener("click", function(){
+    getPrevInPlaylistLoadAndPlay();
+})
+</script>
 
 </html>
