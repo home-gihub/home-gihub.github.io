@@ -21,7 +21,6 @@ body {
 }
 
 aside {
-    background-color: rgb(0, 70, 0);
     margin: 0;
     padding: 0;
     width: 150px;
@@ -30,12 +29,18 @@ aside {
 
 aside#left {
     float: left;
+    background-image: url("./button-fill.svg");
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
 }
 
 aside#right {
     scroll-behavior: smooth;
     overflow-y: scroll;
     float: right;
+    background-image: url("./button-fill.svg");
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
 }
 
 
@@ -54,13 +59,26 @@ aside#left > ul > li {
     background-image: url("./button-fill.svg");
     background-repeat: repeat-x;
     background-size: 100% 100%;
+    border: #0099ff 2px solid;
+    border-radius: 4px;
+    margin: 2px;
 }
 
 aside#left > ul > li > a {
     text-decoration: none;
     font-family: sans-serif;
     display: inline-block;
-    color: white;
+    color: black;
+}
+
+aside#left > div#Music_Player {
+    padding: 4px;
+    background-image: url("./button-fill.svg");
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    border: #0099ff 2px solid;
+    border-radius: 4px;
+    margin: 2px;
 }
 
 main {
@@ -72,7 +90,7 @@ main {
 }
 
 main > iframe#content {
-    background-color: #336633;
+    background-color: rgb(213, 223, 232);
     display: inline;
     padding: 0;
     margin: 0;
@@ -81,6 +99,7 @@ main > iframe#content {
 }
 
 h2 {
-    color: white;
+    color: black;
     font-family: sans-serif;
 }
+
