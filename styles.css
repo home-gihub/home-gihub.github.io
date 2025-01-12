@@ -59,7 +59,7 @@ aside#left > ul > li {
     background-image: url("./button-fill.svg");
     background-repeat: repeat-x;
     background-size: 100% 100%;
-    border: #0099ff 2px solid;
+    border: #42a0de 2px solid;
     border-radius: 4px;
     margin: 2px;
 }
@@ -76,7 +76,7 @@ aside#left > div#Music_Player {
     background-image: url("./button-fill.svg");
     background-repeat: repeat-x;
     background-size: 100% 100%;
-    border: #0099ff 2px solid;
+    border: #42a0de 2px solid;
     border-radius: 4px;
     margin: 2px;
 }
@@ -90,7 +90,7 @@ main {
 }
 
 main > iframe#content {
-    background-color: rgb(213, 223, 232);
+    background-color: rgb(189, 217, 240);
     display: inline;
     padding: 0;
     margin: 0;

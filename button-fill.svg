@@ -18,19 +18,23 @@
     #rect2 {
       fill: url(#g2);
     }
+    #rect3 {
+      fill: url(#g2);
+    }
     .g1s1 {
-      stop-color: rgb(213, 223, 232);
+      stop-color: #a4caec;
     }
     .g1s2 {
-      stop-color: rgb(183, 202, 215);
-    }
-    .g2s1 {
-      stop-color: rgba(255,255,255,0.5);
+      stop-color: #8abcdd;
     }
     .g2s2 {
+      stop-color: rgba(255,255,255,0.5);
+    }
+    .g2s1 {
       stop-color: rgba(255,255,255,0);
     }
   </style>
     <rect id="rect1" x="0" y="0"  width="100%" height="100%" />
     <rect id="rect2" x="0" y="0"  width="100%" height="50%" />
+    <rect id="rect3" x="0" y="0"  width="100%" height="10%" />
 </svg>
