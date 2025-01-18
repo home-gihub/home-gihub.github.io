@@ -67,12 +67,14 @@ aside#left > ul > li {
 aside#left > ul > li > a {
     text-decoration: none;
     font-family: sans-serif;
+    text-shadow: #ffffff 0 1px 0;
     display: inline-block;
     color: black;
 }
 
 aside#left > div#Music_Player {
     padding: 4px;
+    text-shadow: #ffffff 0 1px 0;
     background-image: url("./button-fill.svg");
     background-repeat: repeat-x;
     background-size: 100% 100%;
