@@ -2,3 +2,28 @@
     color: black;
     font-family: sans-serif;
 }
+
+@font-face {
+    font-family: 'TF2Build';
+    src: url('./TF2Build.ttf'); /* IE9 Compat Modes */
+}
+
+div.showcase > p {
+    font-family: 'TF2Build';
+    background-color: #913a1e;
+    color:white;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+div.showcase > div {
+    margin:4px;
+}
+
+div.showcase {
+    width: fit-content;
+    background-color: #9d312f;
+    border: 2px solid #bd3b3b;
+    margin: auto;
+}

@@ -22,10 +22,10 @@
       fill: url(#g2);
     }
     .g1s2 {
-      stop-color: #dabdab;
+      stop-color: #9d312f;
     }
     .g1s1 {
-      stop-color: #c1a18a;
+      stop-color: #913a1e;
     }
   </style>
     <rect id="rect1" x="0" y="0"  width="100%" height="100%" />

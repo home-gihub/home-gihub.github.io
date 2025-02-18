@@ -4,6 +4,11 @@ body {
     padding: 0;
 }
 
+@font-face {
+    font-family: 'TF2Build';
+    src: url('./TF2Build.ttf'); /* IE9 Compat Modes */
+}
+
 #container {
     max-width: 900px;
     margin: 0 auto;
@@ -29,18 +34,14 @@ aside {
 
 aside#left {
     float: left;
-    background-image: url("./button-fill.svg");
-    background-repeat: repeat-x;
-    background-size: 100% 100%;
+    background-color:#f5e7de;
 }
 
 aside#right {
     scroll-behavior: smooth;
     overflow-y: scroll;
     float: right;
-    background-image: url("./button-fill.svg");
-    background-repeat: repeat-x;
-    background-size: 100% 100%;
+    background-color:#f5e7de;
 }
 
 
@@ -59,26 +60,31 @@ aside#left > ul > li {
     background-image: url("./button-fill.svg");
     background-repeat: repeat-x;
     background-size: 100% 100%;
-    border: #42a0de 2px solid;
     border-radius: 4px;
     margin: 2px;
 }
 
+aside#left > ul > li:hover {
+    background-image: url("./button-fill-sel.svg");
+}
+
 aside#left > ul > li > a {
     text-decoration: none;
-    font-family: sans-serif;
-    text-shadow: #ffffff 0 1px 0;
+    font-family: 'TF2Build';
     display: inline-block;
     color: black;
 }
 
+aside#left > ul > li:hover > a {
+    color: white;
+}
+
 aside#left > div#Music_Player {
     padding: 4px;
-    text-shadow: #ffffff 0 1px 0;
+    font-family: 'TF2Build';
     background-image: url("./button-fill.svg");
     background-repeat: repeat-x;
     background-size: 100% 100%;
-    border: #42a0de 2px solid;
     border-radius: 4px;
     margin: 2px;
 }
@@ -92,7 +98,7 @@ main {
 }
 
 main > iframe#content {
-    background-color: rgb(189, 217, 240);
+    background-color:#f5e7de;
     display: inline;
     padding: 0;
     margin: 0;
@@ -104,4 +110,3 @@ h2 {
     color: black;
     font-family: sans-serif;
 }
-
