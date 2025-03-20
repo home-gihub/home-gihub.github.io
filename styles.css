@@ -9,13 +9,13 @@ body {
     src: url('./TF2Build.ttf'); /* IE9 Compat Modes */
 }
 
-#container {
+main {
     max-width: 900px;
     margin: 0 auto;
     height: 500px;
 }
 
-#header {
+header {
     width: 100%;
     background-color: #ffffff;
     /* header color here! */
@@ -79,7 +79,7 @@ aside#left > ul > li:hover > a {
     color: white;
 }
 
-aside#left > div#Music_Player {
+aside#left > section#Music_Player {
     padding: 4px;
     font-family: 'TF2Build';
     background-image: url("./button-fill.svg");
@@ -89,7 +89,7 @@ aside#left > div#Music_Player {
     margin: 2px;
 }
 
-main {
+article {
     display: inline;
     margin: 0;
     padding: 0;
@@ -97,7 +97,7 @@ main {
     height: 100%;
 }
 
-main > iframe#content {
+article > iframe#content {
     background-color:#f5e7de;
     display: inline;
     padding: 0;
