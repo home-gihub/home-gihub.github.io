@@ -4,11 +4,6 @@ body {
     padding: 0;
 }
 
-@font-face {
-    font-family: 'TF2Build';
-    src: url('./TF2Build.ttf'); /* IE9 Compat Modes */
-}
-
 main {
     max-width: 900px;
     margin: 0 auto;
@@ -30,18 +25,19 @@ aside {
     padding: 0;
     width: 150px;
     height: 100%;
+    background-color: rgb(0, 60, 5);
+    color: white;
 }
 
 aside#left {
     float: left;
-    background-color:#f5e7de;
 }
 
 aside#right {
     scroll-behavior: smooth;
     overflow-y: scroll;
     float: right;
-    background-color:#f5e7de;
+    color: white;
 }
 
 
@@ -57,34 +53,31 @@ aside#left > ul {
 
 aside#left > ul > li {
     padding: 4px;
-    background-image: url("./button-fill.svg");
-    background-repeat: repeat-x;
-    background-size: 100% 100%;
+    background-color: rgb(0, 98, 8);
+    border-bottom: black solid 2px;
     border-radius: 4px;
     margin: 2px;
 }
 
 aside#left > ul > li:hover {
-    background-image: url("./button-fill-sel.svg");
+    border-bottom: black solid 0px;
+    border-top: #000000 solid 2px;
 }
 
 aside#left > ul > li > a {
     text-decoration: none;
-    font-family: 'TF2Build';
+    font-family: sans-serif;
     display: inline-block;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
-aside#left > ul > li:hover > a {
-    color: white;
-}
 
 aside#left > section#Music_Player {
     padding: 4px;
-    font-family: 'TF2Build';
-    background-image: url("./button-fill.svg");
-    background-repeat: repeat-x;
-    background-size: 100% 100%;
+    font-family: sans-serif;
+    background-color: rgb(0, 98, 8);
+    border-bottom: black solid 2px;
+    color:white;
     border-radius: 4px;
     margin: 2px;
 }
@@ -98,7 +91,7 @@ article {
 }
 
 article > iframe#content {
-    background-color:#f5e7de;
+    background-color:#4e4e4e;
     display: inline;
     padding: 0;
     margin: 0;
