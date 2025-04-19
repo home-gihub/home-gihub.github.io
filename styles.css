@@ -5,108 +5,9 @@ body {
 }
 
 #container {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 900px;
-=======
-    max-width: 930px;
->>>>>>> parent of f3a673b (Revert "remove - unused")
-    margin: 0 auto;
-
-}
-
-#header {
-<<<<<<< HEAD
-=======
-    width: 100%;
-    background-color: #ffffff;
-    /* header color here! */
-    height: 150px;
-    background-size: 100%;
->>>>>>> parent of f3a673b (Revert "remove - unused")
-=======
     width: 900px;
     margin: 0 auto;
-    background-color: #039930;
-}
 
-#header {
->>>>>>> parent of 031082e (Revert "Make it simple")
-    color: #0099ff;
-    margin: 0;
-    padding: 0;
-    font-size: 4em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-p {
-    color: white;
-    font-family: sans-serif;
-=======
-aside {
-    background-color: rgb(0, 70, 0);
-    width: 150px;
-    height: 500px;
-    margin: 0;
-    padding: 0;
-}
-
-aside#right {
-    scroll-behavior: smooth;
-    overflow-y: scroll;
-}
-
-
-aside#left > ul {
-    text-decoration: none;
-    list-style: none;
-    text-align: center;
-    height: max-content;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-aside#left > ul > li {
-    padding: 4px;
-    background-image: url("./button-fill.svg");
-    background-repeat: repeat-x;
-    background-size: 100% 100%;
-}
-
-aside#left > ul > li > a {
-    text-decoration: none;
-    font-family: sans-serif;
-    display: inline-block;
-    color: white;
-}
-
-main {
-    display: inline;
-    margin: 0;
-    padding: 0;
-    width: 600px;
-    height: 500px;
-}
-
-main > iframe#content {
-    background-color: #336633;
-    display: inline;
-    height: 500px;
-    width: 600px;
->>>>>>> parent of f3a673b (Revert "remove - unused")
-=======
-p {
-    color: white;
-    font-family: sans-serif;
->>>>>>> parent of 031082e (Revert "Make it simple")
-=======
-    width: 900px;
-    margin: 0 auto;
-    background-color: #039930;
 }
 
 #header {
@@ -120,25 +21,13 @@ p {
 p {
     color: white;
     font-family: sans-serif;
->>>>>>> parent of 031082e (Revert "Make it simple")
 }
 
 h2 {
     color: white;
     font-family: sans-serif;
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-<<<<<<< HEAD
 
 .blinkie {
     width: 150;height: 20px;image-rendering: pixelated;
 }
-=======
->>>>>>> parent of f3a673b (Revert "remove - unused")
-=======
-}
->>>>>>> parent of 031082e (Revert "Make it simple")
-=======
-}
->>>>>>> parent of 031082e (Revert "Make it simple")
