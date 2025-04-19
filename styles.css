@@ -6,6 +6,7 @@ body {
 
 #container {
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 900px;
 =======
     max-width: 930px;
@@ -23,14 +24,22 @@ body {
     height: 150px;
     background-size: 100%;
 >>>>>>> parent of f3a673b (Revert "remove - unused")
+=======
+    width: 900px;
+    margin: 0 auto;
+    background-color: #039930;
+}
+
+#header {
+>>>>>>> parent of 031082e (Revert "Make it simple")
     color: #0099ff;
     margin: 0;
     padding: 0;
     font-size: 4em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 5px;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 p {
     color: white;
@@ -88,11 +97,17 @@ main > iframe#content {
     height: 500px;
     width: 600px;
 >>>>>>> parent of f3a673b (Revert "remove - unused")
+=======
+p {
+    color: white;
+    font-family: sans-serif;
+>>>>>>> parent of 031082e (Revert "Make it simple")
 }
 
 h2 {
     color: white;
     font-family: sans-serif;
+<<<<<<< HEAD
 }
 <<<<<<< HEAD
 
@@ -101,3 +116,6 @@ h2 {
 }
 =======
 >>>>>>> parent of f3a673b (Revert "remove - unused")
+=======
+}
+>>>>>>> parent of 031082e (Revert "Make it simple")
