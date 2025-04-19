@@ -6,163 +6,71 @@
     <title>Theo's cool site!</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
+<body style="background-image: url('./stars2.png');">
     <noscript>
         <iframe src="./cantaloupe.html" style="background-color: white;position: absolute;top: 0;bottom: 0;width: 100vw;height: 100vh;z-index: 9999;">
 
         </iframe>
     </noscript>
 
-
-
-
- 
-    <main>
-    <header><img src="./banner.png"/></header>
-    <aside id="left">
-        <ul>
-            <li><a target="content" href="./main.html">Home</a></li>
-            <li><a target="content" href="./lnkme.html">Link me!</a></li>
-            <li><a target="content" href="./mybtns.html">My buttons</a></li>
-            <li><a target="content" href="./stuff.html">Stuff</a></li>
-            <li><a target="content" href="./guestbook.html">Guestbook</a></li>
-          </ul>
-          <section style="text-align: center;background-color: #036630;" id="Music_Player">
-            <p style=" color: rgb(255, 255, 255);margin: 0;">Music Player</p>
-                            <!-- This is for music ! -->
-            <div id="player"></div>
-            <nav>
-            <button id="Music_PL">⏵</button>
-            <button id="Music_P">⏸</button>
-            <button id="Music_PR">⏮</button>
-            <button id="Music_N">⏭</button>
-            </nav>
-        </sectiom>
-    </aside>
-    <article>
-        <iframe id="content" name="content" src="./main.html" frameborder="0">
-
-        </iframe>
-    </article>
-    <aside id="right">
-        <h2>Buttons</h2>
-        <div class="content">
-            <!-- The Old Net Embed Code -->
+    <div id="container">
+        <span>
+        <h1 id="header">Theo's cool site!</h1>
+        <a href="https://github.com/home-gihub">My Github</a><a href="https://steamcommunity.com/id/walterstoptryingtogetmysteamid/">And Steam.</a>
+        </span>
+        <hr>
+        <h2>Welcome!</h2>
+        <p>This is my website. Hope you enjoy 😁!Always under construction 🛠 so here be bugs ⚠ .NOT MOBILE FRIENDLY ⛔📱! Best viewed with Firefox. (I'm not testing any other browsers 😅)</p>
+        <p>
+            So here's a bit about me. I like programing and computers in general. I mostly play video games in my spare time.My Zodiac Sign is Cancer ♋ 
+        </p>
+        <hr>
+        <h2>Buttons and such</h2>
+        <!-- The Old Net Embed Code -->
 <a href="http://www.theoldnet.com/#frombadge" title="Are you tired of this new Internet yet? Time to Get TheOldNet!">
-<img src="http://www.theoldnet.com/images/theoldnetanimblur2.gif" width="88" height="31">
-</a>
-<!-- End The Old Net Embed Code -->
- <a href='https://blinkies.cafe' target='_blank'><img src='https://blinkies.cafe/b/display/blinkiesCafe-badge.gif' alt='blinkies.cafe | make your own blinkies!'></a>
-<a href="http://www.svencoop.com" target="_blank"><img src="http://scmapdb.wdfiles.com/local--files/site:images/svencoop.gif" alt="Sven Co-op" class="image"></a>
-<h2>My links</h2>
-<a href="https://github.com/home-gihub">Github</a>
-<a href="https://steamcommunity.com/id/walterstoptryingtogetmysteamid/">Steam</a>
-
-    </aside>
-</main>
-</body>
-<!-- This is for music ! -->
-<script>
-    var tag = document.createElement('script');
-
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-// put video ids in the playlist array to add songs/videos (why would you watch a video in 100x100 res tho)
-// Paper Airplane Chase DSiWare - Main Menu Theme
-// Art of Balance Wii U - Title Screen Music
-// Options - Mario Kart Wii
-// Humming The Bassline
-// Manuel - Gas Gas Gas
-// James Shimoji - Pepsi Man Theme Song (ORIGINAL)
-// Coconut Mall - Mario Kart Wii OST
-// Spider-Man 2: The Game Pizza Theme
-// Undertale OST - sans. Extended
-// Can You Feel the Sunshine Resort Island) Sonic R Music Extended [Music OST][Original Soundtrack]
-// Driftveil City - Pokémon Black & Pokémon White (OST)
-var playlist = ["-a4jmu-lED0", "eRYLaRBK7YY", "xHV2n-0QMac", "IJYK5tkgtvk", "atuFSv2bLa8", "z54MpfR3XE4", "cscuCIzItZQ", "czTksCF6X8Y", "N1-RyLUQUrA", "ieMqJi6UOK8", "9hZ7gYB4E_c"]
-// it starts at the 0th element
-var currVid;
-currVid = 0;
-
-// 3. This function creates an <iframe> (and YouTube player)
-//    after the API code downloads.
-var player;
-function onYouTubeIframeAPIReady() {
-player = new YT.Player('player', {
-height: '100',
-width: '100',
-videoId: playlist[currVid],
-playerVars: {
- 'playsinline': 1,
- 'controls':0,
- 'enablejsapi':1,
- 'disablekb':1
-},
-events: {
- 'onReady': onPlayerReady,
- 'onStateChange': onPlayerStateChange
-}
-});
-}
-
-function onPlayerStateChange(event) {
-    if (event == YT.PlayerState.ENDED) {
-        currVid = currVid + 1;
-if (currVid > playlist.length) {
-   currVid = 0;
-}
-player.cueVideoById(playlist[currVid],0)
-player.playVideo();
-    }
-      }
-
-// 4. The API will call this function when the video player is ready.
-function onPlayerReady(event) {
-event.target.playVideo();
-}
-
-function getNextInPlaylistLoadAndPlay() {
-    currVid = currVid + 1
-if (currVid > playlist.length) {
-   currVid = 0;
-}
-player.cueVideoById(playlist[currVid],0)
-player.playVideo();
-}
-function getPrevInPlaylistLoadAndPlay() {
-currVid = currVid + -1;
-if (currVid < 0) {
-   currVid = playlist.length;
-}
-player.cueVideoById(playlist[currVid],0)
-player.playVideo();
-}
-function stopVideo() {
-player.stopVideo();
-}
-
-// buttons 
-/*
-<button id="Music_PL">Play</button>
-            <button id="Music_P">Pause</button>
-            <button id="Music_N">Next</button>
-            <button id="Music_PR">Prev</button>
-            */
-
-document.getElementById("Music_PL").addEventListener("click", function(){
-    player.playVideo();
-})
-document.getElementById("Music_P").addEventListener("click", function(){
-    player.pauseVideo();
-})
-document.getElementById("Music_N").addEventListener("click", function(){
-    getNextInPlaylistLoadAndPlay();
-})
-document.getElementById("Music_PR").addEventListener("click", function(){
-    getPrevInPlaylistLoadAndPlay();
-})
+    <img src="http://www.theoldnet.com/images/theoldnetanimblur2.gif" width="88" height="31">
+    </a>
+    <!-- End The Old Net Embed Code --><a href="https://blinkies.cafe" target="_blank"><img src="https://blinkies.cafe/b/display/blinkiesCafe-badge.gif" alt="blinkies.cafe | make your own blinkies!"></a>
+    <a href="http://www.svencoop.com" target="_blank"><img src="http://scmapdb.wdfiles.com/local--files/site:images/svencoop.gif" alt="Sven Co-op" class="image"></a>
+        
+    <img class="blinkie" src="./0020-blinkiesCafe.gif">
+    <img class="blinkie" src="./0028-computer.gif">
+    <img class="blinkie" src="./0038-exitbutton2.gif">
+    <img class="blinkie" src="./0092-computerconnect.gif">
+    <img class="blinkie" src="./0136-clock.gif">
+    <img class="blinkie" src="./0206-nyancat.gif">
+    <img class="blinkie" src="./0222-construction.gif">
+    <img class="blinkie" src="./0113-autism.gif">
+    <img class="blinkie" src="./0147-kirbywalk.gif">
+    <hr>
+        <h2>Link me!</h2>
+        <p>Save this image:
+            <img src="./button.gif">
+            then, name it "button.gif" and place it into your site folder with your html file.
+            Now, put this code into your html:
+            <textarea><a href="https://home-gihub.github.io/"><img src="./button.gif"/></a></textarea>
+        </p>
+        <hr>
+        <script src="https://giscus.app/client.js"
+        data-repo="home-gihub/home-gihub.github.io"
+        data-repo-id="R_kgDOI466gw"
+        data-category="General"
+        data-category-id="DIC_kwDOI466g84CkPm3"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="0"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="transparent_dark"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
 </script>
+        <hr style="margin: 0;">
+            <footer><p style="text-align: center;margin: 0%;">The website comes to an end here.</p></footer>
+        </div>
+</body>
+
 
 </html>
