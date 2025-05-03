@@ -38,5 +38,38 @@
 
     </aside>
     </div>
+
+    <div id="app">
+        <noscript>enable javascript goober</noscript>
+    </div>
+<script src="https://unpkg.com/webamp"></script>
+<script>
+    const app = document.getElementById("app")
+    const webamp = new Webamp({
+        initialTracks: [
+          {
+            metaData: {
+              artist: "Microsoft",
+              title: "CANYON.MID",
+            },
+            // NOTE: Your audio file must be served from the same domain as your HTML
+            // file, or served with permissive CORS HTTP headers:
+            // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+            url: "./CANYON.MID",
+          },
+          {
+            metaData: {
+              artist: "Microsoft",
+              title: "PASSPORT.MID",
+            },
+            // NOTE: Your audio file must be served from the same domain as your HTML
+            // file, or served with permissive CORS HTTP headers:
+            // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+            url: "./PASSPORT.MID",
+          }
+        ],
+      });
+    webamp.renderWhenReady(app);
+</script>
 </body>
 </html>
