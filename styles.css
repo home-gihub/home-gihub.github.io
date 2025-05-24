@@ -111,7 +111,7 @@ h2 {
         height: 10%;
         overflow: hidden;
             margin: 0;
-        padding: 0;
+        padding: 0; 
     }
     aside > ul>li{
         width: fit-content;
