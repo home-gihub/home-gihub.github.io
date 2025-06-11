@@ -20,17 +20,21 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-
-
-nav {
-    background-color: #933110;
-    margin: 0;
-    padding: 0;
+div#container > table {
     width: 100%;
-    height: min-content;
 }
 
-nav > ul {
+div#container > table > tr,div#container > table > tr > td {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+td#nav {
+    background-color: #933110;
+}
+
+td#nav > ul {
     text-decoration: none;
     list-style: none;
     text-align: center;
@@ -41,7 +45,8 @@ nav > ul {
     overflow-x: scroll;
 }
 
-nav > ul > li {
+
+td#nav > ul > li {
     padding: 4px;
     margin: 0;
     margin-right: 2px;
@@ -53,32 +58,27 @@ nav > ul > li {
     background-size: 100% 100%;
 }
 
-nav > ul > li > a {
+
+td#nav > ul > li > a {
     display: inline-block;
     width: fit-content;
     text-decoration: none;
     font-family: sans-serif;
     height: 100%;
-     margin: 0;
     padding: 0;
+    margin: 0;
+    border: 0;
     color: white;
 }
 
-main {
-    display: inline;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
-
-main > iframe#content {
+iframe#content {
     background-color: #663300;
-    display: inline;
+    display: block;
     padding: 0;
     margin: 0;
+    border: 0;
+    height: 100vh;
     width: 100%;
-    height: 100%;
 }
 
 h2 {
