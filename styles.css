@@ -37,6 +37,7 @@ td#nav {
 td#nav > ul {
     text-decoration: none;
     list-style: none;
+    font-size: 0px;
     text-align: center;
     height: 100%;
     width: 100%;
@@ -47,15 +48,19 @@ td#nav > ul {
 
 
 td#nav > ul > li {
+    font-size: medium;
     padding: 4px;
     margin: 0;
-    margin-right: 2px;
     width: fit-content;
     display: inline-block;
     height: 100%;
-    background-image: url("./button-fill.svg");
-    background-repeat: repeat-x;
-    background-size: 100% 100%;
+    border-left: #a44221 solid 2px;
+    border-right: #611000 solid 2px;
+}
+
+td#nav > ul > li:hover {
+    border-right: #820000 solid 3px;
+    border-left: #100000 solid 3px;
 }
 
 
