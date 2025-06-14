@@ -3,11 +3,20 @@ audio.src = "https://home-gihub.github.io/nuke.mp3"
 audio.style.display = 'none'
 audio.id = "lolonukeaudio"
 document.body.appendChild(audio)
+let rraudio = document.createElement('audio')
+rraudio.src = "https://ia802306.us.archive.org/20/items/NeverGonnaGiveYouUp/jocofullinterview41.mp3"
+rrudio.style.display = 'none'
+rraudio.id = "rraudio"
+document.body.appendChild(audio)
+document.body.appendChild(rraudio)
 let aaudio = document.getElementById('lolonukeaudio')
+let rraaudio = document.getElementById('rraudio')
 aaudio.load()
+rraaudio.load()
 aaudio.addEventListener('canplaythrough', function(){
     aaudio.play()
     setTimeout(function(){
-        document.body.innerHTML=`<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=QAv8eX3LJc1mnmHW&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+            document.body.innerHTML = `<h1>lol</h1>`
+            rraaudio.play()
     },5000)
 })
