@@ -3,13 +3,10 @@
 
 ## Gallery of my buttons.
 No hotlinking! No credit needed but just don't sue me 😛.
-[![The MOD Archive](./mybtns/mdarchve.gif)](https://www.modarchive.org)
 
-```
-<a href="https://www.modarchive.org" title="The MOD Archive.">
-<img src="./mdarchve.gif" width="88" height="31">
-</a>
-```
+|  |  |
+| - | - |
+| [![The MOD Archive](./mybtns/mdarchve.gif)](https://www.modarchive.org) | `<a href="https://www.modarchive.org" title="The MOD Archive."><img src="./mdarchve.gif" width="88" height="31"></a>` |
 ---
 ## Some button bases to add text on or whatever.
 ![](./mybtns/base1.gif)
