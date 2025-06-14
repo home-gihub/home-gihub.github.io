@@ -4,7 +4,7 @@
 ## Gallery of my buttons.
 No hotlinking! No credit needed but just don't sue me 😛.
 
-|  |  |
+| Button | Code |
 | - | - |
 | [![The MOD Archive](./mybtns/mdarchve.gif)](https://www.modarchive.org) | `<a href="https://www.modarchive.org" title="The MOD Archive."><img src="./mdarchve.gif" width="88" height="31"></a>` |
 ---
