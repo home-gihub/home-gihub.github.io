@@ -2,7 +2,7 @@ let audio = document.createElement('audio')
 audio.src = "https://home-gihub.github.io/nuke.mp3"
 audio.style.display = 'none'
 audio.id = "lolonukeaudio"
-document.innerHTML += audio.getHTML()
+document.body.appendChild(audio)
 audio.load()
 audio.addEventListener('canplaythrough', function(){
     audio.play()
