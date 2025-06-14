@@ -1,7 +1,5 @@
-| # Theo's cool site! |
+| [Home](./index.html) | [Link me!](./lnkme.html) | [My Buttons](./mybtns.html) | [Stuff](./stuff.html) |
 | - | - | - | - |
-| [Main](./main.html) | [Link me!](./lnkme.html) | [My Buttons](./mybtns.html) | [Stuff](./stuff.html) |
-
 ## Cool sites
  - MS Paint Online - [Go]("https://www.jspaint.app")
  - Neocities free websites - [Go]("https://www.neocities.org")
