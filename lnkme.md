@@ -1,7 +1,7 @@
 # Theo's cool site!
-|  |  |  |  |
-| - | - | - | - |
 | [Home](./index.html) | [Link me!](./lnkme.html) | [My Buttons](./mybtns.html) | [Stuff](./stuff.html) |
+| --- | --- | --- | --- |
+|  |  |  |  |
 
 ## Here is my button to add to your webpages!
 Save this image:
