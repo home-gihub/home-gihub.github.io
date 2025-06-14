@@ -7,47 +7,52 @@ body {
 #container {
     max-width: 75vw;
     margin: 0 auto;
-    height: 150vh;
+    height: 100vh;
 }
 
 #header {
     width: 100%;
-    background-color: #ffffff;
     /* header color here! */
-    height: 150px;
-    background-size: 100%;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    font-size: medium;
+    background-color: white;
     color: #0099ff;
+    display: inline;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-div#container > table {
-    width: 100%;
-}
-
-div#container > table > tr,div#container > table > tr > td {
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-td#nav {
+nav {
     background-color: #933110;
+     position: sticky;
+     padding: 0;
+     height: 5vh;
 }
 
-td#nav > ul {
+nav > div {
+    margin: auto;
+margin-right: 0;
+display: inline-block;
+}
+
+nav > div > ul {
     text-decoration: none;
     list-style: none;
+    display: inline;
     font-size: 0px;
-    text-align: center;
+    text-align: right;
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     overflow-x: scroll;
+    top: 0; 
 }
 
 
-td#nav > ul > li {
+nav > div > ul > li {
+    text-align: right;
     font-size: medium;
     padding: 4px;
     margin: 0;
@@ -58,13 +63,13 @@ td#nav > ul > li {
     border-right: #611000 solid 2px;
 }
 
-td#nav > ul > li:hover {
+nav > div > ul > li:hover {
     border-right: #820000 solid 3px;
     border-left: #100000 solid 3px;
 }
 
 
-td#nav > ul > li > a {
+nav > div > ul > li > a {
     display: inline-block;
     width: fit-content;
     text-decoration: none;
@@ -79,10 +84,11 @@ td#nav > ul > li > a {
 iframe#content {
     background-color: #663300;
     display: block;
+    overflow: visible;
     padding: 0;
     margin: 0;
     border: 0;
-    height: 100vh;
+    height: 95vh;
     width: 100%;
 }
 
