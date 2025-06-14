@@ -1,5 +1,8 @@
-| [Home](./index.html) | [Link me!](./lnkme.html) | [My Buttons](./mybtns.html) | [Stuff](./stuff.html) |
+# Theo's cool site!
+|  |  |  |  |
 | - | - | - | - |
+| [Home](./index.html) | [Link me!](./lnkme.html) | [My Buttons](./mybtns.html) | [Stuff](./stuff.html) |
+
 ![alt text](./welcomeart.png)
 This is my website. Hope you enjoy 😁!
 Always under construction 🛠 .

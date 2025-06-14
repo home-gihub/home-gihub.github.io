@@ -1,5 +1,7 @@
-| [Home](./index.html) | [Link me!](./lnkme.html) | [My Buttons](./mybtns.html) | [Stuff](./stuff.html) |
+# Theo's cool site!
+|  |  |  |  |
 | - | - | - | - |
+| [Home](./index.html) | [Link me!](./lnkme.html) | [My Buttons](./mybtns.html) | [Stuff](./stuff.html) |
 
 ## Gallery of my buttons.
 No hotlinking! No credit needed but just don't sue me 😛.
