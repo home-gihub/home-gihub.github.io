@@ -24,10 +24,15 @@ body {
 }
 
 nav {
-    background-color: #933110;
+    background-image: url("./glossy.svg");
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
      position: sticky;
      padding: 0;
      height: 5vh;
+box-shadow: 1px 11px 30px -8px rgba(0,0,0,1);
+-webkit-box-shadow: 1px 11px 30px -8px rgba(0,0,0,1);
+-moz-box-shadow: 1px 11px 30px -8px rgba(0,0,0,1);
 }
 
 nav > div {
@@ -59,13 +64,19 @@ nav > div > ul > li {
     width: fit-content;
     display: inline-block;
     height: 100%;
-    border-left: #a44221 solid 2px;
-    border-right: #611000 solid 2px;
+    border-right: #a44221 solid 2px;
 }
 
+nav > div > ul > li:first-child {
+    border-left: #a44221 solid 2px;
+}
+
+
+
 nav > div > ul > li:hover {
-    border-right: #820000 solid 3px;
-    border-left: #100000 solid 3px;
+   box-shadow: 1px 1px 18px 7px rgba(0,0,0,0.75) inset;
+-webkit-box-shadow: 1px 1px 18px 7px rgba(0,0,0,0.75) inset;
+-moz-box-shadow: 1px 1px 18px 7px rgba(0,0,0,0.75) inset;
 }
 
 
