@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body> 
+    <main id="main">
+    <button class="off" onclick="toggle(document.getElementById('toggle'))" id="toggle">
+        Click this
+    </button>
+    </main>
+    <script>
+        store = document.getElementById('main').innerHTML
+        document.getElementById('main').innerHTML = "<div style=\"margin:auto;height:100%;text-align:center;\"><button id=\"unmute\">Click to unmute</button></div"
+        document.getElementById('unmute').onclick = function(){
+            document.getElementById('main').innerHTML = store
+        }
+
+    </script>
+    
+        <style>
+        body {
+            background-color: #656565;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+            border: 0;
+            
+        }
+        main{
+            text-align: center;
+        }
+
+        button.off, button.on {
+            position: absolute;
+            left: 60%;
+            top:60%;
+                width: 6em;
+    margin: 0;
+    height: 2em;
+            opacity: 0%;
+        }
+                button.off:hover, button.on:hover {
+                    background-color: white;
+                    color: black;
+                    cursor: pointer;
+            position: absolute;
+            left: 60%;
+            top:60%;
+                width: 6em;
+    margin: 0;
+    height: 2em;
+            opacity: 1000%;
+        }
+
+button#unmute {
+        width: auto;
+        border: 0;
+    border-radius: 0.5em;
+    padding: 0.25em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: white;
+    text-shadow: black 0.05em 0.05em 0.15em ;
+    width: auto;
+    margin: 0;
+    height: 2em;
+    background-color: blueviolet;
+}
+    </style>
+    <script>
+                    function toggle(e){
+    e.innerHTML = '<a href=\"./4.html\">Again</a>'
+    e.className = 'on'
+}
+    </script>
+</body>
+</html>

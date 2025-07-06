@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interact with the buttons</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body> 
+    <main id="main">
+    <button class="off" onclick="toggle(document.getElementById('toggle'))" id="toggle">
+        Click
+    </button>
+    </main>
+    <script>
+        store = document.getElementById('main').innerHTML
+        document.getElementById('main').innerHTML = "<div style=\"margin:auto;height:100%;text-align:center;\"><button id=\"unmute\">Click to unmute</button></div"
+        document.getElementById('unmute').onclick = function(){
+            document.getElementById('main').innerHTML = store
+        }
+
+    </script>
+    
+        <style>
+        body {
+            background-color: #656565;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            border: 0;
+            
+        }
+        main{
+            text-align: center;
+        }
+        button {
+    border: 2px solid white;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    background-color:#cccccc;
+    padding: 0.25em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: white;
+    text-shadow: black 0.05em 0.05em ;
+    width: 4em;
+    height: 2em;
+}
+
+button.on {
+        border: 2px solid black;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+
+button#unmute {
+        width: auto;
+        border: 0;
+    border-radius: 0.5em;
+    padding: 0.25em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: white;
+    text-shadow: black 0.05em 0.05em 0.15em ;
+    height: 2em;
+    background-color: blueviolet;
+    width: auto;
+}
+    </style>
+    <script>
+                    function toggle(e){
+    e.innerHTML = '<a href=\"./3.html\">Click</a>'
+    e.className = 'on'
+}
+    </script>
+</body>
+</html>

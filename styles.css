@@ -24,8 +24,7 @@ body {
 }
 
 nav {
-background-image:linear-gradient(180deg, #933110 0%, #a93d1a 13%, #be4a24 26%, #e9653a 52%, #d4572f 52.25%, #be4a24 52.5%, #933110 53%, #842d10 64.75%, #752810 76.5%, #591f0d 100%);
-     position: sticky;
+background-image:linear-gradient(180deg, #7e2a0c 0%, #9d390e 12.5%, #bd480f 25%, #ff6a00 50%, #e75a00 50.25%, #ce4a00 50.5%, #9e2d00 51%, #862705 63%, #702107 75%, #461406 99%);     position: sticky;
      padding: 0;
      height: 5vh;
 box-shadow: 1px 11px 30px -8px rgba(0,0,0,1);
@@ -65,11 +64,6 @@ nav > div > ul > li {
 }
 
 
-nav > div > ul > li:hover {
-background-image:linear-gradient(180deg, #ab3c17 2%, #993514 14.25%, #872f11 26.5%, #65220b 51%, #5d200b 51.5%, #561e0a 52%, #481909 53%, #4c1b0a 64.75%, #501c0b 76.5%, #591f0d 100%);
-}
-
-
 nav > div > ul > li > a {
     display: inline-block;
     width: fit-content;
@@ -83,7 +77,7 @@ nav > div > ul > li > a {
 }
 
 iframe#content {
-    background-color: #663300;
+    background-color: oklch(41.4% 0.112 45.904);
     display: block;
     overflow: visible;
     padding: 0;

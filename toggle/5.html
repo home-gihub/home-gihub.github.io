@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body> 
+    <main id="main">
+    <button class="off" onclick="toggle(document.getElementById('toggle'))" id="toggle">
+        OFF
+    </button>
+    </main>
+    <script>
+        store = document.getElementById('main').innerHTML
+        document.getElementById('main').innerHTML = "<div style=\"margin:auto;height:100%;text-align:center;\"><button id=\"unmute\">Click to unmute</button></div"
+        document.getElementById('unmute').onclick = function(){
+            document.getElementById('main').innerHTML = store
+        }
+
+    </script>
+    
+        <style>
+        body {
+            background-color: #656565;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            border: 0;
+            
+        }
+        main{
+            text-align: center;
+        }
+        button {
+    border: 0;
+    border-radius: 0.5em;
+    padding: 0.25em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: white;
+    text-shadow: black 0.05em 0.05em 0.15em ;
+    width: 4em;
+    height: 2em;
+}
+
+button.on {
+        background-color: oklch(84.1% 0.238 128.85);
+    border-bottom: oklch(89.7% 0.196 126.665) 0.25em solid;
+}
+
+button.off {
+    background-color: oklch(57.7% 0.245 27.325);
+    border-top: oklch(39.6% 0.141 25.723) 0.25em solid;
+}
+
+button#unmute {
+        width: auto;
+        border: 0;
+    border-radius: 0.5em;
+    padding: 0.25em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: white;
+    text-shadow: black 0.05em 0.05em 0.15em ;
+    width: auto;
+    height: 2em;
+    background-color: blueviolet;
+}
+    </style>
+    <script>
+                    function toggle(e){
+    e.innerHTML = '<a href=\"./2.html\">ON</a>'
+    e.className = 'on'
+}
+    </script>
+</body>
+</html>
