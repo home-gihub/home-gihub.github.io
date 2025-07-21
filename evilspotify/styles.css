@@ -1,0 +1,8 @@
+body {
+    background-color: black;
+}
+
+body > div {
+    text-align: center;
+    margin: auto;
+}
