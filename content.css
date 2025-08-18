@@ -61,35 +61,30 @@ box-shadow: 0px 7px 14px -8px rgba(0,0,0,0.75);
 -webkit-box-shadow: 0px 7px 14px -8px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 7px 14px -8px rgba(0,0,0,0.75);
     background: #f2f2f2;
-background: -webkit-linear-gradient(180deg, rgba(242, 242, 242, 1) 0%, rgba(158, 158, 158, 1) 100%);
-background: -moz-linear-gradient(180deg, rgba(242, 242, 242, 1) 0%, rgba(158, 158, 158, 1) 100%);
-background: linear-gradient(180deg, rgba(242, 242, 242, 1) 0%, rgba(158, 158, 158, 1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#F2F2F2", endColorstr="#9E9E9E", GradientType=0);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e2e2e2+0,dbdbdb+50,d1d1d1+51,fefefe+100;Grey+Gloss+%231 */
+background: linear-gradient(to bottom,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
 }
 
 .button:hover {
     background: #d4d4d4;
-background: -webkit-linear-gradient(180deg, rgba(212, 212, 212, 1) 0%, rgba(158, 158, 158, 1) 100%);
-background: -moz-linear-gradient(180deg, rgba(212, 212, 212, 1) 0%, rgba(158, 158, 158, 1) 100%);
-background: linear-gradient(180deg, rgba(212, 212, 212, 1) 0%, rgba(158, 158, 158, 1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#D4D4D4", endColorstr="#9E9E9E", GradientType=0);
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2f6f8+0,d8e1e7+50,b5c6d0+51,e0eff9+100;Grey+Gloss+%232 */
+background: linear-gradient(to bottom,  #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
 }
 
 .button.primary {
-    border: 1.5px solid #a35400;
-    background: #EB7B00;
-background: -webkit-linear-gradient(180deg, rgba(235, 123, 0, 1) 0%, rgba(158, 57, 0, 1) 100%);
-background: -moz-linear-gradient(180deg, rgba(235, 123, 0, 1) 0%, rgba(158, 57, 0, 1) 100%);
-background: linear-gradient(180deg, rgba(235, 123, 0, 1) 0%, rgba(158, 57, 0, 1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#EB7B00", endColorstr="#9E3900", GradientType=0);
+    border: 1.5px solid #80c217;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#9dd53a+0,a1d54f+50,80c217+51,7cbc0a+100;Green+Gloss+%231 */
+background: linear-gradient(to bottom,  #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
 }
 
 .button.primary:hover {
-    border: 1.5px solid #a35400;
-background: #c76700;
-background: -webkit-linear-gradient(180deg, rgba(199, 103, 0, 1) 0%, rgba(158, 57, 0, 1) 100%);
-background: -moz-linear-gradient(180deg, rgba(199, 103, 0, 1) 0%, rgba(158, 57, 0, 1) 100%);
-background: linear-gradient(180deg, rgba(199, 103, 0, 1) 0%, rgba(158, 57, 0, 1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#C76700", endColorstr="#9E3900", GradientType=0);}
+    border: 1.5px solid #80c217;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#9ef91f+0,a2f931+50,80de04+51,79ce02+100 */
+background: linear-gradient(to bottom,  #9ef91f 0%,#a2f931 50%,#80de04 51%,#79ce02 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
 
 
