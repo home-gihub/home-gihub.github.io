@@ -19,7 +19,7 @@ no.addEventListener('click',  function(){
         videosrc.src = './whilewait.mp4'
     video.load()
     video.play()
-    }, 7100);
+    }, 8000);
 })
 
 
