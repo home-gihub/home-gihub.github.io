@@ -15,11 +15,11 @@ margin: 0;
 }
 
 tr#navlinks {
-    background-image: url('./glosswhite.png');
+    background-image: url('./mattewhite.png');
     background-repeat: repeat-x;
 background-size: contain;
 padding: 0;
-height:20px;
+height:25px;
 }
 
 
@@ -31,14 +31,18 @@ a.navtab {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     padding: 0.25em;
-    background-image: url('./mattewhite.png');
+    background-image: url('./glosswhite.png');
     background-repeat: repeat-x;
     background-size: contain;
     height: 20px;
     text-shadow: 1px 1px white;
     display: inline-block;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
+    border:2px solid greenyellow;
+    border-radius: 5px;
+}
+
+a.navtab:hover {
+    background-image: url('./glossgreen.png');
 }
 
 
