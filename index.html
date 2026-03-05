@@ -1,83 +1,80 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title>Theo's cool site!</title>
-    <link rel="stylesheet" href="./styles.css">
-  </head>
-  <body>
-    <center>
-    <header>
-      
-      <iframe scrolling="no" width="800" height="231"  src="./header.html" style="overflow:hidden;border:0;display: block;"></iframe>
-    </header>
-    <main>
-      <img width="800" height="20" src="./shadow.png">
-      <br/>
-      <fieldset>
-      <h2> Welcome!</h2>
-      <p>This is my personal website. I hope you enjoy it!</p> 
-        <a class="action" href="https://twitter.com/intent/tweet?text=https%3A//home-gihub.github.io/">
-          <img class="icon" src="./logo-black.png"> Share on Twitter ></a>
-        <a class="action" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//home-gihub.github.io/">
-          <img class="icon" src="./Facebook_Logo_Primary.png"> Share on Facebook ></a>
-      </fieldset>
-      <br/>
-      <fieldset>
-        <h2>FAQ</h2>
-        <br/>
-        <h3>Why does the website look like this?</h3>
-        <p>I don't like flat design, I think it's boring and that it has no personality.</p>
-        <br>
-        <h3>Why is everything in the middle of the screen?</h3>
-        <p>Because it's hard to read when everything's not in the middle</p>
-        <br>
-        <h3>Why?</h3>
-        <p>Why not? </p>
-      </fieldset>
-      <br>
-      <fieldset>
-        <h2>My 88x31 Button</h2>
-        <p>If you don't know what an 88x31 button is, an 88x31 button is an image (with the dimensions 88px x 31px) that linkes to a website.</p>
-        <p>This is good if you have a website and want to share another form yours, whilst providing a little peek inside.</p>
-        <p>Here it is if you wolud like to embed it into your own website:</p>
-        <table>
-          <tr>
-            <td>Options</td>
-            <td>Result</td>
-          </tr>
-          <tr>
-            <td>
-              <center>
-              <form>
-                <label for="buttongeneratorStyles">Choose style:</label>
-                <select id="buttongeneratorStyles">
-                  <optgroup label="Styles">
-                    <option value="web1">Web 1.0</option>
-                    <option value="web2">Web 2.0</option>
-                  </optgroup>
-                </select>
-                <label for="buttongeneratorIframe">Open outside of iframe?</label>
-                <input type="checkbox" id="buttongeneratorIframe"/>
-              </form>
-              </center>
-            </td>
-            <td>
-              <center>
-              <button id="buttongeneratorRegen">Generate</button>
-               <div id="buttongeneratorResult"></div>
-              <textarea id="buttongeneratorCode"></textarea>
-             </center>
-            </td>
-          </tr>
-        </table>
-      </fieldset>
-      <br> 
-      <br>
-    </main>
-    <footer></footer>
-    </center>
-    <br>
-  </body>
-  <script src="./scripts.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+    <div id="padleft"></div>
+    
+    
+    <div class="blade left" id="blade1"><label>Home</label></div>
+    <section class="section open" style="background-color: gold;" id="s1">
+
+        <section class="content">
+            
+            
+                <h1>Welcome!</h1>
+            <div class="box">
+           
+            <p>This website is <b> super not optimised for mobile!!!!</b></p>
+            <p>If you must view it on a phone, please rotate to landscape.</p>
+            <p>This is a new site layout so I'm just going to fix everything <del>soon</del>.</p>
+            <p>Actually, not soon. because bug fixing takes time and I lose motivation (I wish i didn't ;-;)</p>
+            <p>But even if all the bugs are fixed, this website will be under construction indefiniteley    </p>
+                    <p>This website is based off the Xbox 360</p>
+            <p>"Blades" dashboard, so if you ever played games in ~2005 it might look familiar.</p>
+            <p>I'm not actually nostalgic towards the blades dash myself</p>
+            <p>but it certainly is my favourite console ui and my favourite ui in general.</p>
+    
+            </div>
+        </section>
+
+    </section>
+    
+    
+    <div class="blade right" id="blade2"><label>Creations</label></div>
+    <section class="section" style="background-color: green;" id="s2">
+         <section class="content">
+
+            <h1>Creations</h1>
+            <p>Random things I've made</p>
+    
+            <ul style="max-width: 20vw;">
+                <li><a href="./creations/springfieldpolicedepartment/index.html">Springfield police department</a></li>
+                 <li><a href="./creations/evilspotify/index.html">Evil Spotify</a></li>
+                  <li><a href="./creations/emmergencycheckatrade/index.html">Emergency checkatrade</a></li>
+                   <li><a href="./creations/checker/index.html">Infinite checkerboard</a></li>
+            </ul>
+
+         </section>
+    </section>
+    
+    
+    <div class="blade right" id="blade3"><label>Share this page</label></div>
+    <section class="section" style="background-color: blue;" id="s3">
+
+        <section class="content">
+            <h1>Coming soon</h1>
+        </section>
+    </section>
+    
+    
+    <div class="blade right" id="blade4"><label>Gifs, gifs, gifs!</label></div>
+    <section class="section" style="background-color: purple;" id="s4">
+
+        <section class="content">
+            <h1>Coming soon</h1>
+        </section>
+
+    </section>
+    
+    
+     <div id="padright"></div>
+  </div>
+  <script src="./index.js"></script>
+</body>
 </html>

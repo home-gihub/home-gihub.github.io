@@ -1,89 +1,128 @@
 * {
-        padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-td#header {
-    background-image: url('./header.png');
-    background-repeat: no-repeat;
-background-size: contain;
-height: 200px;
-width: 800px;
-padding: 0;
-margin: 0;
-}
-
-tr#navlinks {
-    background-image: url('./mattewhite.png');
-    background-repeat: repeat-x;
-background-size: contain;
-padding: 0;
-height:25px;
-}
-
-
-
-a.navtab {
-    border-bottom-left-radius: 0.25em;
-    border-bottom-right-radius: 0.25em;
-    color:black;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    padding: 0.25em;
-    background-image: url('./glosswhite.png');
-    background-repeat: repeat-x;
-    background-size: contain;
-    height: 20px;
-    text-shadow: 1px 1px white;
-    display: inline-block;
-    border:2px solid greenyellow;
-    border-radius: 5px;
-}
-
-a.navtab:hover {
-    background-image: url('./glossgreen.png');
-}
-
-
-table.nav {
-    width: 800px;
     padding: 0;
     margin: 0;
-    border: 0;
-  
 }
 
-main {
-    width: 800px;
-    background-color: #e1e1e1ff;
-        border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
+#padleft, #padright{
+    width:10vw  ;
+    height:100vh;
+    display: inline-block;
+    background-color: gray;
+        background: #919191;
+background: -webkit-linear-gradient(0deg, rgba(145, 145, 145, 1) 0%, rgba(230, 230, 230, 1) 55%, rgba(199, 199, 199, 1) 100%);
+background: -moz-linear-gradient(0deg, rgba(145, 145, 145, 1) 0%, rgba(230, 230, 230, 1) 55%, rgba(199, 199, 199, 1) 100%);
+background: linear-gradient(0deg, rgba(145, 145, 145, 1) 0%, rgba(230, 230, 230, 1) 55%, rgba(199, 199, 199, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#919191", endColorstr="#C7C7C7", GradientType=0);
+
 }
 
-main > fieldset {
-    background-color: white;
-    padding: 0.5em;
-    border: 1px grey solid;
-    border-radius: 0.5em;
-    width:75%;
-    text-align: left;
-    box-shadow: 0 1px rgba(255, 255, 255, 0.75);
-    font-family: Arial, Helvetica, sans-serif;
+.blade {
+    display: inline-block;
+    width:5vw;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
 }
 
-fieldset > a.action {
-    border-top: 1px grey solid;
-    width: 100%;
-    display: block;
+.blade.left {
+    background-image: url(blade-l.png);
+    
+}
+
+.blade.right {
+    background-image: url(blade-r.png);
+    
+}
+
+
+.section {
+ width: 0vw;
+     display: inline-block;
+    transition: width 1s;
+}
+
+
+
+.section.open {
+    width: 75vw;
+        display: inline-block;
+}
+
+#container
+{ 
+    display: flex;
+    width:100vw;
+}
+
+div.blade.right > label {
+    text-orientation: mixed;
+    writing-mode: vertical-lr;
+    font-family: sans-serif;
+    margin-top: 30vh;
+    padding-left: 10%;
+}
+
+
+div.blade.left > label {
+    text-orientation: mixed;
+    writing-mode: vertical-lr;
+    font-family: sans-serif;
+    margin-top: 30vh;
+    padding-left: 50%;
+}
+
+section.content {
+    background: #919191;
+background: -webkit-linear-gradient(0deg, rgba(145, 145, 145, 0.43) 0%, rgba(199, 199, 199, 1) 100%);
+background: -moz-linear-gradient(0deg, rgba(145, 145, 145, 0.43) 0%, rgba(199, 199, 199, 1) 100%);
+background: linear-gradient(0deg, rgba(145, 145, 145, 0.43) 0%, rgba(199, 199, 199, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#919191", endColorstr="#C7C7C7", GradientType=0);
+border-top: 2px solid black;
+border-bottom: 2px solid black;
+color:white;
+font-family: sans-serif;
+margin-top: 12vh;
+height: 75vh;
+padding-left: 1em;
+}
+
+div.box {
+    box-shadow: 0px 10px 31px 0px rgba(0,0,0,0.75) inset;
+-webkit-box-shadow: 0px 10px 31px 0px rgba(0,0,0,0.75) inset;
+-moz-box-shadow: 0px 10px 31px 0px rgba(0,0,0,0.75) inset;
+border-radius: 1em;
+max-height: 75vh;
+display: inline-block;
+padding: 1em;
+
+}
+
+
+td, th { /* table cells */
+    padding: 2em;
+}
+
+ul {
     text-decoration: none;
-    color: black;
-    margin-top: 0.5em;
-    padding-top: 0.5em;
+    list-style: none;
 }
 
-img.icon {
-    width: 16px;
-    height: 16px;
+li {
+    border-top: 2px solid black;
+}
 
+li > a {
+    color:white;
+    text-decoration: none;
+}
+
+li:hover {
+        background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(./highlight.png);
+}
+
+li:hover > a {
+   color:black;
 }
