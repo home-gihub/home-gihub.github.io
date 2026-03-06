@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+      <audio id="bladeSwitch1" preload="auto" src="./dash_BladeSwitch_1.wav"></audio>
+      <audio id="bladeSwitch2" preload="auto" src="./dash_BladeSwitch_2.wav"></audio>
+      <audio id="bladeSwitch3" preload="auto" src="./dash_BladeSwitch_3.wav"></audio>
+      <audio id="bladeSwitch4" preload="auto" src="./dash_BladeSwitch_4.wav"></audio>
+    <audio id="bladeLand" preload="auto" src="./dash_BladeLand.wav"></audio>
+      <audio id="enterSub" preload="auto" src="./dash_2ndLevelOpen.wav"></audio>
 </head>
 <body>
     <div id="container">
     <div id="padleft"></div>
-    
+     <script defer src="./index.js"></script>
     
     <div class="blade left" id="blade1"><label>Home</label></div>
     <section class="section open" style="background-color: gold;" id="s1">
@@ -48,6 +54,7 @@
                  <li><a href="./creations/evilspotify/index.html">Evil Spotify</a></li>
                   <li><a href="./creations/emmergencycheckatrade/index.html">Emergency checkatrade</a></li>
                    <li><a href="./creations/checker/index.html">Infinite checkerboard</a></li>
+                   <li><a onclick="visitsub('./gamelauncher.html',2)">Game launcher (web only)</a></li>
             </ul>
 
          </section>
@@ -75,6 +82,7 @@
     
      <div id="padright"></div>
   </div>
-  <script src="./index.js"></script>
+
+  
 </body>
 </html>

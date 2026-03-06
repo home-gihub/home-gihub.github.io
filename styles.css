@@ -22,7 +22,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#919191", endC
     height:100vh;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    
+     transition: width 1s;
 }
 
 .blade.left {
@@ -39,10 +39,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#919191", endC
 .section {
  width: 0vw;
      display: inline-block;
-    transition: width 1s;
+    transition: width 0.25s linear;
 }
 
-
+.section.full {
+    width:80vw;
+}
 
 .section.open {
     width: 75vw;
@@ -52,7 +54,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#919191", endC
 #container
 { 
     display: flex;
-    width:100vw;
+    width:100vw; transition: width 2s;
 }
 
 div.blade.right > label {
@@ -71,6 +73,12 @@ div.blade.left > label {
     margin-top: 30vh;
     padding-left: 50%;
 }
+
+div.blade.shrinking {
+   width:0;
+  
+}
+
 
 section.content {
     background: #919191;
