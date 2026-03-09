@@ -30,6 +30,8 @@ function shrinkallblades(){
   document.getElementById('blade' + String(i)).className+=` shrinking`
 
     }
+  document.getElementById('padleft').className=` `
+   document.getElementById('padright').className=` `
 
 }
 
@@ -76,3 +78,13 @@ function visitsub(link,sec) {
     document.getElementById('s'+String(sec)).className="full section"
     setTimeout(function(){window.location = link}, 1010)   
 }
+params = new URLSearchParams(document.location.search);
+currpage = 1;
+if (params.get("from") != null) {
+    currpage =params.get("from");
+}
+
+hideallsections(currpage)
+
+alignallblades(currpage)
+document.getElementById('s' + String(currpage)).className='section full'

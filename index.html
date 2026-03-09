@@ -1,89 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-      <audio id="bladeSwitch1" preload="auto" src="./dash_BladeSwitch_1.wav"></audio>
-      <audio id="bladeSwitch2" preload="auto" src="./dash_BladeSwitch_2.wav"></audio>
-      <audio id="bladeSwitch3" preload="auto" src="./dash_BladeSwitch_3.wav"></audio>
-      <audio id="bladeSwitch4" preload="auto" src="./dash_BladeSwitch_4.wav"></audio>
+    <link rel="stylesheet" href="styles.css" />
+    <audio id="bladeSwitch1" preload="auto" src="./dash_BladeSwitch_1.wav"></audio>
+    <audio id="bladeSwitch2" preload="auto" src="./dash_BladeSwitch_2.wav"></audio>
+    <audio id="bladeSwitch3" preload="auto" src="./dash_BladeSwitch_3.wav"></audio>
+    <audio id="bladeSwitch4" preload="auto" src="./dash_BladeSwitch_4.wav"></audio>
     <audio id="bladeLand" preload="auto" src="./dash_BladeLand.wav"></audio>
-      <audio id="enterSub" preload="auto" src="./dash_2ndLevelOpen.wav"></audio>
-</head>
-<body>
+    <audio id="enterSub" preload="auto" src="./dash_2ndLevelOpen.wav"></audio>
+  </head>
+  <body>
     <div id="container">
-    <div id="padleft"></div>
-     <script defer src="./index.js"></script>
-    
-    <div class="blade left" id="blade1"><label>Home</label></div>
-    <section class="section open" style="background-color: gold;" id="s1">
+      <div id="padleft" class="padclosed"></div>
+      <script defer src="./index.js"></script>
 
+      <div class="blade" id="blade1"><label>Home</label></div>
+      <section class="section" style="background-color: gold" id="s1">
         <section class="content">
-            
-            
-                <h1>Welcome!</h1>
-            <div class="box">
-           
-            <p>This website is <b> super not optimised for mobile!!!!</b></p>
-            <p>If you must view it on a phone, please rotate to landscape.</p>
-            <p>This is a new site layout so I'm just going to fix everything <del>soon</del>.</p>
-            <p>Actually, not soon. because bug fixing takes time and I lose motivation (I wish i didn't ;-;)</p>
-            <p>But even if all the bugs are fixed, this website will be under construction indefiniteley    </p>
-                    <p>This website is based off the Xbox 360</p>
-            <p>"Blades" dashboard, so if you ever played games in ~2005 it might look familiar.</p>
-            <p>I'm not actually nostalgic towards the blades dash myself</p>
-            <p>but it certainly is my favourite console ui and my favourite ui in general.</p>
-    
+          <h1>Welcome!</h1>
+          <div style="display: grid;grid-template-columns: 1fr 1fr;">
+            <div class="box" style="height: fit-content;width: fit-content;">
+              <label><p>About me</p></label>
+              <div>
+                <p>Favourite game: TF2</p>
+                <p>Favourite OS: Fedora KDE Linux</p>
+                <p>Hobbies: Coding, Video gaming.</p>
+              </div>
             </div>
-        </section>
-
-    </section>
-    
-    
-    <div class="blade right" id="blade2"><label>Creations</label></div>
-    <section class="section" style="background-color: green;" id="s2">
-         <section class="content">
-
-            <h1>Creations</h1>
-            <p>Random things I've made</p>
-    
-            <ul style="max-width: 20vw;">
-                <li><a href="./creations/springfieldpolicedepartment/index.html">Springfield police department</a></li>
-                <li><a href="./creations/evilspotify/index.html">Evil Spotify</a></li>
-                <li><a href="./creations/emmergencycheckatrade/index.html">Emergency checkatrade</a></li>
-                <li><a href="./creations/checker/index.html">Infinite checkerboard</a></li>
-                <li><a onclick="visitsub('./gamelauncher.html',2)">Game launcher (web only)</a></li>
-                <li><a onclick="visitsub('./creations/tppc/index.html',2)">The Pigpiss chronicles</a></li>
+            <div>
+              Some music to make you feel less boredom
+            <iframe referrerPolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/yNwKYgM6SkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            
+            <div>
+            <ul style="min-width: fit-content;">
+               <li><a>This list is a placeholder!</a></li>
+              <li><a>View Github repo</a></li>
+              <li><a>Share this page</a></li>
+              <li><a>88x31 button</a></li>
             </ul>
-
-         </section>
-    </section>
-    
-    
-    <div class="blade right" id="blade3"><label>Share this page</label></div>
-    <section class="section" style="background-color: blue;" id="s3">
-
-        <section class="content">
-            <h1>Coming soon</h1>
+            </div>
+            <div>
+            
+            This website is <b> super not optimised for mobile!!!!</b>
+            If you must view it on a phone, please rotate to landscape.
+            This is a new site layout so I'm just going to fix everything <del>soon</del>.
+            Actually, not soon. because bug fixing takes time and I lose motivation (I wish i didn't ;-;)
+            But even if all the bugs are fixed, this website will be under construction indefiniteley
+            This website is based off the Xbox 360
+            "Blades" dashboard, so if you ever played games in ~2005 it might look familiar.
+            I'm not actually nostalgic towards the blades dash myself
+            but it certainly is my favourite console ui and my favourite ui in general.
+            </div>
+          </div>
         </section>
-    </section>
-    
-    
-    <div class="blade right" id="blade4"><label>Gifs, gifs, gifs!</label></div>
-    <section class="section" style="background-color: purple;" id="s4">
+      </section>
 
+      <div class="blade" id="blade2"><label>Creations</label></div>
+      <section class="section" style="background-color: green" id="s2">
         <section class="content">
-            <h1>Coming soon</h1>
+          <h1>Creations</h1>
+          <p>Random things I've made</p>
+
+          <ul style="max-width: 20vw">
+            <li><a href="./creations/springfieldpolicedepartment/index.html">Springfield police department</a></li>
+            <li><a href="./creations/evilspotify/index.html">Evil Spotify</a></li>
+            <li><a href="./creations/emmergencycheckatrade/index.html">Emergency checkatrade</a></li>
+            <li><a href="./creations/checker/index.html">Infinite checkerboard</a></li>
+            <li><a onclick="visitsub('./gamelauncher.html', 2)">Game launcher (web only)</a></li>
+            <li><a onclick="visitsub('./creations/tppc/index.html', 2)">The Pigpiss chronicles</a></li>
+          </ul>
         </section>
+      </section>
 
-    </section>
-    
-    
-     <div id="padright"></div>
-  </div>
+      <div class="blade" id="blade3"><label>Share this page</label></div>
+      <section class="section" style="background-color: blue" id="s3">
+        <section class="content">
+          <h1>Coming soon</h1>
+        </section>
+      </section>
 
-  
-</body>
+      <div class="blade" id="blade4"><label>Gifs, gifs, gifs!</label></div>
+      <section class="section" style="background-color: purple" id="s4">
+        <section class="content">
+          <h1>Coming soon</h1>
+        </section>
+      </section>
+
+      <div id="padright" class="padclosed"></div>
+    </div>
+  </body>
 </html>
