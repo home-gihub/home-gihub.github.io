@@ -35,6 +35,14 @@ function shrinkallblades(){
 
 }
 
+function playenter() {
+document.getElementById('enter').play()
+}
+
+function playexit() {
+document.getElementById('exit').play()
+}
+
 
 document.getElementById('blade1').addEventListener('click', function(){
     hideallsections(1)
@@ -88,3 +96,13 @@ hideallsections(currpage)
 
 alignallblades(currpage)
 document.getElementById('s' + String(currpage)).className='section full'
+
+enterbtns = document.getElementsByClassName("enterbtn")
+for(i=0;i<enterbtns.length;i++) {
+    enterbtns[i].addEventListener('click', playenter)
+}
+
+exitbtns = document.getElementsByClassName("exitbtn")
+for(i=0;i<exitbtns.length;i++) {
+    exitbtns[i].addEventListener('click', playexit)
+}

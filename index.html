@@ -11,6 +11,8 @@
     <audio id="bladeSwitch4" preload="auto" src="./dash_BladeSwitch_4.wav"></audio>
     <audio id="bladeLand" preload="auto" src="./dash_BladeLand.wav"></audio>
     <audio id="enterSub" preload="auto" src="./dash_2ndLevelOpen.wav"></audio>
+    <audio id="enter" preload="auto" src="./enter.wav"></audio>
+    <audio id="exit" preload="auto" src="./exit.wav"></audio>
   </head>
   <body>
     <div id="container">
@@ -19,6 +21,7 @@
 
       <div class="blade" id="blade1"><label>Home</label></div>
       <section class="section" style="background-color: gold" id="s1">
+     
         <section class="content">
           <h1>Welcome!</h1>
           <div style="display: grid;grid-template-columns: 1fr 1fr;">
@@ -37,10 +40,7 @@
             
             <div>
             <ul style="min-width: fit-content;">
-               <li><a>This list is a placeholder!</a></li>
-              <li><a>View Github repo</a></li>
-              <li><a>Share this page</a></li>
-              <li><a>88x31 button</a></li>
+             <li><a class="enterbtn" onclick="visitsub('./comments.html', 1)">Comments/guestbook</a></li>
             </ul>
             </div>
             <div>
@@ -57,6 +57,7 @@
             </div>
           </div>
         </section>
+        
       </section>
 
       <div class="blade" id="blade2"><label>Creations</label></div>
@@ -66,12 +67,12 @@
           <p>Random things I've made</p>
 
           <ul style="max-width: 20vw">
-            <li><a href="./creations/springfieldpolicedepartment/index.html">Springfield police department</a></li>
-            <li><a href="./creations/evilspotify/index.html">Evil Spotify</a></li>
-            <li><a href="./creations/emmergencycheckatrade/index.html">Emergency checkatrade</a></li>
-            <li><a href="./creations/checker/index.html">Infinite checkerboard</a></li>
-            <li><a onclick="visitsub('./gamelauncher.html', 2)">Game launcher (web only)</a></li>
-            <li><a onclick="visitsub('./creations/tppc/index.html', 2)">The Pigpiss chronicles</a></li>
+            <li><a class="enterbtn" href="./creations/springfieldpolicedepartment/index.html">Springfield police department</a></li>
+            <li><a class="enterbtn" href="./creations/evilspotify/index.html">Evil Spotify</a></li>
+            <li><a class="enterbtn" href="./creations/emmergencycheckatrade/index.html">Emergency checkatrade</a></li>
+            <li><a class="enterbtn" href="./creations/checker/index.html">Infinite checkerboard</a></li>
+            <li><a class="enterbtn" onclick="visitsub('./gamelauncher.html', 2)">Game launcher (web only)</a></li>
+            <li><a class="enterbtn" onclick="visitsub('./creations/tppc/index.html', 2)">The Pigpiss chronicles</a></li>
           </ul>
         </section>
       </section>
@@ -79,14 +80,14 @@
       <div class="blade" id="blade3"><label>Share this page</label></div>
       <section class="section" style="background-color: blue" id="s3">
         <section class="content">
-          <h1>Coming soon</h1>
+          <h1>Give me ideas for this section in the comments!</h1>
         </section>
       </section>
 
       <div class="blade" id="blade4"><label>Gifs, gifs, gifs!</label></div>
       <section class="section" style="background-color: purple" id="s4">
         <section class="content">
-          <h1>Coming soon</h1>
+          <h1>Give me ideas for this section in the comments!</h1>
         </section>
       </section>
 
