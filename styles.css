@@ -91,10 +91,7 @@ div.blade.shrinking {
 
 section.content {
     background: #919191;
-background: -webkit-linear-gradient(0deg, rgba(145, 145, 145, 0.43) 0%, rgba(199, 199, 199, 1) 100%);
-background: -moz-linear-gradient(0deg, rgba(145, 145, 145, 0.43) 0%, rgba(199, 199, 199, 1) 100%);
-background: linear-gradient(0deg, rgba(145, 145, 145, 0.43) 0%, rgba(199, 199, 199, 1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#919191", endColorstr="#C7C7C7", GradientType=0);
+background: linear-gradient(0deg,rgba(255, 255, 255, 0.452) 0%, rgba(255, 255, 255, 0.205) 50%, rgba(255, 255, 255, 0.452) 100%);
 border-top: 2px solid black;
 border-bottom: 2px solid black;
 color:white;
@@ -162,4 +159,20 @@ li:hover {
 
 li:hover > a {
    color:black;
+}
+
+#s1 {
+    background: radial-gradient(ellipse at center,  #c99700 6%,#e48100 26%,#bb8c00 57%,#dd7d00 100%);
+}
+
+#s2 {
+    background: radial-gradient(ellipse at center,  #299140 6%,#086400 26%,#249437 57%,#008a22 100%);
+}
+
+#s3 {
+    background: radial-gradient(ellipse at center,  #2f45a7 6%,#000286 26%,#2d47bb 57%,#0011ac 100%);
+}
+
+#s4 {
+    background: radial-gradient(ellipse at center,  #672fa7 6%,#600086 26%,#932dbb 57%,#5f00ac 100%);
 }
