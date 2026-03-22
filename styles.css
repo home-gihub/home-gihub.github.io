@@ -4,7 +4,10 @@
 }
 
 
-
+body > div.container {
+    /* hack hack */
+    overflow: hidden;
+}
 
 #padleft, #padright{
    width:0;
