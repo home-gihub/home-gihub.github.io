@@ -1,0 +1,9 @@
+body {
+    text-shadow: 
+    lightcoral 5px 0px 10px,
+    lightcoral -5px 0px 10px,
+    lightcoral 0px 5px 10px,
+    lightcoral 0px -5px 10px;   
+    font-family: sans-serif;
+    color: white;
+}

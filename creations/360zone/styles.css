@@ -1,0 +1,144 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background: #737373;
+background: linear-gradient(0deg,#737373 0%, #bdbdbd 30%, #bfbfbf 40%, #474747 80%);
+height: 100vh;
+}
+
+div.catmain {
+    display: grid;
+    height: 75vh;
+    width: 55vw;
+    gap: 0.1rem;
+}
+
+div.catmain[cat="home"] {
+    grid-template-areas:
+  "0 ad ad 1"
+  "2 ad ad 3"
+  "4 5 6 7";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+div.cattile, div.ad, div.mainad {
+    position: relative;
+    color: white;
+    text-align: left;
+       transition: box-shadow 0.2s ease-in-out;
+}
+
+div.cattile:hover, div.ad:hover, div.mainad:hover {
+      transition: box-shadow 0.2s ease-in-out;
+      z-index: 99;
+    box-shadow: black 0px 0px 10px ;
+}
+
+div.cattile, div.ad{
+    background-color: green;
+
+    width: 1fr;
+    height: 1fr;
+}
+
+p.header{
+    display: inline;
+    margin: 1em;
+    color: gray;
+}
+
+
+p.header.active{
+    color: white;
+}
+
+header {
+    width: fit-content;
+    margin: auto;
+    font-size: x-large;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+
+header > p{
+    display: inline;
+}
+
+
+div.cattile > p, div.ad > p, div.mainad > p {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: calc(100% - 0.5rem);
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+div.ad > p, div.mainad > p {
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+div.catmain[cat="home"] > div.mainad {
+     grid-area: ad;
+}
+
+.catmain.hidden {
+    display: none;
+}
+
+div.catmain[cat="bing"] {
+    grid-template-areas:
+    "0 0"
+    "0 0"
+  "logo search"
+  "1 1"
+  "1 1";
+  grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+div.catmain[cat="bing"] > .binglogo {
+    grid-area: logo;
+        font-size: xx-large;
+    color: white;
+        text-align: center;
+}
+
+div.catmain[cat="bing"] >.bingbox {
+    background-color: #474747;
+    grid-area: search;
+    font-size: xx-large;
+    color: white;
+}
+
+div.catmain[cat="social"] {
+    grid-template-areas:
+    "0 people people people"
+    "1 people people people"
+    "2 people people people";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+div.catmain[cat="social"] > .avatars {
+    grid-area: people;
+}
+
+div.catmain[cat="games"] {
+grid-template-areas:
+    "a a ad0 ad0 ad0 ad1 ad1 ad1"
+    "a a ad0 ad0 ad0 ad1 ad1 ad1"
+    "b b ad0 ad0 ad0 ad1 ad1 ad1"
+    "b b ad2 ad2 ad2 ad3 ad3 ad3"
+    "c c ad2 ad2 ad2 ad3 ad3 ad3"
+    "c c ad2 ad2 ad2 ad3 ad3 ad3";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
