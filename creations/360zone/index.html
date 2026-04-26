@@ -7,8 +7,8 @@
   </head>
   <body>
     <script defer src="./srcipts.js"></script>
-    <header><p id="hdr 0" onclick="opencat(0)" class="header">bing</p><p id="hdr 1" class="header active" onclick="opencat(1)">home</p><p id="hdr 2" onclick="opencat(2)" class="header">social</p><p id="hdr 3" class="header" onclick="opencat(3)">games</p><p id="hdr 4" class="header">movies & tv</p><p id="hdr 5" class="header">apps</p><p id="hdr 6" class="header">settings</p></header>
-    <main style="margin: auto;width: min-content;">
+    <header><p id="hdr 0" onclick="opencat(0)" class="header">bing</p><p id="hdr 1" class="header active" onclick="opencat(1)">home</p><p id="hdr 2" onclick="opencat(2)" class="header">social</p><p id="hdr 3" class="header" onclick="opencat(3)">games</p><p id="hdr 4"  onclick="opencat(4)" class="header">movies & tv</p><p id="hdr 5"  onclick="opencat(5)" class="header">music</p><p id="hdr 6"  onclick="opencat(6)" class="header">apps</p></header>
+   
       <div id="cat 0" cat="bing" class="catmain hidden">
         <div class="binglogo"><p>bing</p></div>
         <div class="bingbox"><p>Search for games</p></div>
@@ -35,14 +35,57 @@
         <div class="cattile" style="grid-area: a;"><p>My games</p></div>
         <div class="ad" style="grid-area: ad0;"><p>Game</p></div>
         <div class="ad" style="grid-area: ad1;"><p>Game</p></div>
+        <div class="ad rec" style="grid-area: rec0;"><p>Ye play ts man</p></div>
         <div class="cattile" style="grid-area: b;"><p>Browse Games</p></div>
          <div class="ad" style="grid-area: ad2;"><p>Game</p></div>
         <div class="ad" style="grid-area: ad3;"><p>Game</p></div>
+        <div class="ad rec" style="grid-area: rec1;"><p>Ye play ts man</p></div>
         <div class="cattile" style="grid-area: c;"><p>Search games</p></div>
-        
+        <div class="ad rec" style="grid-area: rec2;"><p>all recommendation</p></div>
        
       </div>
-    </main>
-    <footer></footer>
+
+      <div id="cat 4" cat="tvmovies" class="catmain hidden">
+        <div class="cattile"><p>My video apps</p></div>
+        <div class="cattile"><p>Xbox Video</p></div>
+        <div class="mainad"><p>BIG TILE</p></div>
+        <div class="ad rec"><p>gothic</p></div>
+        <div class="cattile"><p>Browse movies and tv</p></div>
+        <div class="cattile"><p>Get your tv app</p></div>
+        <div class="ad"><p>Family guy</p></div>
+        <div class="cattile"><p>Search tv and movies</p></div>
+        <div class="ad"><p>y evryting ads :_(</p></div>
+        <div class="ad"><p>Madigascar 3</p></div>
+        <div class="ad"><p>In crackle</p></div>
+        <div class="ad rec"><p>All recommendations</p></div>
+      </div>
+
+      <div id="cat 5" cat="music" class="catmain hidden">
+        <div class="cattile" style="grid-area: a;"><p>My music apps</p></div>
+        <div class="ad" style="grid-area: ad0;"><p>Music</p></div>
+        <div class="ad" style="grid-area: ad1;"><p>Music</p></div>
+        <div class="ad rec" style="grid-area: rec0;"><p>Ye play ts man</p></div>
+        <div class="cattile" style="grid-area: b;"><p>Xbox music</p></div>
+         <div class="ad" style="grid-area: ad2;"><p>Music</p></div>
+        <div class="ad" style="grid-area: ad3;"><p>Music</p></div>
+        <div class="ad rec" style="grid-area: rec1;"><p>Ye play ts man</p></div>
+        <div class="cattile" style="grid-area: c;"><p>Search music</p></div>
+        <div class="ad rec" style="grid-area: rec2;"><p>all recommendation</p></div>
+       
+      </div>
+
+            <div id="cat 6" cat="apps" class="catmain hidden">
+        <div class="cattile" style="grid-area: a;"><p>My apps</p></div>
+        <div class="ad" style="grid-area: ad0;"><p>Game</p></div>
+        <div class="ad" style="grid-area: ad1;"><p>Game</p></div>
+        <div class="cattile" style="grid-area: b;"><p>Browse apps</p></div>
+         <div class="ad" style="grid-area: ad2;"><p>Game</p></div>
+        <div class="ad" style="grid-area: ad3;"><p>Game</p></div>
+           <div class="ad" style="grid-area: ad4;"><p>Game</p></div>
+        <div class="ad" style="grid-area: ad5;"><p>Game</p></div>
+        <div class="cattile" style="grid-area: c;"><p>Search apps</p></div>
+      </div>
+
+
   </body>
 </html>

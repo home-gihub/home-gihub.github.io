@@ -11,6 +11,8 @@ height: 100vh;
 div.catmain {
     display: grid;
     height: 75vh;
+    margin-left: auto;
+    margin-right: auto;
     width: 55vw;
     gap: 0.1rem;
 }
@@ -33,9 +35,18 @@ div.cattile, div.ad, div.mainad {
 
 div.cattile:hover, div.ad:hover, div.mainad:hover {
       transition: box-shadow 0.2s ease-in-out;
+       transition: transform 0.2s ease-in-out;
       z-index: 99;
     box-shadow: black 0px 0px 10px ;
+    transform: scale(1.06);
+        transform-origin: center;
 }
+
+div.cattile:active, div.ad:active, div.mainad:active {
+    transform: scale(0.8);
+        transform-origin: center;
+}
+
 
 div.cattile, div.ad{
     background-color: green;
@@ -84,7 +95,7 @@ div.ad > p, div.mainad > p {
 }
 
 
-div.catmain[cat="home"] > div.mainad {
+div.mainad {
      grid-area: ad;
 }
 
@@ -131,14 +142,34 @@ div.catmain[cat="social"] > .avatars {
     grid-area: people;
 }
 
-div.catmain[cat="games"] {
+div.catmain[cat="games"], div.catmain[cat="music"] {
+    width: 65vw;
 grid-template-areas:
-    "a a ad0 ad0 ad0 ad1 ad1 ad1"
-    "a a ad0 ad0 ad0 ad1 ad1 ad1"
-    "b b ad0 ad0 ad0 ad1 ad1 ad1"
-    "b b ad2 ad2 ad2 ad3 ad3 ad3"
-    "c c ad2 ad2 ad2 ad3 ad3 ad3"
-    "c c ad2 ad2 ad2 ad3 ad3 ad3";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    "a a ad0 ad0 ad0 ad1 ad1 ad1 rec0 rec0 "
+    "a a ad0 ad0 ad0 ad1 ad1 ad1 rec0 rec0 "
+    "b b ad0 ad0 ad0 ad1 ad1 ad1 rec1 rec1 "
+    "b b ad2 ad2 ad2 ad3 ad3 ad3 rec1 rec1 "
+    "c c ad2 ad2 ad2 ad3 ad3 ad3 rec2 rec2 "
+    "c c ad2 ad2 ad2 ad3 ad3 ad3 rec2 rec2 ";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+div.catmain[cat="tvmovies"] {
+    grid-template-areas:
+  "0 1 ad ad 3"
+  "4 5 ad ad 6"
+  "7 8 9 10 11";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+div.catmain[cat="apps"] {
+    width: 65vw;
+grid-template-areas:
+    "a ad0 ad0 ad1 ad1 "
+    "b ad0 ad0 ad1 ad1"
+    "c ad2 ad3 ad4 ad5";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
