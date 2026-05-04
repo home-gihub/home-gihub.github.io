@@ -3,11 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="./styles.css">
+    <audio id="bgm" src="./music.mp3" autoplay preload="auto" loop></audio>
   </head>
   <body>
     <script defer src="./index.js"></script>
-    <header>zooming text maker</header>
-    <main>
+   
+    <div style="margin: auto;width: 400px;">
+       <header><div class="header">Zooming text maker</div>
+      <marquee>Zoom it! Copy it! Use it! Welcome to the 3D realm. Hopefully your browser can handle it!</marquee></header>
+    <button id="mus">Play some music?</button>
+      <main width="400px">
       <label for="text">Put ur text right here:</label>
       <br>
       <textarea id="text"></textarea></main>
@@ -25,5 +31,6 @@
       <br>
     </main>
     <footer>as it says on the tin</footer>
+    </div>
   </body>
 </html>

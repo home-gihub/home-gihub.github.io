@@ -15,3 +15,7 @@ function maketext(text) {
 document.getElementById("make").addEventListener("click", function(){
     maketext(document.getElementById("text").value)
 })
+
+document.getElementById("mus").addEventListener("click", function(){
+   document.getElementById("bgm").play()
+})

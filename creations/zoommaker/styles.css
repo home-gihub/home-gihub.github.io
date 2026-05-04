@@ -1,0 +1,57 @@
+textarea, button, div#preview{
+    border-bottom: 2px solid rgb(33, 33, 33);
+    border-right: 2px solid rgb(84, 84, 84);
+    border-left: 2px solid grey;
+    border-top: 2px solid white;
+    color: black;
+
+}
+
+div#preview {
+    padding-bottom: 42pt;
+    padding-right: 80pt;
+}
+
+@keyframes header {
+    0% {
+        color: hsl(0, 100%, 50%);
+         transform: perspective(500px) translate3d(10px, 0, 20px) rotateY(0deg);
+
+    }
+
+    25% {
+        color: hsl(120, 100%, 50%);
+        transform: perspective(500px) translate3d(10px, 0, 20px) rotateY(90deg);
+
+    }
+    50% {
+        color: hsl(256, 100%, 50%);
+         transform: perspective(500px) translate3d(10px, 0, 20px) rotateY(180deg);
+
+    }
+    99% {
+         transform: perspective(500px) translate3d(10px, 0, 20px) rotateY(360deg);
+
+    }
+    100% {
+        color:hsl(0, 100%, 50%);
+         transform: perspective(500px) translate3d(10px, 0, 20px) rotateY(360deg);
+
+    }
+}
+
+.header {
+    animation: header 5s linear 0s infinite;
+    font-size: xx-large;
+    transform-origin: center;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}
+
+* {
+    font-family: sans-serif;
+    color: white;
+}
