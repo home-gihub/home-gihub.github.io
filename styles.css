@@ -303,6 +303,13 @@ color: white;
     background-repeat: no-repeat;
 }
 
+.zomtxt {
+    background-image: url(./zoomtxt.png);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
 div.catmain[cat="appslist"] {
     height: 70vh;
     display: inline-block;
