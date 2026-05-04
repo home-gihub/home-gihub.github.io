@@ -8,9 +8,10 @@ textarea, button, div#preview{
 }
 
 div#preview {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    height: 180pt;
+    width: max-content;
+    padding-right: 80pt;
+    padding-bottom: 50pt;
+    height: fit-content;
 }
 
 @keyframes header {
