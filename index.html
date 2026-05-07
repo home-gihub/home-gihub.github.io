@@ -2,89 +2,40 @@
 <html lang="">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Home page</title>
     <link rel="stylesheet" href="styles.css">
-    <audio src="./swooshout.wav" autoplay preload="auto"></audio>
+    <script src="./index.js" defer></script>
   </head>
-  <body goin>
-    <script defer src="./scripts.js"></script>
+  <body>
 
-<dialog id="dlg-ads">
-  <div class="dlg-content">
-      <p>Too bad lol</p>
-  </div>
-  <button class="dlg-btn" onclick="closedlg('dlg-ads')">Close</button>
-</dialog>
+    <div style="display:table;width: 100vw;height: 100vh;">
+    <div style="display:table-cell;vertical-align:middle;width: 100vw;height: 100vh;">
+      <div style="margin:auto;width: fit-content;height: fit-content;">
+        
 
-
-<dialog id="dlg-addbtn">
-  <div class="dlg-content">
-      <p>Add my button to your site! Download the image</p>
-      <img src="./button.gif"/>
-      <p>And put the code onto your site</p>
-      <textarea>
-        <a href="https://home-gihub.github.io"><img src="./button.gif"/></a>
-      </textarea>
-  </div>
-  <button class="dlg-btn" onclick="closedlg('dlg-addbtn')">Close</button>
-</dialog>
-
-<dialog id="dlg-about">
-  <div class="dlg-content">
-      <p>Welcome to my site!</p>
-      <p>I put my things here.</p>
-      <p>Expect entire redesigns to the site</p>
-      <p>Q: What is the big "roboroof" thing?</p>
-      <p>A: You'll get the reference if you've played GTA V</p>
-      <p>Q: This looks familar. Where does this design come from?</p>
-      <p>A: The Xbox 360 metro dashboard</p>
-      <p>Q: HELPP THE SITE DOESNT LLOOK RIGHTT</p>
-      <p>A: Modern desktop browsers only</p>
-  </div>
-  <button class="dlg-btn" onclick="closedlg('dlg-about')">Close</button>
-</dialog>
-
-
-<dialog id="dlg-guestbk" big>
-  <div class="dlg-content">
-    <script src="https://giscus.app/client.js"
-        data-repo="home-gihub/home-gihub.github.io"
-        data-repo-id="R_kgDOI466gw"
-        data-category="General"
-        data-category-id="DIC_kwDOI466g84CkPm3"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="transparent_dark"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
-  </div>
-  <button class="dlg-btn" onclick="closedlg('dlg-guestbk')">Close</button>
-</dialog>
-
-
-<div style="display:table;width: 100vw;height: 100vh;">
-  <div style="display:table-cell;vertical-align:middle;">
-    <div style="margin-left:auto;margin-right:auto;width: fit-content;">
-      <div  id="cat 1" cat="home" class="catmain">
-        <div class="cattile"onclick="document.getElementById('dlg-guestbk').showModal()"><p>Guestbook</p></div>
-        <div class="mainad rborf" onclick="gowtr('./creations/tppc/index.html')"><p>Boris AI roboroof software</p></div>
-        <div class="ad addbtn" onclick="document.getElementById('dlg-addbtn').showModal()"><p>Add my button!</p></div>
-        <div class="cattile" onclick="gowtr('./creations.html')"><p>My creations</p></div>
-        <div class="ad wndshps" onclick="gowtr('./creations/windowshops/index.html')"><p>Get your frutiger css today!</p></div>
-        <div class="cattile"  onclick="document.getElementById('dlg-about').showModal()"><p>About</p></div>
-        <div class="ad evlspfy" onclick="gowtr('./creations/evilspotify/index.html')"><p>Evil Spotify</p></div>
-        <div class="ad" onclick="gowtr('./creations/emmergencycheckatrade/index.html')"><p>Checkatrade in an emergency</p></div>
-        <div class="ad zomtxt"  onclick="gowtr('./creations/zoommaker/index.html')"><p>Zoom your text</div>
+          <div id="pagecontainer" goin class="menucontainer" style="vertical-align:top;" >
+    <div class="icon">
+      <p>🏠</p>
     </div>
+    <ul class="linkslist">
+      <li onclick="gowanim('./creations.html')" style="margin-left: -2vw;">
+        <a>Creations</a>
+      </li>
+       <li  onclick="gowanim('./guestbook.html')" style="margin-left: -0.5vw;">
+        <a >Guestbook</a>
+      </li>
+      <li  onclick="gowanim('./about.html')" style="margin-left: -0.5vw;">
+        <a >About</a>
+      </li>
+    </ul>
+    </div>
+
+
+
     </div>
   </div>
-</div> 
-    
-    <footer></footer>
+</div>
+
+
   </body>
 </html>
