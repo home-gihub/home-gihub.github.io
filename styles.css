@@ -126,7 +126,7 @@ ul.linkslist > li:hover, ul.linkslist > li:hover > a, button:hover {
 
 @keyframes goin {
     0% {
-        transform: perspective(600px) translateZ(-1200px)  rotateY(15deg);
+        transform: perspective(600px) translateZ(-1200px)  rotateY(55deg);
        opacity: 0;
     }
     100% {

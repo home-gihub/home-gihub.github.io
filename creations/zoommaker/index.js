@@ -2,9 +2,9 @@ function maketext(text) {
     output = ""
     for (i=0;i<=50;i++) {
         if (i<50) {
-            output += `<div class="zoomtext" style="position:relative;z-index:${i};left:${100-i*1}pt;margin-top:-${i*1.30}pt;top:${i}px;color:rgb(${(i/50)*128},${(i/50)*128},${(i/50)*128});font-size:${i}pt;">${text}</div>`
+            output += `<div class="zoomtext" style="position:relative;z-index:${i};left:${100-i*1}pt;height:0;top:${0-(i)*-0.55}pt;color:rgb(${(i/50)*128},${(i/50)*128},${(i/50)*128});font-size:${i}pt;">${text}</div>`
         } else {
-              output += `<div class="zoomtext" style="position:relative;z-index:${i};left:${100-i*1}pt;margin-top:-${i*1.30}pt;top:${i}px;color:rgb(0,0,0);font-size:${i}pt;">${text}</div>`
+              output += `<div class="zoomtext" style="position:relative;z-index:${i};left:${100-i*1}pt;height:0;top:${0-(i)*-0.55}pt;color:rgb(0,0,0);font-size:${i}pt;">${text}</div>`
         }
     }
 
