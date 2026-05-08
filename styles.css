@@ -108,6 +108,7 @@ button {
 ul.linkslist > li:hover, button:hover {
      box-shadow: inset 0px 0px 8vh var(--color-text);
      transition: linear 0.2s transform;
+     background: none;
     color: var(--color-bg);
 }
 
