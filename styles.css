@@ -122,10 +122,9 @@ ul.linkslist > li:hover, ul.linkslist > li:hover > a, button:hover {
 
 @keyframes goin {
     0% {
-        transform: scale(3) perspective(600px) rotateY(90deg);
+        transform: perspective(600px) translateZ(-600px)  rotateY(15deg);
         opacity: 0;
     }
- 
     100% {
 
     }
@@ -133,26 +132,28 @@ ul.linkslist > li:hover, ul.linkslist > li:hover > a, button:hover {
 
 @keyframes goout {
     100% {
-        transform: scale(3) perspective(600px) rotateY(-90deg);
+        transform: perspective(600px) translateZ(600px) rotateY(-15deg);
         opacity: 0;
     }
 
+
+
     0% {
-          transform: perspective(600px);
+          transform: perspective(600px) translateZ(0);
         opacity: 1;
     }
 
 }
 
 #pagecontainer[goin] {
-    animation: goin 1s linear;
+    animation: goin 0.5s linear;
     opacity: 1;
-    transform-origin: right;
+    transform-origin: center;
 }
 
 #pagecontainer[goout] {
-    animation: goout 1s linear;
-    transform-origin: left;
+    animation: goout 0.5s linear;
+    transform-origin: center;
     opacity: 0;
 }
 
