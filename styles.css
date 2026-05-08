@@ -1,11 +1,12 @@
+
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: rgb(41, 0, 61);
-     box-shadow: inset 0px 0px 10vh rebeccapurple;
+    background-color: var(--color-bg);
+     box-shadow: inset 0px 0px 10vh var(--color-primary);
     font-family: sans-serif;
     width: 100vw;
     height: 100vh;
@@ -15,7 +16,7 @@ body {
     width: 50vh;
     height: 50vh;   
     border-radius: 25vh;
-    box-shadow: inset 0px 0px 10vh rebeccapurple;
+    box-shadow: inset 0px 0px 10vh var(--color-primary);
     text-align: center;
     text-justify:inter-cluster;
     vertical-align: middle;
@@ -25,7 +26,7 @@ body {
    
 }
 .icon:hover {
-     box-shadow: inset 0px 0px 10vh coral;
+     box-shadow: inset 0px 0px 10vh var(--color-secondary);
 }
 
 .icon > p {
@@ -61,7 +62,7 @@ ul.linkslist {
 }
 
 ul.linkslist > li {
-         box-shadow: inset 0px 0px 5vh rebeccapurple, 0vh 0.5vh 1vh -0.5vh rebeccapurple;
+         box-shadow: inset 0px 0px 5vh var(--color-primary), 0vh 0.5vh 1vh -0.5vh var(--color-primary);
          border-top-left-radius: 4vh;
          border-bottom-right-radius: 4vh;
          padding-left: 4vh;
@@ -73,19 +74,20 @@ ul.linkslist > li {
 }
 
 ul.linkslist > li:hover {
-     box-shadow: inset 0px 0px 5vh coral;transition: linear 0.2s transform;
+     box-shadow: inset 0px 0px 5vh var(--color-secondary);
+     transition: linear 0.2s transform;
 }
 
 
 ul.linkslist > li > a {
     font-family: 'Courier New', Courier, monospace;
-    color: plum;
+    color: var(--color-text);
     text-decoration: none;
 }
 
 
 ul.linkslist > li:hover, ul.linkslist > li:hover > a { 
-    color: coral;
+    color: var(--color-secondary);
 }
 
 @keyframes goin {
@@ -125,13 +127,13 @@ ul.linkslist > li:hover, ul.linkslist > li:hover > a {
 }
 
 .mainbox {
-      box-shadow: inset 0px 0px 3vh rebeccapurple;
+      box-shadow: inset 0px 0px 3vh var(--color-primary);
          border-top-left-radius: 4vh;
         padding: 2vh;
          border-bottom-right-radius: 4vh;
             width: fit-content;
            height: fit-content;
-          color: plum;
+          color: var(--color-text);
          display: inline-block;
          vertical-align:middle;
        transform: perspective(600px) rotateY(-15deg);
