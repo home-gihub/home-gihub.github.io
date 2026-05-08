@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bing bong</title>
+    <audio src="./shop bing bong.wav" id="bingbong" preload="auto"></audio>
+</head>
+<body>
+    <script> 
+    count = 0
+        function playsound() {
+            document.getElementById("bingbong").currentTime = 0
+            document.getElementById("bingbong").play()
+            count += 1
+            document.getElementById("count").innerText = `You have bing bong ${count} times`
+        }
+    </script>
+    <center>
+    <h1>Shop bing bong sim</h1>
+         <div onmouseenter="playsound()" id="top" style="height: 20vh;border-bottom: 2px solid coral;"></div>
+          <div onmouseenter="playsound()" id="bot" style="height: 20vh;"></div>
+        <h1 id="count">You have bing bong 0 times</h1>
+    </center>
+
+</body>
+</html>
