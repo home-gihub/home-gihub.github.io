@@ -29,7 +29,7 @@ function gowanim(url) {
     }, 1500);
 }
 cookies = {"theme":""}
-if (document.cookie==null || document.cookie == "null") {
+if (document.cookie==null || document.cookie == "null" || document.cookie == "") {
    settheme("purple.css", false)
 } else {
  cookies = JSON.parse(document.cookie)
