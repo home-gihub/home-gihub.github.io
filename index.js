@@ -30,15 +30,18 @@ function gowanim(url) {
 }
 cookies = {"theme":""}
 if (document.cookie==null || document.cookie == "null") {
-   settheme("purple.css")
+   settheme("purple.css", false)
 } else {
  cookies = JSON.parse(document.cookie)
 }
 
 document.head.innerHTML +=`<link rel="stylesheet" href="${cookies["theme"]}"/>` 
 
-function settheme(theme) {
+function settheme(theme, showdlg) {
     
    cookies["theme"] = theme
     document.cookie = JSON.stringify(cookies)
+    if (showdlg) {
+      document.getElementById('reloaddlg').show()
+    }
 }

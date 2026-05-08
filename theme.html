@@ -8,6 +8,16 @@
     <script src="./index.js" defer></script>
 </head>
 <body>
+    <dialog id="reloaddlg">
+        <div class="boxcontent"> 
+    You need to reload for the changes
+    to take effect. Would you like to
+    reload now?
+    </div>
+    <button onclick="location.reload()">Yes</button>
+    <button onclick="document.getElementById('reloaddlg').close()">No</button>
+</dialog>
+
         <div style="display:table;width: 100vw;height: 100vh;">
     <div style="display:table-cell;vertical-align:middle;width: 100vw;height: 100vh;">
       <div style="margin:auto;width: fit-content;height: fit-content;">
@@ -22,27 +32,28 @@
   Themes
 </p>  
 
+
 <div class="boxcontent"> 
     <ul class="linkslist">
         <li  onclick="gowanim('./index.html')">
             < Back To Main Menu
         </li>
-        <li  onclick="settheme('red.css')">
+        <li  onclick="settheme('red.css', true)">
            Red
         </li>
-         <li  onclick="settheme('orange.css')">
+         <li  onclick="settheme('orange.css', true)">
            Orange
         </li>
-         <li  onclick="settheme('green.css')">
+         <li  onclick="settheme('green.css', true)">
            Green
         </li>
-         <li  onclick="settheme('blue.css')">
+         <li  onclick="settheme('blue.css', true)">
            Blue
         </li>
-         <li  onclick="settheme('purple.css')">
+         <li  onclick="settheme('purple.css', true)">
            Purple
         </li>
-         <li  onclick="settheme('empty.css')">
+         <li  onclick="settheme('empty.css', true)">
            Empty
         </li>
     </ul>

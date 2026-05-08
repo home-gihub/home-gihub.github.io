@@ -4,6 +4,21 @@
     margin: 0;
 }
 
+dialog {
+   position: absolute;
+width: 75vh;
+height: 75vh;
+background-color: var(--color-bg);
+z-index: 99;
+padding: 1em;
+border: var(--color-text) 2px solid;
+  border-top-left-radius: 4vh;
+         border-bottom-right-radius: 4vh;
+color: white;
+margin: auto;
+top: 12.5vh;
+}
+
 body {
     background-color: var(--color-bg);
      box-shadow: inset 0px 0px 10vh var(--color-primary);
@@ -73,7 +88,22 @@ ul.linkslist > li {
          transition:linear 0.2s transform;
 }
 
-ul.linkslist > li:hover {
+button {
+    box-shadow: inset 0px 0px 5vh var(--color-primary), 0vh 0.5vh 1vh -0.5vh var(--color-primary);
+         border-top-left-radius: 4vh;
+         border-bottom-right-radius: 4vh;
+         padding-left: 4vh;
+         padding-right: 4vh;
+         padding-top: 2vh;
+         padding-bottom: 2vh;
+         color: var(--color-text);
+         margin-bottom: 2vh;
+         background-color: transparent;
+         width: fit-content;
+         border: none;
+}
+
+ul.linkslist > li:hover, button:hover {
      box-shadow: inset 0px 0px 5vh var(--color-secondary);
      transition: linear 0.2s transform;
 }
@@ -86,7 +116,7 @@ ul.linkslist > li > a {
 }
 
 
-ul.linkslist > li:hover, ul.linkslist > li:hover > a { 
+ul.linkslist > li:hover, ul.linkslist > li:hover > a, button:hover { 
     color: var(--color-secondary);
 }
 
@@ -143,6 +173,15 @@ ul.linkslist > li:hover, ul.linkslist > li:hover > a {
     margin-left: 2vh;
 }
 
+.boxcontent {
+    box-shadow: inset 0px 0px 5vh rgba(0, 0, 0, 0.5);
+             border-bottom-right-radius: 4vh;
+              border-top-left-radius: 4vh;
+    overflow: scroll;
+     padding: 1vh;
+}
+
+
 .mainbox > .boxcontent {
     box-shadow: inset 0px 0px 5vh rgba(0, 0, 0, 0.5);
              border-bottom-right-radius: 4vh;
@@ -154,5 +193,5 @@ ul.linkslist > li:hover, ul.linkslist > li:hover > a {
 
 .mainbox > .boxcontent > ul {
     list-style: none;
-    padding: 1vh;
+   
 }
