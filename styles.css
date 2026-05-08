@@ -77,9 +77,11 @@ ul.linkslist {
 }
 
 ul.linkslist > li {
-         box-shadow: inset 0px 0px 5vh var(--color-primary), 0vh 0.5vh 1vh -0.5vh var(--color-primary);
+         box-shadow: inset 0px 0px 0vh 0.2vh var(--color-primary);
+         
          border-top-left-radius: 4vh;
          border-bottom-right-radius: 4vh;
+         background: linear-gradient(90deg,rgba(0,0,0,0) 0%, var(--color-primary) 100%);
          padding-left: 4vh;
          padding-top: 2vh;
          padding-bottom: 2vh;
@@ -104,8 +106,9 @@ button {
 }
 
 ul.linkslist > li:hover, button:hover {
-     box-shadow: inset 0px 0px 5vh var(--color-secondary);
+     box-shadow: inset 0px 0px 10vh var(--color-text);
      transition: linear 0.2s transform;
+    color: var(--color-bg);
 }
 
 
@@ -117,7 +120,7 @@ ul.linkslist > li > a {
 
 
 ul.linkslist > li:hover, ul.linkslist > li:hover > a, button:hover { 
-    color: var(--color-secondary);
+    color: var(--color-bg);
 }
 
 @keyframes goin {
