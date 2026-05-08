@@ -40,7 +40,9 @@ document.head.innerHTML +=`<link rel="stylesheet" href="${cookies["theme"]}"/>`
 function settheme(theme, showdlg) {
     
    cookies["theme"] = theme
+   console.log(cookies)
     document.cookie = JSON.stringify(cookies)
+    console.log(document.cookie)
     if (showdlg) {
       document.getElementById('reloaddlg').show()
     }
