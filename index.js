@@ -26,7 +26,7 @@ function gowanim(url) {
      console.error('Failed to fetch page: ', error)
   })
        // window.location=url
-    }, 1500);
+    }, 1000);
 }
 cookies = {"theme":""}
 if (document.cookie==null || document.cookie == "null" || document.cookie == "") {

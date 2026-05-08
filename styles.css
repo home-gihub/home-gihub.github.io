@@ -122,8 +122,8 @@ ul.linkslist > li:hover, ul.linkslist > li:hover > a, button:hover {
 
 @keyframes goin {
     0% {
-        transform: perspective(600px) translateZ(-600px)  rotateY(15deg);
-        opacity: 0;
+        transform: perspective(600px) translateZ(-1200px)  rotateY(15deg);
+       opacity: 0;
     }
     100% {
 
@@ -133,14 +133,12 @@ ul.linkslist > li:hover, ul.linkslist > li:hover > a, button:hover {
 @keyframes goout {
     100% {
         transform: perspective(600px) translateZ(600px) rotateY(-15deg);
-        opacity: 0;
     }
 
 
 
     0% {
           transform: perspective(600px) translateZ(0);
-        opacity: 1;
     }
 
 }
@@ -154,7 +152,8 @@ ul.linkslist > li:hover, ul.linkslist > li:hover > a, button:hover {
 #pagecontainer[goout] {
     animation: goout 0.5s linear;
     transform-origin: center;
-    opacity: 0;
+    opacity: 1;
+     transform: perspective(600px) translateZ(600px) rotateY(-15deg);
 }
 
 .mainbox {
