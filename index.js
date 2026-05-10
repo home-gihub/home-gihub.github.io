@@ -1,3 +1,27 @@
+function setCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+function eraseCookie(name) {   
+    document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
+
 function gowanim(url) {
     document.getElementById("pagecontainer").removeAttribute("goin")
     document.getElementById("pagecontainer").setAttribute("goout", "")
@@ -28,20 +52,15 @@ function gowanim(url) {
        // window.location=url
     }, 1000);
 }
-cookies = {"theme":""}
 if (document.cookie==null || document.cookie == "null" || document.cookie == "") {
    settheme("purple.css", false)
-} else {
- cookies = JSON.parse(document.cookie)
 }
 
-document.head.innerHTML +=`<link rel="stylesheet" href="${cookies["theme"]}"/>` 
+document.head.innerHTML +=`<link rel="stylesheet" href="${getCookie("theme")}"/>` 
 
 function settheme(theme, showdlg) {
-    
-   cookies["theme"] = theme
-   console.log(cookies)
-    document.cookie = JSON.stringify(cookies)
+    // set theme  
+   setCookie("theme",theme,999999999)
     console.log(document.cookie)
     if (showdlg) {
       document.getElementById('reloaddlg').show()

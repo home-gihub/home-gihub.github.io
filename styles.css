@@ -84,9 +84,10 @@ ul.linkslist > li {
          background: linear-gradient(90deg,rgba(0,0,0,0) 0%, var(--color-primary) 100%);
          padding-left: 4vh;
          padding-top: 2vh;
-         padding-bottom: 2vh;
+         padding-bottom: 1vh;
          margin-bottom: 2vh;
          width: 20vw;
+         height: 5vh;
          transition:linear 0.2s transform;
 }
 
@@ -117,6 +118,7 @@ ul.linkslist > li > a {
     font-family: 'Courier New', Courier, monospace;
     color: var(--color-text);
     text-decoration: none;
+    font-size: 3vh;
 }
 
 
@@ -198,4 +200,20 @@ ul.linkslist > li:hover, ul.linkslist > li:hover > a, button:hover {
 .mainbox > .boxcontent > ul {
     list-style: none;
    
+}
+
+@keyframes spinin {
+    0% {
+        transform: rotateZ(-90deg) translateX(50vw);
+        transform-origin:top left;
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+        transform-origin:top left;
+    }
+}
+
+dialog[open] {
+    animation: spinin linear 0.5s;
 }
