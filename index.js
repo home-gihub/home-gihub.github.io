@@ -1,30 +1,6 @@
-function setCookie(name,value,days) {
-    var expires = "";
-    if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + (days*24*60*60*1000));
-        expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
-}
-function getCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0;i < ca.length;i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-    }
-    return null;
-}
-function eraseCookie(name) {   
-    document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-}
-
-
-function gowanim(url) {
+function gowanim(url,ismain) {
     document.getElementById("pagecontainer").removeAttribute("goin")
-    document.getElementById("pagecontainer").setAttribute("goout", "")
+    document.getElementById("pagecontainer").setAttribute(ismain ? "goout" : "gohome", "")
     setTimeout(() => {
         fetch(url)
   .then(response => {
@@ -41,7 +17,7 @@ function gowanim(url) {
  
     document.body=doc.body
     // You can now even select part of that html as you would in the regular DOM
-    // Example:
+    // Example:setCookie("theme",theme,999999)
     // const docArticle = doc.querySelector('article').innerHTML
 
     console.log(doc)
@@ -52,15 +28,19 @@ function gowanim(url) {
        // window.location=url
     }, 1000);
 }
-if (document.cookie==null || document.cookie == "null" || document.cookie == "") {
-   settheme("purple.css", false)
+
+
+
+if (localStorage.getItem("theme") == null) {
+   console.log("Theme is null. Setting to default...") 
+   settheme("green.css", false)
 }
 
-document.head.innerHTML +=`<link rel="stylesheet" href="${getCookie("theme")}"/>` 
+document.head.innerHTML +=`<link rel="stylesheet" href="${localStorage.getItem("theme")}"/>` 
 
 function settheme(theme, showdlg) {
     // set theme  
-   setCookie("theme",theme,999999999)
+    localStorage.setItem("theme",theme)
     console.log(document.cookie)
     if (showdlg) {
       document.getElementById('reloaddlg').show()

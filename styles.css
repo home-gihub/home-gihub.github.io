@@ -136,6 +136,25 @@ ul.linkslist > li:hover, ul.linkslist > li:hover > a, button:hover {
     }
 }
 
+@keyframes gofrom {
+    0% {
+        transform: perspective(600px) translateZ(600px)  rotateY(-15deg);
+    }
+    100% {
+
+    }
+}
+
+@keyframes gohome {
+    0% {
+        transform: perspective(600px) ;
+    }
+    100% {
+         transform: perspective(600px) translateZ(-1000px)  rotateY(-15deg);
+         opacity: 0;
+    }
+}
+
 @keyframes goout {
     100% {
         transform: perspective(600px) translateZ(600px) rotateY(-15deg);
@@ -154,6 +173,22 @@ ul.linkslist > li:hover, ul.linkslist > li:hover > a, button:hover {
     opacity: 1;
     transform-origin: center;
 }
+
+#pagecontainer[gofrom] {
+    animation: gofrom 0.5s linear;
+    opacity: 1;
+    transform-origin: center;
+}
+
+#pagecontainer[gohome] {
+    animation: gohome 0.5s linear forwards;
+    transform-origin: center;
+    opacity: 1; 
+         transform: perspective(600px) translateZ(-6000px)  rotateY(-15deg);
+}
+
+
+
 
 #pagecontainer[goout] {
     animation: goout 0.5s linear;

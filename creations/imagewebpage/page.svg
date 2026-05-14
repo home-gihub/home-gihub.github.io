@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1024"
+   height="768"
+   viewBox="0 0 1024 768"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="page.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.48153235"
+     inkscape:cx="438.18448"
+     inkscape:cy="507.75405"
+     inkscape:window-width="1966"
+     inkscape:window-height="747"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient12"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#999999;stop-opacity:1;"
+         offset="0"
+         id="stop12" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0.10746209"
+         id="stop14" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop13" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#1172ff;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#3080f7;stop-opacity:0.99607843;"
+         offset="0.51287913"
+         id="stop3" />
+      <stop
+         style="stop-color:#085ddd;stop-opacity:0.99215686;"
+         offset="0.51287913"
+         id="stop4" />
+      <stop
+         style="stop-color:#004bbd;stop-opacity:0.99350941;"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="512.4895"
+       y1="0.73420757"
+       x2="512.4895"
+       y2="78.562157"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0129683,0,0,1,-6.0380866,0)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient5"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.32708938,0,0,0.43137255,20.507821,89.943988)"
+       x1="512.4895"
+       y1="0.73420757"
+       x2="512.4895"
+       y2="78.562157" />
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter12"
+       x="-0.021601451"
+       y="-0.035927803"
+       width="1.0432029"
+       height="1.1017954">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         id="feFlood11" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="3.000000"
+         id="feGaussianBlur11" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="0.000000"
+         dy="6.000000"
+         id="feOffset11" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite11" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite12" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient12"
+       id="linearGradient13"
+       x1="188.46086"
+       y1="120.40221"
+       x2="188.46086"
+       y2="325.85892"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-2)" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter12-6"
+       x="-0.021601451"
+       y="-0.035927803"
+       width="1.0432029"
+       height="1.1017954">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         id="feFlood11-4" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="3.000000"
+         id="feGaussianBlur11-9" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="0.000000"
+         dy="6.000000"
+         id="feOffset11-5" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite11-0" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite12-4" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient21"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.32708938,0,0,0.43137255,380.50782,89.943988)"
+       x1="512.4895"
+       y1="0.73420757"
+       x2="512.4895"
+       y2="78.562157" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient12"
+       id="linearGradient22"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(358)"
+       x1="188.46086"
+       y1="120.40221"
+       x2="188.46086"
+       y2="325.85892" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient26"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.17119998,0,0,0.63930085,454.46663,251.05029)"
+       x1="512.4895"
+       y1="0.73420757"
+       x2="512.4895"
+       y2="78.562157" />
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter27"
+       x="-0.041267652"
+       y="-0.15038257"
+       width="1.0825353"
+       height="1.426084">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         id="feFlood26" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="3.000000"
+         id="feGaussianBlur26" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="0.000000"
+         dy="6.000000"
+         id="feOffset26" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite26" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite27" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter12-6-3"
+       x="-0.021601451"
+       y="-0.035927803"
+       width="1.0432029"
+       height="1.1017954">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         id="feFlood11-4-9" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="3.000000"
+         id="feGaussianBlur11-9-4" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="0.000000"
+         dy="6.000000"
+         id="feOffset11-5-8" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite11-0-1" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite12-4-2" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient27"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.26652961,0,0,0.43137255,736.43002,88.905636)"
+       x1="512.4895"
+       y1="0.73420757"
+       x2="512.4895"
+       y2="78.562157" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient12"
+       id="linearGradient28"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(715.19303,-1.0383518)"
+       x1="188.46086"
+       y1="120.40221"
+       x2="188.46086"
+       y2="325.85892" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:url(#linearGradient2);stroke-width:1.00646"
+       id="rect1"
+       width="1032.3213"
+       height="74.891014"
+       x="-3.0630975"
+       y="1.4684513" />
+    <rect
+       style="fill:url(#linearGradient5);stroke-width:0.375628"
+       id="rect1-0"
+       width="333.3385"
+       height="32.305927"
+       x="21.468451"
+       y="90.577438" />
+    <text
+       xml:space="preserve"
+       style="font-size:37.2195px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke-width:3.10163;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       x="18.452593"
+       y="49.746471"
+       id="text4"
+       transform="scale(1.0069214,0.99312618)"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         x="18.452593"
+         y="49.746471"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:3.10163;-inkscape-font-specification:'sans-serif, Normal';font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:37.2195015px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">The image webpage</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.7712px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke-width:0.799882"
+       x="658.0047"
+       y="51.408844"
+       id="text5"
+       transform="scale(1.1050786,0.90491302)"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         x="658.0047"
+         y="51.408844"
+         style="stroke-width:0.799882">Go to my website?</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.8443px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke-width:0.667508"
+       x="33.761997"
+       y="111.70734"
+       id="text6"
+       transform="scale(0.96160977,1.0399229)"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         x="33.761997"
+         y="111.70734"
+         style="stroke-width:0.667508">What is this?</tspan></text>
+    <rect
+       style="fill:url(#linearGradient13);stroke-width:0.95798;filter:url(#filter12)"
+       id="rect6"
+       width="333.31094"
+       height="200.4019"
+       x="20.84374"
+       y="122.52551" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.8673px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke-width:0.560656"
+       x="30.425272"
+       y="156.21115"
+       id="text14"
+       transform="scale(0.9956548,1.0043642)"><tspan
+         sodipodi:role="line"
+         x="30.425272"
+         y="156.21115"
+         id="tspan15"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.560656">Well simply, this is a webpage</tspan><tspan
+         sodipodi:role="line"
+         x="30.425272"
+         y="185.0979"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.560656"
+         id="tspan16">made mostly in                .</tspan><tspan
+         sodipodi:role="line"
+         x="30.425272"
+         y="213.98465"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.560656"
+         id="tspan19">Don't believe me? Inspect this </tspan><tspan
+         sodipodi:role="line"
+         x="30.425272"
+         y="242.8714"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.560656"
+         id="tspan20">website and you'll only see a</tspan><tspan
+         sodipodi:role="line"
+         x="30.425272"
+         y="271.75815"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.560656"
+         id="tspan21">div and an image tag and a</tspan><tspan
+         sodipodi:role="line"
+         x="30.425272"
+         y="300.6449"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.560656"
+         id="tspan35">map tag. The div is for centering</tspan></text>
+    <rect
+       style="fill:url(#linearGradient21);stroke-width:0.375628"
+       id="rect1-0-2"
+       width="333.3385"
+       height="32.305927"
+       x="381.46844"
+       y="90.577438" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.8443px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke-width:0.667508"
+       x="408.13428"
+       y="111.70734"
+       id="text6-2"
+       transform="scale(0.96160976,1.0399229)"><tspan
+         sodipodi:role="line"
+         id="tspan6-6"
+         x="408.13428"
+         y="111.70734"
+         style="stroke-width:0.667508">Interactivity?</tspan></text>
+    <rect
+       style="fill:url(#linearGradient22);stroke-width:0.95798;filter:url(#filter12-6)"
+       id="rect6-1"
+       width="333.31094"
+       height="200.4019"
+       x="380.84375"
+       y="122.52551" />
+    <rect
+       style="fill:url(#linearGradient27);stroke-width:0.339076"
+       id="rect1-0-2-9"
+       width="271.6217"
+       height="32.305927"
+       x="737.21277"
+       y="89.539085" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.6653px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke-width:0.689564"
+       x="750.5553"
+       y="114.36694"
+       id="text6-2-0"
+       transform="scale(0.99338359,1.0066605)"><tspan
+         sodipodi:role="line"
+         id="tspan6-6-8"
+         x="750.5553"
+         y="114.36694"
+         style="stroke-width:0.689564">But why?</tspan></text>
+    <rect
+       style="fill:url(#linearGradient28);stroke-width:0.95798;filter:url(#filter12-6-3)"
+       id="rect6-1-8"
+       width="333.31094"
+       height="200.4019"
+       x="738.0368"
+       y="121.48716"
+       transform="matrix(0.81485249,0,0,1,135.31262,0)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.6802px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke-width:0.582496"
+       x="387.29874"
+       y="158.52705"
+       id="text14-0"
+       transform="scale(1.0077011,0.99235775)"><tspan
+         sodipodi:role="line"
+         x="387.29874"
+         y="158.52705"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.582496"
+         id="tspan21-4">Thanks to the &lt;map&gt; element</tspan><tspan
+         sodipodi:role="line"
+         x="387.29874"
+         y="188.53911"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.582496"
+         id="tspan25">I can put links on this site so</tspan><tspan
+         sodipodi:role="line"
+         x="387.29874"
+         y="218.55116"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.582496"
+         id="tspan26">it isn't just a centered svg.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.6802px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke-width:0.582496"
+       x="737.95203"
+       y="162.67378"
+       id="text14-0-3"
+       transform="scale(1.0077011,0.99235775)"><tspan
+         sodipodi:role="line"
+         x="737.95203"
+         y="162.67378"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.582496"
+         id="tspan26-6">Well, what you see is</tspan><tspan
+         sodipodi:role="line"
+         x="737.95203"
+         y="192.68584"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.582496"
+         id="tspan29">what you get, the only</tspan><tspan
+         sodipodi:role="line"
+         x="737.95203"
+         y="222.69789"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.582496"
+         id="tspan31">downside is setting up</tspan><tspan
+         sodipodi:role="line"
+         x="737.95203"
+         y="252.70995"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.582496"
+         id="tspan32">the &lt;map&gt;</tspan></text>
+    <rect
+       style="fill:url(#linearGradient26);stroke-width:0.330829;filter:url(#filter27)"
+       id="rect1-0-2-5"
+       width="174.47079"
+       height="47.877888"
+       x="454.96939"
+       y="251.98907"
+       transform="matrix(1,6.2328078e-5,-7.774146e-6,1,0,0)"
+       ry="15.388502" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5304px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke-width:0.605338"
+       x="467.68246"
+       y="281.93933"
+       id="text27"
+       transform="scale(0.99329023,1.0067551)"><tspan
+         sodipodi:role="line"
+         id="tspan27"
+         x="467.68246"
+         y="281.93933"
+         style="stroke-width:0.605338;fill:#ffffff;fill-opacity:1">Link to Google</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.2195px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1"
+       x="417.04016"
+       y="735.69403"
+       id="text33"><tspan
+         sodipodi:role="line"
+         id="tspan33"
+         x="417.04016"
+         y="735.69403">That is it!</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.2014px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#042dff;fill-opacity:1;stroke-width:0.542762"
+       x="185.25099"
+       y="185.98875"
+       id="text36"><tspan
+         sodipodi:role="line"
+         id="tspan36"
+         x="185.25099"
+         y="185.98875"
+         style="fill:#042dff;fill-opacity:1;stroke-width:0.542762">inkscape</tspan></text>
+  </g>
+</svg>
