@@ -1,0 +1,45 @@
+#lsidebar,#lsidebar{
+    width:25%;
+    display:block;
+    height: 100%d;
+}
+
+#lsidebar {
+    float: left;
+}
+
+#rsidebar {
+    float: right;
+}
+
+main {
+    display: block;
+}
+
+#header {
+    display: block;
+    width: 100%;
+}
+
+section {
+    width: 50%;
+    margin: auto;
+}
+
+#pageeditor {
+    position: absolute;
+    background-color: white;
+    left:1em;
+    top:1em;
+    width: 20vw;
+    display: inline-block;
+    border: 0.2em solid black;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+}
+
+#pageeditor > * {
+    margin: 0;
+    padding: 0;
+}

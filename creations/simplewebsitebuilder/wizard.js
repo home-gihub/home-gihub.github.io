@@ -46,37 +46,88 @@ function setWiz(id) {
     
 }
 
-function makeSiteTangible() {
-    site = {}
-    switch (siteLayout) {
-        case 0:
+function makeSiteTangible(site) {
+    if(siteLayout == 0) {
             site.navbar = {
                 "links": [
 
                 ]
             }
-            break
-        case 1:
-        case 3:
+    }
+    if(siteLayout == 1 || siteLayout == 3) {
             site.lsidebar = {
                 "links": [
 
                 ]
             }
-            
-        case 2:
-        case 3:
-            site.rsidebar = {
+    }
+    if(siteLayout == 2 || siteLayout == 3) {
+           site.rsidebar = {
                 "links": [
 
                 ]
             }
-            break
     }
+
+    site.colors = [
+        "#cccc00",
+        "#ffcc00",
+        "#ff3300",
+        "#000000"
+    ]
 
     site.main = {
         "text": "This is placeholder text"
     }
+
+    return site
+}
+
+function tangiblesitetohtml(site){
+    html = `
+    <html>
+    <head>
+    </head>
+    <body>
+    <section>
+    <img id="header" src="./placeholder.png"/>
+    `
+     if (site.navbar != null) {
+        html += `<nav id="navbar"  style="background-color:${site.colors[2]};">
+        <ul>
+        `
+        for(i=0;i<site.rsidebar.links.length;i++) {
+            html += `<li><a style="color:${site.colors[3]};" href="${site.rsidebar.links[i].href}">${site.rsidebar.links[i].text}</a></li>`
+        }
+        html += `</ul>
+        </nav>`
+    }
+    if (site.lsidebar != null) {
+        html += `<aside id="lsidebar"  style="background-color:${site.colors[2]};">
+        <ul>
+        `
+        for(i=0;i<site.lsidebar.links.length;i++) {
+            html += `<li><a style="color:${site.colors[3]};" href="${site.lsidebar.links[i].href}">${site.lsidebar.links[i].text}</a></li>`
+        }
+        html += `</ul>
+        </aside>`
+    }
+
+    html += `<main style="background-color:${site.colors[1]};" >
+    ${site.main.text}
+    </main>`
+
+    if (site.rsidebar != null) {
+        html += `<aside id="rsidebar" style="background-color:${site.colors[2]};" >
+        <ul>
+        `
+        for(i=0;i<site.rsidebar.links.length;i++) {
+            html += `<li><a style="color:${site.colors[3]};" href="${site.rsidebar.links[i].href}">${site.rsidebar.links[i].text}</a></li>`
+        }
+        html += `</ul>
+        </aside>`
+    }
+   return html
 }
 
 setWiz(0)
@@ -84,7 +135,11 @@ setWiz(0)
 function next() {
     currStep = currStep + 1
     if (currStep == wizard.length) {
-        site = makeSiteTangible()
+        site = makeSiteTangible({})
+        document.getElementById("page").innerHTML = tangiblesitetohtml(site)
+        document.head.innerHTML = `<link rel="stylesheet" href="./site.css">`
+        return
     }
     setWiz(currStep)
 }
+
