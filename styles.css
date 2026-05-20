@@ -1,254 +1,71 @@
-
 * {
     padding: 0;
     margin: 0;
-}
-
-dialog {
-   position: absolute;
-width: 75vh;
-height: 75vh;
-background-color: var(--color-bg);
-z-index: 99;
-padding: 1em;
-border: var(--color-text) 2px solid;
-  border-top-left-radius: 4vh;
-         border-bottom-right-radius: 4vh;
-color: white;
-margin: auto;
-top: 12.5vh;
+    border: 0;
+    font-family: sans-serif;
 }
 
 body {
-    background-color: var(--color-bg);
-     box-shadow: inset 0px 0px 10vh var(--color-primary);
-    font-family: sans-serif;
     width: 100vw;
-    height: 100vh;
+    background: linear-gradient(to top, #2255ff, #0099ff);
+    padding-bottom: 10em;
 }
 
-.icon {
-    width: 50vh;
-    height: 50vh;   
-    border-radius: 25vh;
-    box-shadow: inset 0px 0px 10vh var(--color-primary);
-    text-align: center;
-    text-justify:inter-cluster;
-    vertical-align: middle;
-    line-height: 50vh;
-    font-size: 25vh;
+body > main {
+    width: 50%;
+    margin: auto;
+    height: 25em;
+    margin-bottom: 10em;
+}
+
+
+body > main > img {
+    width: 100%;
     display: inline-block;
-   
-}
-.icon:hover {
-     box-shadow: inset 0px 0px 10vh var(--color-secondary);
 }
 
-.icon > p {
-     animation: spin 10s linear infinite;
-     transition: font-size 2s linear;
-     transform-origin: center;
+main > section {
+    height: 100%;
 }
 
-.icon:hover > p {
-     transition: font-size 2s linear;
-     font-size: 30vh;
-}
-
-@keyframes spin {
-    0% {
-        transform: perspective(600px) rotateY(0deg);
-    }
-
-     50% {
-        transform: perspective(600px) rotateY(180deg);
-    }
-
-     100% {
-        transform: perspective(600px) rotateY(360deg);
-    }
-
-}
-
-ul.linkslist {
+main > section > main {
+    background-color: #ffffff;
+    background-image:url("./texture.png");
+    background-size: 10%,10%;
+    width: 75%;
+    height: 100%;
     display: inline-block;
-    text-decoration: none;
+}
+
+section > main > iframe {
+    width: 100%;
+    height: 100%;
+}
+
+section > aside {
+
+      float: right;
+      height: 100%;
+    width: 25%;
+background-color: #d8d8d8;
+background-image:url("./texture.png")
+}
+
+aside > p {
+    color: white;
+     background: linear-gradient(to top, #2255ff, #0099ff);
+}
+
+aside > ul {
     list-style: none;
 }
 
-ul.linkslist > li {
-         box-shadow: inset 0px 0px 0vh 0.2vh var(--color-primary);
-         
-         border-top-left-radius: 4vh;
-         border-bottom-right-radius: 4vh;
-         background: linear-gradient(90deg,rgba(0,0,0,0) 0%, var(--color-primary) 100%);
-         padding-left: 4vh;
-         padding-top: 2vh;
-         padding-bottom: 1vh;
-         margin-bottom: 2vh;
-         width: 20vw;
-         height: 5vh;
-         transition:linear 0.2s transform;
+aside > ul > li {
+     background-color: #d8d8d8;
+  box-shadow: #000000cc 0px 0px 2px;
 }
 
-button {
-    box-shadow: inset 0px 0px 5vh var(--color-primary), 0vh 0.5vh 1vh -0.5vh var(--color-primary);
-         border-top-left-radius: 4vh;
-         border-bottom-right-radius: 4vh;
-         padding-left: 4vh;
-         padding-right: 4vh;
-         padding-top: 2vh;
-         padding-bottom: 2vh;
-         color: var(--color-text);
-         margin-bottom: 2vh;
-         background-color: transparent;
-         width: fit-content;
-         border: none;
-}
-
-ul.linkslist > li:hover, button:hover {
-     box-shadow: inset 0px 0px 8vh var(--color-text);
-     transition: linear 0.2s transform;
-     background: none;
-    color: var(--color-bg);
-}
-
-
-ul.linkslist > li > a {
-    font-family: 'Courier New', Courier, monospace;
-    color: var(--color-text);
+aside > ul > li > a  {
     text-decoration: none;
-    font-size: 3vh;
-}
-
-
-ul.linkslist > li:hover, ul.linkslist > li:hover > a, button:hover { 
-    color: var(--color-bg);
-}
-
-@keyframes goin {
-    0% {
-        transform: perspective(600px) translateZ(-1200px)  rotateY(55deg);
-       opacity: 0;
-    }
-    100% {
-
-    }
-}
-
-@keyframes gofrom {
-    0% {
-        transform: perspective(600px) translateZ(600px)  rotateY(-15deg);
-    }
-    100% {
-
-    }
-}
-
-@keyframes gohome {
-    0% {
-        transform: perspective(600px) ;
-    }
-    100% {
-         transform: perspective(600px) translateZ(-1000px)  rotateY(-15deg);
-         opacity: 0;
-    }
-}
-
-@keyframes goout {
-    100% {
-        transform: perspective(600px) translateZ(600px) rotateY(-15deg);
-    }
-
-
-
-    0% {
-          transform: perspective(600px) translateZ(0);
-    }
-
-}
-
-#pagecontainer[goin] {
-    animation: goin 0.5s linear;
-    opacity: 1;
-    transform-origin: center;
-}
-
-#pagecontainer[gofrom] {
-    animation: gofrom 0.5s linear;
-    opacity: 1;
-    transform-origin: center;
-}
-
-#pagecontainer[gohome] {
-    animation: gohome 0.5s linear forwards;
-    transform-origin: center;
-    opacity: 1; 
-         transform: perspective(600px) translateZ(-6000px)  rotateY(-15deg);
-}
-
-
-
-
-#pagecontainer[goout] {
-    animation: goout 0.5s linear;
-    transform-origin: center;
-    opacity: 1;
-     transform: perspective(600px) translateZ(600px) rotateY(-15deg);
-}
-
-.mainbox {
-      box-shadow: inset 0px 0px 3vh var(--color-primary);
-         border-top-left-radius: 4vh;
-        padding: 2vh;
-         border-bottom-right-radius: 4vh;
-            width: fit-content;
-           height: fit-content;
-          color: var(--color-text);
-         display: inline-block;
-         vertical-align:middle;
-       transform: perspective(600px) rotateY(-15deg);
-}
-
-.mainbox > p {
-    margin-left: 2vh;
-}
-
-.boxcontent {
-    box-shadow: inset 0px 0px 5vh rgba(0, 0, 0, 0.5);
-             border-bottom-right-radius: 4vh;
-              border-top-left-radius: 4vh;
-    overflow: scroll;
-     padding: 1vh;
-}
-
-
-.mainbox > .boxcontent {
-    box-shadow: inset 0px 0px 5vh rgba(0, 0, 0, 0.5);
-             border-bottom-right-radius: 4vh;
-              border-top-left-radius: 4vh;
-    overflow: scroll;
-    height: 60vh;
-    width: fit-content;
-}
-
-.mainbox > .boxcontent > ul {
-    list-style: none;
-   
-}
-
-@keyframes spinin {
-    0% {
-        transform: rotateZ(-90deg) translateX(50vw);
-        transform-origin:top left;
-    }
-
-    100% {
-        transform: rotateZ(0deg);
-        transform-origin:top left;
-    }
-}
-
-dialog[open] {
-    animation: spinin linear 0.5s;
+    color: rgb(0, 0, 0);
 }

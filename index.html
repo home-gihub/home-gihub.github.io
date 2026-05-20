@@ -1,50 +1,28 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-  
-    
-    <link rel="stylesheet" href="styles.css">
-    <script src="./index.js" defer></script>
-      <title>Home page</title>
-     
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
 
-    <div style="display:table;width: 100vw;height: 100vh;">
-    <div style="display:table-cell;vertical-align:middle;width: 100vw;height: 100vh;">
-      <div style="margin:auto;width: fit-content;height: fit-content;">
-        
-
-          <div id="pagecontainer" gofrom class="menucontainer" style="vertical-align:top;" >
-    <div class="icon">
-      <p>🏠</p>
-    </div>
-    <ul class="linkslist" style="vertical-align:top;">
-      <li onclick="gowanim('./creations.html', true)" style="margin-left: -2vw;">
-        <a>Creations</a>
-      </li>
-       <li  onclick="gowanim('./guestbook.html', true)" >
-        <a >Guestbook</a>
-      </li>
-      <li  onclick="window.location = './creations/zoommaker/index.html'" style="margin-left: 0.5vw;">
-        <a >Featured creation</a>
-      </li>
-      <li  onclick="gowanim('./theme.html', true)" style="margin-left: -0.5vw;">
-        <a >Theme</a>
-      </li>
-      <li  onclick="gowanim('./about.html', true)" style="margin-left: -2vw;">
-        <a >About</a>
-      </li>
-    </ul>
-    </div>
-
-
-
-    </div>
-  </div>
-</div>
-
-
-  </body>
+            <img src="./Header.png">
+        <section>
+        <main>
+            <iframe name="main" src="./main.html"></iframe>
+        </main>
+        <aside>
+            <p>Navagation</p>
+            <ul>
+                 <li><a href="./main.html" target="main">Home</a></li>
+                <li><a href="./creations.html" target="main">Creations</a></li>
+                <li><a href="./about.html" target="main">About</a></li>
+            </ul>
+        </aside>
+        </section>
+    </main>
+</body>
 </html>

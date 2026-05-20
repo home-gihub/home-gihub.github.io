@@ -1,0 +1,16 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: scroll;
+
+}
+
+h1,h2 {
+    color: rgba(255,255,255,0.9);
+    background: linear-gradient(to top, #002bb9 0%, #2255ff 49%,  #0099ff 50%, #2255ff 100%);
+    box-shadow: #000000cc 0px 0px 10px;
+}

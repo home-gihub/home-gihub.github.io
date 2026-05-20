@@ -1,0 +1,8 @@
+*{
+    font-family: sans-serif;
+}
+
+main, footer {
+    width: 50%;
+    margin: auto;
+}
