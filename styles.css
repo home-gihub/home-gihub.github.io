@@ -3,11 +3,12 @@
     margin: 0;
     border: 0;
     font-family: sans-serif;
+    vertical-align: baseline;
 }
 
 body {
     width: 100vw;
-    background: linear-gradient(to top, #2255ff, #0099ff);
+    background-color:  #0b750b;
     padding-bottom: 10em;
 }
 
@@ -53,7 +54,9 @@ background-image:url("./texture.png")
 
 aside > p {
     color: white;
-     background: linear-gradient(to top, #2255ff, #0099ff);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b6e026+0,abdc28+100;Green+Flat */
+background: linear-gradient(to bottom,  #b6e026 0%,#abdc28 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
 }
 
 aside > ul {
@@ -61,7 +64,9 @@ aside > ul {
 }
 
 aside > ul > li {
-     background-color: #d8d8d8;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+50,e1e1e1+51,f6f6f6+100;White+Gloss+%231 */
+background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
   box-shadow: #000000cc 0px 0px 2px;
 }
 

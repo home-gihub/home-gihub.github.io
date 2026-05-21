@@ -2,6 +2,7 @@
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    vertical-align: top;
 }
 
 body {
@@ -11,6 +12,37 @@ body {
 
 h1,h2 {
     color: rgba(255,255,255,0.9);
-    background: linear-gradient(to top, #002bb9 0%, #2255ff 49%,  #0099ff 50%, #2255ff 100%);
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bfd255+0,8eb92a+50,72aa00+51,9ecb2d+100;Green+Gloss */
+background: linear-gradient(to bottom,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
     box-shadow: #000000cc 0px 0px 10px;
+}
+
+
+aside.box {
+    border: 1px solid #9c9c9c;
+    margin: 0.5em;
+    box-shadow: #000000cc 0px 0px 2px;
+   background-color: white;
+   display: inline-block;
+   width: fit-content;
+}
+aside.box >label {
+    background: linear-gradient(to bottom, #ececec 0%, #9c9c9c 95%,#747474 96%,#ffffff 100% );
+    color: black;
+    padding: 0.25em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+   display: block;
+   text-align: center;
+    text-shadow: #ffffff 1px 1px 0px;
+}
+
+
+aside.box > div.content {
+    padding: 1em;
+    display: inline-block;
+    width: min-content;
+    overflow-y: scroll;
+    background-color: white;
 }
