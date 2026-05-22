@@ -8,7 +8,7 @@
 
 body {
     width: 100vw;
-    background-color:  #0b750b;
+    background-color:  #002d00;
     padding-bottom: 10em;
 }
 
@@ -30,9 +30,7 @@ main > section {
 }
 
 main > section > main {
-    background-color: #ffffff;
-    background-image:url("./texture.png");
-    background-size: 10%,10%;
+    background-color: #242424;
     width: 75%;
     height: 100%;
     display: inline-block;
@@ -48,14 +46,13 @@ section > aside {
       float: right;
       height: 100%;
     width: 25%;
-background-color: #d8d8d8;
-background-image:url("./texture.png")
+background-color: #151515;
 }
 
 aside > p {
     color: white;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b6e026+0,abdc28+100;Green+Flat */
-background: linear-gradient(to bottom,  #b6e026 0%,#abdc28 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: linear-gradient(to bottom,  #3fe026 0%,#135d00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 }
 
@@ -65,7 +62,7 @@ aside > ul {
 
 aside > ul > li {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+50,e1e1e1+51,f6f6f6+100;White+Gloss+%231 */
-background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: linear-gradient(to bottom,  #0fb600 0%,#04f500 50%,#3ec300 51%,#078400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
   box-shadow: #000000cc 0px 0px 2px;
 }
