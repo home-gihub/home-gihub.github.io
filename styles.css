@@ -71,3 +71,88 @@ aside > ul > li > a  {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
+
+
+dialog {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    animation: dlgfade 0.1s linear;
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(1vh);
+}
+
+dialog > h1 {
+    color: white;
+    position: fixed;
+    top: 5vh;
+    left: 12.5vw;
+    font-size: 5vh;
+    animation: dlgfade 0.4s linear;
+}
+
+dialog[open] > main {
+    width: 100vw;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    height: 75vh;
+    position: fixed;
+    top: 12.5vh;
+    font-size: 3vh;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    margin: auto;
+    animation: dlglines 0.2s linear;
+}
+
+dialog > main > section {
+    width: fit-content;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    animation: dlgfade 0.4s linear;
+}
+
+
+dialog > main > nav {
+    width: 100vw;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    bottom: 15vh;
+    animation: dlgfade 0.4s linear;
+}
+
+@keyframes dlglines {
+    0% {
+        position: fixed;
+        top: 50vh;
+        height: 0;
+    }
+
+    100% {
+        position: fixed;
+        top: 12.5vh;
+    }
+}
+
+@keyframes dlgfade {
+    0% {
+       opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+       opacity: 1;
+    }
+}
+
+
+dialog > main > nav > a {
+    margin-right: 1em;
+      color: white;
+    text-decoration: none;
+}

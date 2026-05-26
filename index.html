@@ -7,8 +7,22 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <dialog id="wipdlg">
+        <h1>WIP Creation</h1>
+        <main>
+            <section>
+            This creation is a work in progress and may not
+            <br>
+            work correctly (or at all).
+            <br>
+            <br>
+            Do you still want to open it?
+            
+            </section>
+            <nav><a onclick="window.location = errGoto">Yes</a><a onclick="document.getElementById('wipdlg').close()">No</a></nav>
+        </main>
+    </dialog>
     <main>
-
             <img src="./Header.png">
         <section>
         <main>
