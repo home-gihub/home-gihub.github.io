@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="720"
+   height="720"
+   viewBox="0 0 720 720"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   sodipodi:docname="sticky.svg"
+   inkscape:export-filename="sticky.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.72638889"
+     inkscape:cx="421.95029"
+     inkscape:cy="426.08031"
+     inkscape:window-width="1922"
+     inkscape:window-height="709"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient14"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ffe680;stop-opacity:1;"
+         offset="0"
+         id="stop14" />
+      <stop
+         style="stop-color:#ffe680;stop-opacity:1;"
+         offset="1"
+         id="stop15" />
+    </linearGradient>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter14"
+       x="-0.018826413"
+       y="-0.36850129"
+       width="1.0376528"
+       height="1.6286198">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.411765"
+         flood-color="rgb(0,0,0)"
+         id="feFlood13" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="5.000000"
+         id="feGaussianBlur13" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="0.000000"
+         dy="-5.000000"
+         id="feOffset13" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite13" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite14" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient14"
+       id="linearGradient15"
+       x1="233.84959"
+       y1="83.272873"
+       x2="502.08228"
+       y2="658.49969"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       inkscape:menu-tooltip="Transparent plastic with deep colors"
+       inkscape:menu="Bevels"
+       inkscape:label="Deep Colors Plastic"
+       style="color-interpolation-filters:sRGB;"
+       id="filter19"
+       x="-1.0376984"
+       y="-1.0376984"
+       width="3.0753969"
+       height="3.0753969">
+      <feGaussianBlur
+         in="SourceGraphic"
+         result="result6"
+         stdDeviation="10"
+         id="feGaussianBlur15" />
+      <feComposite
+         in2="SourceGraphic"
+         in="result6"
+         operator="xor"
+         id="feComposite15" />
+      <feGaussianBlur
+         result="result2"
+         stdDeviation="9"
+         id="feGaussianBlur16" />
+      <feComposite
+         in2="SourceGraphic"
+         operator="atop"
+         result="result91"
+         id="feComposite16" />
+      <feComposite
+         result="result4"
+         in="result2"
+         operator="xor"
+         in2="result91"
+         id="feComposite17" />
+      <feGaussianBlur
+         in="result4"
+         result="result3"
+         stdDeviation="5"
+         id="feGaussianBlur17" />
+      <feSpecularLighting
+         lighting-color="rgb(255,255,255)"
+         in="result3"
+         result="result5"
+         specularExponent="35"
+         specularConstant="2"
+         surfaceScale="12"
+         id="feSpecularLighting17">
+        <feDistantLight
+           elevation="45"
+           azimuth="235"
+           id="feDistantLight17" />
+      </feSpecularLighting>
+      <feComposite
+         in2="result5"
+         in="SourceGraphic"
+         k3="0.7"
+         k2="0.9"
+         operator="arithmetic"
+         result="result7"
+         id="feComposite18" />
+      <feGaussianBlur
+         in="result7"
+         result="result10"
+         stdDeviation="1"
+         id="feGaussianBlur18" />
+      <feComposite
+         in="result11"
+         operator="in"
+         in2="SourceGraphic"
+         id="feComposite19" />
+    </filter>
+    <filter
+       y="0"
+       height="1"
+       x="0"
+       width="1"
+       inkscape:menu-tooltip="Aquarelle paper effect which can be used for pictures as for objects"
+       inkscape:menu="Textures"
+       inkscape:label="Rough Paper"
+       style="color-interpolation-filters:sRGB;"
+       id="filter28">
+      <feTurbulence
+         type="fractalNoise"
+         baseFrequency="0.16509164313046648"
+         numOctaves="1"
+         seed="0"
+         result="result4"
+         id="feTurbulence27" />
+      <feDisplacementMap
+         in="SourceGraphic"
+         in2="result4"
+         yChannelSelector="G"
+         xChannelSelector="R"
+         scale="10"
+         result="result3"
+         id="feDisplacementMap27" />
+      <feDiffuseLighting
+         lighting-color="rgb(233,230,215)"
+         diffuseConstant="0.97870991492146597"
+         surfaceScale="0.13920062154696122"
+         result="result1"
+         in="result4"
+         id="feDiffuseLighting27">
+        <feDistantLight
+           azimuth="235"
+           elevation="43"
+           id="feDistantLight27" />
+      </feDiffuseLighting>
+      <feComposite
+         operator="in"
+         in="result3"
+         in2="result1"
+         result="result2"
+         id="feComposite27" />
+      <feComposite
+         in2="result1"
+         result="result5"
+         operator="arithmetic"
+         k1="1.7"
+         id="feComposite28" />
+      <feBlend
+         in="result5"
+         in2="result3"
+         mode="normal"
+         id="feBlend28" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect1"
+       style="fill:url(#linearGradient15);stroke-width:0;stroke-miterlimit:0;paint-order:markers fill stroke;filter:url(#filter28)"
+       d="M 50.619652,62.301109 H 683.36532 l 1.94691,597.701251 -634.692578,19.4691 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="rect2"
+       style="fill:#d3bc5f;stroke-width:0;stroke-miterlimit:0;paint-order:markers fill stroke;filter:url(#filter14)"
+       d="m 50.486328,677.5293 c 0.0651,1.33203 0.130208,2.66406 0.195313,3.99609 C 262.31706,675 473.95247,668.47461 685.58789,661.94922 c 0.62242,-0.69961 1.43133,-1.32109 1.93911,-2.06874 0.12056,-7.48685 0.24111,-14.9737 0.36167,-22.46056 -0.71094,-0.67578 -1.42187,-1.35156 -2.13281,-2.02734 -211.75651,14.04557 -423.51302,28.09114 -635.269532,42.13672 z" />
+    <circle
+       style="fill:#c83636;stroke-width:0;stroke-miterlimit:0;paint-order:markers fill stroke;fill-opacity:1;filter:url(#filter19)"
+       id="path15"
+       cx="375.83173"
+       cy="60.573612"
+       r="28.910133" />
+  </g>
+</svg>

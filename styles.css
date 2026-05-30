@@ -6,6 +6,7 @@
     vertical-align: baseline;
     /* I love border-box */
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -17,7 +18,6 @@ body {
 body > main {
     width: 50%;
     margin: auto;
-    height: 25em;
     margin-bottom: 10em;
 }
 
@@ -28,65 +28,58 @@ body > main > img {
 }
 
 main > section {
-    height: 100%;
-}
-
-main > section > main {
     background-color: #d6d6d6;
     background-repeat: repeat;
     background-image: url(./texture.png);
     background-size: 10% 10%;
-    width: 75%;
-    height: 100%;
+}
+
+h1,h2,nav {
+    color: rgba(255,255,255,0.9);
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    box-shadow: #000000cc 0px 0px 10px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav > a {
+        color: rgba(255,255,255,0.9);
+text-decoration: none;
+margin-left: 1em;
+}
+
+aside.box {
+    border: 1px solid #9c9c9c;
+    margin: 0.5em;
+    box-shadow: #000000cc 0px 0px 2px;
+   background-color: white;
+   width: fit-content;
+}
+
+aside.box >label {
+    background: linear-gradient(to bottom, #dedede 0%, #8d8d8d 95%,#747474 96%,#ffffff 100% );
+    color: rgb(0, 0, 0);
+    padding: 0.25em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+   display: block;
+   text-align: center;
+    box-shadow: #000000cc 0px 0px 10px;
+    text-shadow: #ffffff 1px 1px 0px;
+}
+
+
+aside.box > div.content {
+    padding: 1em;
     display: inline-block;
+    width: min-content;
+    overflow-y: scroll;
+    background-color: white;
 }
-
-section > main > iframe {
-    width: 100%;
-    height: 100%;
-}
-
-section > aside {
-    float: right;
-    height: 100%;
-    width: 25%;
-    background-image: url("./glass.svg");
-    background-size: cover;
-    background-position-x: center;
-    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75),
-    0px 0px 5px 0px rgba(255, 255, 255, 0.75) inset;
-    border: white solid 1px;  
-
-    font-family: sans-serif;    
-    color: black;
-}
-
-aside > p {
-    text-shadow: white 5px 0px 10px,
-        white -5px 0px 10px,
-        white 0px 5px 10px,
-        white 0px -5px 10px;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b6e026+0,abdc28+100;Green+Flat */
-background: linear-gradient(to right, rgba(255,255,255, 0) 50%, rgba(255,255,255, 1) 100% ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-}
-
-aside > ul {
-    list-style: none;
-}
-
-aside > ul > li {
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d0e4f7+0,73b1e7+24,0a77d5+50,539fe1+79,87bcea+100;Blue+Pipe+%231 */
-background: linear-gradient(to bottom,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-  box-shadow: #000000cc 0px 0px 2px;
-}
-
-aside > ul > li > a  {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
 
 dialog {
     width: 100vw;
@@ -95,6 +88,12 @@ dialog {
     animation: dlgfade 0.1s linear;
     background-color: rgba(0, 0, 0, 0.65);
     backdrop-filter: blur(1vh);
+    /* IE hack*/
+    display: none;
+}
+
+dialog[open] {
+    display: unset;
 }
 
 dialog > h1 {
@@ -170,4 +169,104 @@ dialog > main > nav > a {
     margin-right: 1em;
       color: white;
     text-decoration: none;
+}
+
+section > table {
+    margin: auto;
+}
+
+td#letter {
+    background-image: url("./letter.png");
+    background-repeat: no-repeat;
+    background-size: 400px 250px;
+    width: 400px;
+    height: 250px;
+}
+
+td#letter > p {
+    transform: rotate(-1.5deg)translateX(20px) translateY(20px);
+    padding: 0.25em;
+    color: gray;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.65);
+    width: 370px;
+}
+
+
+td#addbtn{
+    background-image: url("./buttonbg.png");
+    background-repeat: no-repeat;
+    background-size: 300px 250px;
+    width: 300px;
+    height: 250px;
+}
+
+td#addbtn > div {
+    width: 200px;
+    position: relative;
+    left: 50px;
+    top: 90px;
+}
+
+section#howmade {
+    background: linear-gradient(to top, #222222, #444444);
+    color: yellowgreen;
+   
+}
+
+section#howmade > main {
+    width: fit-content;
+    margin: auto;
+}
+
+section#howmade > main >  p {
+    font-family: monospace;
+    font-size: 20px;
+    text-shadow: 0px 0px  5px lime;
+}
+
+div#creationscount {
+    font-size: 50px;
+     background: linear-gradient(to top, #222222, #444444);
+     text-align: center;
+    color: white;
+}
+
+td#creationsdesc {
+    width: 200px;
+    height: 200px;
+    padding-left: 1em;
+    background-image: url("./sticky.png");
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    transform: rotate(2deg);
+    padding: 1em;
+    color:cornflowerblue;
+    font-family:cursive;
+    font-size: 20px;
+    position: absolute;
+}
+
+ul#creationslist {
+    list-style: decimal;
+    font-style: italic;
+
+}
+
+ul#creationslist > li > * {
+    font-style: normal;
+}
+
+section#footer {
+    background: repeating-linear-gradient(-45deg,
+  #000000,
+  #000000 40px,
+  #ffcc00 40px,
+  #ffcc00 80px
+);
+box-shadow: 0px 0px 10px #000000;
+padding-bottom: 1em;
+padding-top: 1em;
+color: white;
+text-align: center;
+font-weight: bold;
 }

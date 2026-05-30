@@ -10,41 +10,4 @@ body {
     color: black;
 }
 
-h1,h2 {
-    color: rgba(255,255,255,0.9);
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
-background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
-    box-shadow: #000000cc 0px 0px 10px;
-}
-
-
-aside.box {
-    border: 1px solid #9c9c9c;
-    margin: 0.5em;
-    box-shadow: #000000cc 0px 0px 2px;
-   background-color: white;
-   display: inline-block;
-   width: fit-content;
-}
-
-aside.box >label {
-    background: linear-gradient(to bottom, #dedede 0%, #8d8d8d 95%,#747474 96%,#ffffff 100% );
-    color: rgb(0, 0, 0);
-    padding: 0.25em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-   display: block;
-   text-align: center;
-    box-shadow: #000000cc 0px 0px 10px;
-    text-shadow: #ffffff 1px 1px 0px;
-}
-
-
-aside.box > div.content {
-    padding: 1em;
-    display: inline-block;
-    width: min-content;
-    overflow-y: scroll;
-    background-color: white;
-}
