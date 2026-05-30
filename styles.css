@@ -171,6 +171,12 @@ dialog > main > nav > a {
     text-decoration: none;
 }
 
+section#Welcome {
+    background-image: url("./wood.jpg");
+    background-size: contain;
+    
+}
+
 section > table {
     margin: auto;
 }
