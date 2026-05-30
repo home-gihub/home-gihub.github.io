@@ -174,11 +174,20 @@ dialog > main > nav > a {
 section#Welcome {
     background-image: url("./wood.jpg");
     background-size: contain;
-    
+
 }
 
 section > table {
     margin: auto;
+}
+
+img#hammer {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 10;
+    top: 610px;
+    right: 400px;
 }
 
 td#letter {
