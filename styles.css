@@ -16,7 +16,7 @@ body {
 }
 
 body > main {
-    width: 50%;
+    width: 800px;
     margin: auto;
     margin-bottom: 10em;
 }
@@ -177,6 +177,32 @@ section#Welcome {
 
 }
 
+aside#music {
+    position: absolute;
+    background-image: url("./glass.svg");
+     background-size: cover;
+             box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75),
+            0px 0px 5px 0px rgba(255, 255, 255, 0.75) inset;
+             border: white solid 1px;
+               text-shadow: 
+             white 5px 0px 10px,
+              white -5px 0px 10px,
+              white 0px 5px 10px,
+               white 0px -5px 10px;
+              border-radius: 10px 10px;
+               padding: 5px;
+               font-family: sans-serif;    
+              color: black;
+
+    transform: rotate(1deg);
+    right: 70vw;
+    top:390px;
+}
+
+aside#music > iframe {
+    border-radius: 10pxa;
+}
+
 section > table {
     margin: auto;
 }
@@ -186,8 +212,9 @@ img#hammer {
     height: 200px;
     position: absolute;
     z-index: 10;
+    transform: rotate(-65deg);
     top: 610px;
-    right: 400px;
+    left: 70vw;
 }
 
 td#letter {
@@ -199,7 +226,7 @@ td#letter {
 }
 
 td#letter > p {
-    transform: rotate(-1.5deg)translateX(20px) translateY(20px);
+    transform: rotate(-1deg)translateX(20px) translateY(20px);
     padding: 0.25em;
     color: gray;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.65);
