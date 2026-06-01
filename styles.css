@@ -13,6 +13,7 @@ body {
     width: 100vw;
     background:linear-gradient(to bottom,  #5462ff, #333366);
     padding-bottom: 10em;
+
 }
 
 body > main {
@@ -26,6 +27,11 @@ body > main > img {
     width: 100%;
     display: block;
 }
+
+ section {
+    width: 800px;
+        position: relative;
+ }
 
 main > section {
     background-color: #d6d6d6;
@@ -178,6 +184,7 @@ section#Welcome {
 }
 
 aside#music {
+    z-index: 10;
     position: absolute;
     background-image: url("./glass.svg");
      background-size: cover;
@@ -195,8 +202,8 @@ aside#music {
               color: black;
 
     transform: rotate(1deg);
-    right: 70vw;
-    top:390px;
+    left: -200px;
+    top:140px;
 }
 
 aside#music > iframe {
@@ -213,8 +220,8 @@ img#hammer {
     position: absolute;
     z-index: 10;
     transform: rotate(-65deg);
-    top: 610px;
-    left: 70vw;
+    right: -100px;
+    top:180px
 }
 
 td#letter {
@@ -252,7 +259,6 @@ td#addbtn > div {
 section#howmade {
     background: linear-gradient(to top, #222222, #444444);
     color: yellowgreen;
-   
 }
 
 section#howmade > main {
@@ -260,7 +266,7 @@ section#howmade > main {
     margin: auto;
 }
 
-section#howmade > main >  p {
+section#howmade > main >  * {
     font-family: monospace;
     font-size: 20px;
     text-shadow: 0px 0px  5px lime;
@@ -298,7 +304,7 @@ ul#creationslist > li > * {
     font-style: normal;
 }
 
-section#footer {
+#footer {
     background: repeating-linear-gradient(-45deg,
   #000000,
   #000000 40px,
