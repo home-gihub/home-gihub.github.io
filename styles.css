@@ -9,21 +9,47 @@
     scroll-behavior: smooth;
 }
 
-body {
-    width: 100vw;
+html {
     background:linear-gradient(to bottom,  #5462ff, #333366);
-    padding-bottom: 10em;
-
 }
 
-body > main {
+@keyframes wave {
+ from {
+    background-position: 0% bottom;
+}
+  to {background-position: 100% bottom;}
+}
+
+body {
+    width: 100vw;
+background-repeat: repeat-x;
+    padding-bottom: 10em;
+    background-attachment: fixed;
+    background-size: 50% 75%;
+    background-blend-mode: color-burn;
+background-image: url("./wave.png");
+animation: wave 10s linear infinite;
+}
+
+div#wrapper {
+     background-blend-mode: color-burn;
+    width: 100vw;
+    background-repeat: repeat-x;
+    padding-bottom: 10em;
+    background-attachment: fixed;
+    background-size: 50% 75%;
+background-image: url("./wave.png");
+animation: wave 5s linear infinite;
+}
+
+main {
     width: 800px;
     margin: auto;
     margin-bottom: 10em;
 }
 
 
-body > main > img {
+ main > img {
     width: 100%;
     display: block;
 }
