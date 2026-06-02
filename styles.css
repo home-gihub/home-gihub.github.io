@@ -206,7 +206,7 @@ dialog > main > nav > a {
 section#Welcome {
     background-image: url("./wood.jpg");
     background-size: contain;
-
+    box-shadow: 0px -20px 10px -10px black inset;
 }
 
 aside#music {
@@ -283,18 +283,31 @@ td#addbtn > div {
 }
 
 section#howmade {
-    background: linear-gradient(to top, #222222, #444444);
-    color: yellowgreen;
+     background-image: url("./howmadebg.png");
+     width: 100%;
+     height: 289px;
+    background-size: cover;
+    color: white\;
 }
 
 section#howmade > main {
     width: fit-content;
     margin: auto;
+    color: white;
 }
 
-section#howmade > main >  * {
+section#howmade > main {
+    width: 400px;
+    position: absolute;
+    left: 340px;
+    font-size: 15px;
+    text-shadow: 0px 0px 5px black, 0px 0px 5px black;
+}
+
+section#howmade > main >  header {
     font-family: monospace;
-    font-size: 20px;
+    font-size: 25px;
+    color: yellowgreen;
     text-shadow: 0px 0px  5px lime;
 }
 
