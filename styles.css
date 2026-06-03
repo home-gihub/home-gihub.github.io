@@ -66,16 +66,19 @@ main > section {
     background-size: 10% 10%;
 }
 
-h1,h2,nav {
+h1,h2 {
     color: rgba(255,255,255,0.9);
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
-background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-    box-shadow: #000000cc 0px 0px 10px;
+    font-family: cursive;
+  
 }
 
 nav {
     text-align: center;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  box-shadow: #000000cc 0px 0px 10px;
+  color: rgba(255,255,255,0.9);
+
 }
 
 nav > a {
@@ -333,10 +336,46 @@ td#creationsdesc {
     position: absolute;
 }
 
+section#creations {
+padding-top: 20px;
+padding-bottom: 20px;
+background-size: 1000px 1000px;
+background-image: url("./brick.png");
+}
+
+section#creations > div {
+    background-color: #1e5799;
+    background-image: url("corner.png");
+    background-size: 10% 10%;
+    width: 90%;
+    margin: auto;
+    color: white;
+     transform: rotate(-0.4deg);
+     box-shadow: -1px 1px 10px #000000 ;
+}
+
+section#creations > div > table {
+    margin: auto;
+}
+
 ul#creationslist {
     list-style: decimal;
     font-style: italic;
 
+}
+
+#coffee {
+    position: absolute;
+    width: 200px;
+    left: -70px;
+    top: -40px;
+}
+
+#pencil {
+    position: absolute;
+    height: 300px;
+    right: 70px;
+    bottom: 40px;
 }
 
 ul#creationslist > li > * {
