@@ -54,12 +54,12 @@ main {
     display: block;
 }
 
- section {
+ body > div#wrapper > main >section {
     width: 800px;
         position: relative;
  }
 
-main > section {
+section {
     background-color: #d6d6d6;
     background-repeat: repeat;
     background-image: url(./texture.png);
@@ -72,7 +72,7 @@ h1,h2 {
   
 }
 
-nav {
+nav#sitenav {
     text-align: center;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
 background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -129,6 +129,7 @@ dialog {
 
 dialog[open] {
     display: unset;
+    z-index: 999;
 }
 
 dialog > h1 {
@@ -161,6 +162,7 @@ dialog > main > section {
     justify-content: center;
     align-content: center;
     animation: dlgfade 0.4s linear;
+    background: none;
 }
 
 
@@ -236,7 +238,7 @@ aside#music {
 }
 
 aside#music > iframe {
-    border-radius: 10pxa;
+    border-radius: 10px;
 }
 
 section > table {
@@ -267,6 +269,7 @@ td#letter > p {
     color: gray;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.65);
     width: 370px;
+    font-size: 15px;
 }
 
 
@@ -290,7 +293,7 @@ section#howmade {
      width: 100%;
      height: 289px;
     background-size: cover;
-    color: white\;
+    color: white;
 }
 
 section#howmade > main {
@@ -329,10 +332,10 @@ td#creationsdesc {
     background-repeat: no-repeat;
     background-size: 200px 200px;
     transform: rotate(2deg);
-    padding: 1em;
+    padding: 2em;
     color:cornflowerblue;
-    font-family:cursive;
-    font-size: 20px;
+    font-family: sans-serif;
+    font-size: 15px;
     position: absolute;
 }
 
@@ -396,3 +399,4 @@ color: white;
 text-align: center;
 font-weight: bold;
 }
+
