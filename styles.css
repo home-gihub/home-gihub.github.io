@@ -317,54 +317,30 @@ section#howmade > main >  header {
     text-shadow: 0px 0px  5px lime;
 }
 
-div#creationscount {
-    font-size: 50px;
-     background: linear-gradient(to top, #222222, #444444);
-     text-align: center;
-    color: white;
-}
-
-td#creationsdesc {
-    width: 200px;
-    height: 200px;
-    padding-left: 1em;
-    background-image: url("./sticky.png");
-    background-repeat: no-repeat;
-    background-size: 200px 200px;
-    transform: rotate(2deg);
-    padding: 2em;
-    color:cornflowerblue;
-    font-family: sans-serif;
-    font-size: 15px;
-    position: absolute;
-}
-
 section#creations {
-padding-top: 20px;
-padding-bottom: 20px;
-background-size: 1000px 1000px;
-background-image: url("./brick.png");
+background: linear-gradient(1deg, #195ef5, #000055);
 }
 
 section#creations > div {
-    background-color: #1e5799;
-    background-image: url("corner.png");
-    background-size: 10% 10%;
-    width: 90%;
-    margin: auto;
-    color: white;
-     transform: rotate(-0.4deg);
-     box-shadow: -1px 1px 10px #000000 ;
+color: white;
+overflow-y: scroll;
+overflow-x: hidden;
 }
 
-section#creations > div > table {
-    margin: auto;
+section#creations > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-ul#creationslist {
-    list-style: decimal;
-    font-style: italic;
+section#creations > div > a > img {
+    width: 100%;
+    height: auto;
+    border: 5px solid transparent;
+    object-fit: cover;
+}
 
+section#creations > div > a:hover > img {
+border: 5px solid cornflowerblue;
 }
 
 #coffee {
@@ -374,12 +350,6 @@ ul#creationslist {
     top: -40px;
 }
 
-#pencil {
-    position: absolute;
-    height: 300px;
-    right: 70px;
-    bottom: 40px;
-}
 
 ul#creationslist > li > * {
     font-style: normal;
