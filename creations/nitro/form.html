@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitro giveaway</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+    <dialog id="dlg">
+        <h2>Does this information look correct?</h2>
+        <p>Discord handle: <span id="acchandle"></span></p>
+        <p>Nitro length: <span id="nitrolen"></span></p>
+        <span>
+        <button id="genbtn" class="genbtn">Yes, generate link!</button>
+        <button id="cdlgbtn" class="nobtn">No, go back!</button>
+        </span>
+    </dialog>
+
+    <div class="container">
+        <h1>Discord nitro giveaway form</h1>
+        <p>Please fill out all information to enter the giveaway.</p>
+        <form>
+            <label for="handle">Discord handle:</label>
+            <br>
+            <span>@<input id="handle" type="text"></span>
+            <br>
+             <label for="length">Nitro length:</label>
+            <br>
+            <select id="length">
+                <option value="m">1 Month</option>
+                <option value="y">1 Year</option>
+            </select>
+            <br>
+            <label for="captcha">Captcha:</label>
+            <br>
+            <img style="width: 320px;height: auto;" src="./captcha.png"/>
+            <br>
+            <input id="captcha" type="text">
+        </form>
+        <p id="err" class="error"></p>
+        <button id="dlgbtn" class="genbtn">GENERATE NITRO LINK</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
