@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRoGram MaNaGeR Tool</title>
+</head>
+<body style="overflow-y: scroll;">
+    
+    <script>
+        // im too lazy for writing html so this automates it for me :)
+        span = document.createElement("span")
+        apps = [
+            "WebXash",
+            "Minecraft Classic",
+            "nothing",
+            "rng.exe",
+            "clickyclick",
+            "Music Player",
+            "Textarea",
+            "JSpaint",
+            "Glock",
+            "Appearance",
+            "Superbar"
+        ]
+    apps.forEach(app => {
+        let appspan = document.createElement("div")
+        let name = document.createElement("a")
+        let ico = document.createElement("img")
+        name.innerText = app
+        name.onclick = function(){window.top.invokeExec(`./apps/${app}/app.js`)}
+        name.style.textWrap = "wrap"
+        ico.setAttribute("src", `../${app}/icon.png`)
+        appspan.style.display = "inline-block"
+        appspan.style.width = "min-content"
+        appspan.style.marginRight = "10px"
+        appspan.appendChild(ico)
+        appspan.appendChild(name)
+            span.appendChild(appspan)
+        });
+        document.body.appendChild(span)
+    </script>
+</body>
+</html> 

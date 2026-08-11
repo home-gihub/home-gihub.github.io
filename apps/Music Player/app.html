@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../applook.css">
+</head>
+<body>
+    <div class="menubar"><button id="fileopen">Open file</button></div>
+    <span id="musiccnt">No file open...</span>
+    <script>
+        // Source - https://stackoverflow.com/a/40971885
+// Posted by user4602228, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-06-29, License - CC BY-SA 4.0
+
+var input = document.createElement('input');
+input.type = 'file';
+
+input.onchange = e => { 
+
+   // getting a hold of the file reference
+   var file = e.target.files[0]; 
+
+   // setting up the reader
+   var reader = new FileReader();
+   reader.readAsDataURL(file); // this is reading as data url
+
+   // here we tell the reader what to do when it's done reading...
+   reader.onload = readerEvent => {
+      var content = readerEvent.target.result; // this is the content!
+      let music = document.createElement("audio")
+    music.setAttribute("controls","")
+      music.src = content;
+      document.getElementById("musiccnt").innerHTML = music.outerHTML
+   }
+
+}
+
+document.getElementById("fileopen").addEventListener('click', function(){
+input.click();
+})
+
+
+
+
+    </script>
+</body>
+</html>

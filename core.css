@@ -1,0 +1,66 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(-15deg, #333333, #212121)
+}
+
+.header {
+    background-color: #000099;
+     border-left:2px solid #c8c8c8;
+      border-top:2px solid #c8c8c8;
+      user-select: none;
+       border-right:2px solid #222222;
+    color: white;
+}
+
+.windcnt {
+    background-color: #8c8c8c;
+    border-left:2px solid #c8c8c8;
+    border-right:2px solid #222222;
+    border-bottom:2px solid #222222;
+}
+
+button {
+        background-color: #8c8c8c;
+    border-left:2px solid #c8c8c8;
+     border-top:2px solid #c8c8c8;
+    border-right:2px solid #222222;
+    border-bottom:2px solid #222222;
+}
+
+
+.windcnt > * {
+    padding: 0;
+    margin: 0;
+}
+
+.windcnt > div.menubar {
+    border-bottom: 2px solid black;
+        background-color: #8c8c8c;
+}
+
+.windcnt > div.menubar > button {
+        background-color: #8c8c8c;
+        color: black;
+        border: none;
+         border-left: 2px solid rgb(255, 255, 255);
+        border-right: 2px solid black;
+        padding-left: 2px;
+        padding-right: 2px;
+}
+
+.windcbtn {
+    background-color: #8c8c8c;
+      border-left:2px solid #c8c8c8;
+    border-right:2px solid #222222;
+     border-top:2px solid #c8c8c8;
+     color: black;
+     width: fit-content;
+     height: 100%;
+        font-size: 80%;
+     float: inline-end;
+    border-bottom:2px solid #222222;
+}
