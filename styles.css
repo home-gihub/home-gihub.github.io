@@ -12,6 +12,14 @@ body > canvas {
     z-index: 0 !important;
 }
 
+body > div {
+    position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100vw;
+  height: 100vh;
+}
 
 hr {
     width: 100%;
