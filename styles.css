@@ -8,6 +8,13 @@ body, html {
 
 }
 
+
+hr {
+    width: 100%;
+    height: 2px;
+    border: none;
+    background: radial-gradient(closest-side, #cccccc, #00000000);
+}
 main {
     width: 100%;
     height: 100%;
@@ -19,6 +26,8 @@ main {
 main > section {
     display: grid;
     gap: 15px;
+    isolation: isolate;
+
     grid-template-rows: repeat(3, 25vh);
      grid-template-columns: repeat(5, 25vh);
 }
@@ -48,12 +57,10 @@ div.welcome > p {
 
 }
 
-main > section > a {
+main > section > div.tile > a {
     width: 25vh;
     height: 25vh;
-    background: radial-gradient(24em 10em at 5% 5%, #ccccccaa 0%, #cccccc22 29%, #00000000 30%);
-    border: 1px #cccccc solid;
-    box-shadow: inset 0px 0px 0px 1px #000000, 0px 0px 15px #0000005b;
+
     backdrop-filter: blur(4px);
         display: flex;
          position: relative;
@@ -62,30 +69,50 @@ main > section > a {
 }
 
 
+main > section > div.tile > a::after {
+    /* Create a glass reflection that goes over the content*/
+    position: absolute;
+    display: flex;
+    content: "";
+    width: 25vh;
+    height: 25vh;
+    background: radial-gradient(24em 10em at 5% 5%, #ccccccaa 0%, #cccccc22 29%, #00000000 30%);
+    border: 1px #cccccc solid;
+    box-shadow: inset 0px 0px 0px 1px #000000, 0px 0px 15px #0000005b;
+    z-index: 1;
+}
 
 
-main > section > a > img {
+main > section > div.tile > a >  img {
     width: 19vh;
     height: 19vh;
 
 }
 
-main > section > a > p {
+main > section > div.tile {
+    position: relative;
+    text-align: center;
+}
+
+main > section > div.tile  > p {
     display: none;
     text-decoration: none;
     color: black;
     position: absolute;
-    top : 18vh;
-    z-index: 999;
-    border-radius: 1em;
-    box-shadow: #ffffff inset 0px 0px 0.5em;
+    backdrop-filter: blur(6px);
+    top : 22vh;
+    width: 100%;
     font-family: sans-serif;
     padding: 0.75em;
-    background-color: #d8e3dc;
+    color: white;
+    background: radial-gradient(24em 10em at 5% 5%, #ccccccaa 0%, #cccccc22 29%, #00000000 30%);
+    border: 1px #cccccc solid;
+    box-shadow: inset 0px 0px 0px 1px #000000, 0px 0px 15px #0000005b;
 }
 
-main > section > a:hover > p {
+main > section > div.tile:hover > p {
     display: block;
+        z-index: 999;
 }
 
 #npbtn {
@@ -141,7 +168,7 @@ main > section > a:hover > p {
 .pagen {
     width: 2vw;
     height: 2vw;
-    background: radial-gradient(4em 4em at top left, #ffffff 0%, #08b2c5 29%, #00bfffc6 30%);
+    background: radial-gradient(4em 4em at top left, #ffffff 0%, #c56d08 29%, #ff0000c6 30%);
     border: 1px #cccccc solid;
     border-radius: 100%;
     box-shadow: inset 0px 0px 0px 1px #000000, 0px 0px 15px #0000005b;

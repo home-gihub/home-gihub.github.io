@@ -52,7 +52,7 @@ apps = [
     {"icon": "./3dtxtmkr.png", "link": "./creations/zoommaker/index.html", "title": "3D text maker"},
     {"icon": "./shopbingb.png", "link": "./creations/shopbingbong/index.html", "title": "Shop chime sim"},
     {"icon": "./srngfldpd.png", "link": "./creations/springfieldpolicedepartment/index.html", "title": "Springfield police deparment"},
-        {"widget": `<div class="widget2x1 welcome"><p>Welcome</p>Welcome to my website! <br>
+        {"widget": `<div class="widget2x1 welcome"><p>Welcome</p><hr>Welcome to my website! <br>
 Here, you can find all the things I have made. <br>
 Just click on an icon to open!</div>`},
     null,
@@ -77,11 +77,11 @@ while (true) {
     else if (apps[actuali]["widget"]) 
         elm = apps[actuali]["widget"]
     else if (apps[actuali]["link"] == "" ) 
-        elm = `<a></a>`
+        elm = `<div class="tile"><a></a></div>`
     else
-        elm = `<a href="${apps[actuali]["link"]}"><img src="${apps[actuali]["icon"]}"><p>${apps[actuali]["title"]}</p></a>`
-    document.getElementById(`page${page}`).innerHTML += elm
-
+        elm = `<div class="tile"><a href="${apps[actuali]["link"]}"><img src="${apps[actuali]["icon"]}"></a><p>${apps[actuali]["title"]}</p></div>`
+    document.getElementById(`page${page}`)
+    .insertAdjacentHTML("beforeend", elm);
     i++
     actuali++ 
     if (i >= 15) {
