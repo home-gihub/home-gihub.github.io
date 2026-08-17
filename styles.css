@@ -5,7 +5,11 @@ body, html {
     overflow: hidden;
     width: 100%;
     height: 100%;
+    isolation: isolate;
+}
 
+body > canvas {
+    z-index: 0 !important;
 }
 
 
@@ -114,6 +118,8 @@ main > section > div.tile:hover > p {
     display: block;
         z-index: 999;
 }
+
+
 
 #npbtn {
     height: 100vh;
