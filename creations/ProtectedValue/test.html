@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple counter</title>
+</head>
+<body>
+    <script type="module">
+        import {ProtectedValue} from "./ProtectedValue.js"
+
+        let count = new ProtectedValue(0);
+        let header = document.createElement("p")
+        function headerHydrate(val) 
+            { header.innerText = `Count is ${val}` }
+        count.subscribe(headerHydrate)
+        let button = document.createElement("button")
+        button.innerText = "+1"
+        button.onclick = () => 
+            { count.val += 1 }
+
+        headerHydrate(count.val)
+
+        document.body.appendChild(header)
+        document.body.appendChild(button)
+
+        // stopwatch
+         let swState = {
+            "isRunning": new ProtectedValue(false),
+            "startTime": new ProtectedValue(0),
+            "elapsed": new ProtectedValue(0),
+            "destroying": false
+        };
+
+
+        swState.swText = document.createElement("p")
+        swState.swText.Hydrate = (val) => 
+            { swState.swText.innerText = val }
+        
+        swState.swButton = document.createElement("button")
+        swState.swButton.onclick = () => 
+            { 
+                swState.isRunning.val = !swState.isRunning.val 
+                if(swState.isRunning.val) {
+                    swState.startTime.val = Date.now()
+                }
+            }
+        swState.swButton.Hydrate = (val) => 
+            { swState.swButton.innerText = val ? "Stop" : "Start" }
+
+        swState.isRunning.subscribe( swState.swButton.Hydrate )
+        swState.elapsed.subscribe( swState.swText.Hydrate )
+        
+        swState.swText.Hydrate(swState.elapsed.val)
+        swState.swButton.Hydrate(swState.isRunning.val)
+        let tid = 0;
+        let updElapsed = () => {
+            console.log("tick")
+            if (swState.isRunning.val) {
+                
+                swState.elapsed.val = Date.now() - swState.startTime.val
+                console.log("tock")
+            }
+            if (swState.destroying) {
+                return
+            }
+            tid = setTimeout(updElapsed, 10) 
+        }
+        
+        tid = setTimeout(updElapsed, 10)
+
+
+        swState.swCloseButton = document.createElement("button")
+            swState.swCloseButton.innerText = "Close Stopwatch"
+            swState.swCloseButton.onclick = () => {
+                clearTimeout(tid)
+                swState.destroying = true
+                swState.elapsed.destroy()
+                swState.isRunning.destroy()
+                swState.startTime.destroy()
+                swState.swText.remove()
+                swState.swButton.remove()
+                swState.swCloseButton.remove()
+                swState.destroying = null
+                swState = null
+            }
+        
+
+        document.body.appendChild(swState.swText)
+        document.body.appendChild(swState.swButton)
+        document.body.appendChild(swState.swCloseButton)
+
+    </script>
+
+</body>
+</html>
