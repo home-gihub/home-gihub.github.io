@@ -57,7 +57,8 @@ Here, you can find all the things I have made. <br>
 Just click on an icon to open!</div>`},
     null,
     {"icon": "./evilspotify.png", "link": "./creations/evilspotify/index.html", "title": "Evil spotify"},
-    {"icon": "./echkatrd.png", "link": "./creations/emmergencycheckatrade/index.html", "title": "Emergency checkatrade"}
+    {"icon": "./echkatrd.png", "link": "./creations/emmergencycheckatrade/index.html", "title": "Emergency checkatrade"},
+     {"icon": "./premium.png", "link": "./creations/premium/premium.html", "title": "Premium"}
 ]
 
 addblankapps(apps, 14 - apps.length )

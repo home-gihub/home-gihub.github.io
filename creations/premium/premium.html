@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <dialog id="dlg">
+        <header id="header">Please confirm.</header>
+        <article id="content">
+        <p>Pay for <i>premium</i> UI?</p>
+        <button id="Yes">Yes!</button><button id="No">No!</button>
+        </article>
+                <p style="font-size: 5px;color: #939393;">By purchasing premium UI, you agree that you cannot refund once purchased.</p>
+    </dialog>
+    <dialog id="pdlg">
+        <header id="header">Purchase successful</header>
+        <article id="content">
+<i>Premium</i> UI has been <b>subscribed to</b>.
+<hr>
+<button id="cool">Oh, cool!</button>
+<button id="refund">I want a refund!</button>
+        </article>
+ </dialog>
+    <dialog id="refundm">
+        <header id="header">No.</header>
+        <article id="content">
+        <p>We do not accept refunds for <i>premium</i> UI.</p>
+        <button id="Yes" onclick="document.getElementById('refundm').close()">Oh</button>
+         <button id="Legal" onclick="window.location = 'https://en.wikipedia.org/wiki/Fine_print'">
+            This is an <br> anti-consumer practice <br> and I will <br> take legal action <br> on you and <br> your company.
+         </button>
+        </article>
+
+    </dialog>
+    <dialog id="regret">
+        <header id="header">Bank</header>
+        <article id="content">
+        <p>You have: <span style="color: red;font-size: 2em;">-$-977.002</span></p>
+        <header>Recent transactions</header>
+        <table>
+            <tr><th>Account</th><th>Ammount</th><th>Balance</th></tr>
+            <tr><td>Shitty Services® Co.</td><td>-$999.99</td><td>-$977.002</td></tr>
+            <tr><td>Playstation</td><td>-$12</td><td>$22,988</td></tr>
+            <tr><td>AWS</td><td>-$100</td><td>$23,000</td></tr>
+        </table>
+        <button onclick="document.getElementById('regret').close();document.getElementById('regret2').showModal()">Oh, Well</button>
+        </article>
+    </dialog>
+    <dialog id="regret2">
+        <header id="header">Shitty Services® Co.</header>
+        <article id="content">
+        <p><i>Premium</i> UI now costs $9999.999</p>
+        <button onclick="document.getElementById('regret2').close();document.getElementById('regret3').showModal()">Dangit</button>
+        </article>
+    </dialog>
+   <dialog id="regret3">
+        <header id="header">Shitty Services® Co.</header>
+        <article id="content">
+        <p><i>Premium</i> UI now has a $99999.999</p>
+        <p>You have automatically been upgraded.</p>
+        <button onclick="document.getElementById('regret3').close();document.getElementById('end').removeAttribute('hidden')">Aw, shucks.</button>
+        </article>
+    </dialog>
+    <p id="end" hidden style="color:white;background-color: blue;height: 100vh;font-family: monospace;">
+░░░░░░░░░░██░░░▄▄▄██▄▄░░<br>
+██░░░░░░██░░░░██▀░██░░░░<br>
+░░░░░░██░░░░░░░▀██████▄░<br>
+░░░░░░██░░░░░░░░░░██ ▀██<br>
+██░░░░░░██░░░░░░██████▀ <br>
+░░░░░░░░░░██░░░░░░▀▀░░░░<br>
+        STOP: 0x87023.
+        <br>
+        Windows detected a broke person and now your product key
+        <br>
+        has been revoked and your pc has been remotely been deactivated
+        <br>
+        by Microsoft.
+        <br><br>
+        Look online at: https://example.com
+    </p>
+    <script>
+        document.getElementById("No")
+        .addEventListener("click", () => {
+            window.location = "https://upload.wikimedia.org/wikipedia/en/e/ef/Opening_of_%22Never_Gonna_Give_You_Up%22.mp3?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+        })
+        document.getElementById("Yes")
+        .addEventListener("click", () => {
+            
+            let st = document.createElement("style")
+            st.innerText = document.getElementById("newui").innerText
+            document.body.appendChild(st)
+            document.getElementById("oldui").remove()
+            document.getElementById("dlg").close()
+            document.getElementById("pdlg").show()
+            document.getElementById("cool")
+        .addEventListener("click", () => 
+        {
+            document.getElementById("pdlg").close()
+            document.getElementById("regret").show()
+        })
+        document.getElementById("refund")
+        .addEventListener("click", () => {
+            document.getElementById("refundm").showModal()
+        })
+
+        })
+
+        document.getElementById("dlg").show()
+    </script>
+    <style id="oldui">
+        * {padding: 0;margin: 0;border: none;font-family: 'Courier New', Courier, monospace;}
+
+        article {
+            padding: 0.5em;
+        }
+
+        body {
+            background-color: #137e70;
+        }
+
+        button, button, header, p {
+            padding: 0.25em;
+        }
+
+        dialog {
+            margin: auto;
+            border: 2px outset black;
+            background-color: #b2b2b2;
+        }
+
+        button#No {
+            border: 2px outset #828282;
+            background-color: #b2b2b2;
+        }
+
+        button#Yes {
+            width: 5em;
+            position: relative;
+            height: 2em;
+            font-size: 2em;
+            background: linear-gradient(to bottom, #1ad320 0%, #87f08c 50%,#1ae120 50.01%,  #089c0d 100%);
+            color: white;
+            text-shadow: 1px 1px #00000022;
+            border-top: 3px solid transparent;
+             border-bottom: 3px solid transparent;
+            border-image: radial-gradient(2em 2em at 1.5em 0em, #ffffdd, #766503);
+            border-image-slice: 1;
+        }
+
+        button#Yes::before {
+            display: inline-block;
+            content: '';
+            left: -6px;
+            top: -3px;
+            position: absolute;
+            border-style: solid;
+            border-top: 3px solid transparent;
+             border-bottom: 3px solid transparent;
+            border-image: radial-gradient(2em 2em at 3.5em 2em, #ffffdd, transparent);
+            border-image-slice: 1;
+            width: 5em;
+            height: calc(2em - 6px);
+            z-index: 1;
+        }
+
+        header {
+            background-color: #0000aa;
+            color: white;
+            border-bottom: 2px solid #b2b2b2;
+        }
+    </style>
+
+    <p hidden id="newui">
+                * {padding: 0;margin: 0;border: none;}
+
+        article {
+            padding: 0.5em;
+        }
+
+        body {
+            background-color: #137e70;
+        }
+
+        button, button, header, p {
+            padding: 0.25em;
+        }
+
+        dialog {
+            margin: auto;
+            background: white;
+            color: black;
+            text-shadow: 1px 1px #00000022;
+            box-shadow: 2px 2px 4px #00000066;
+        }
+
+        button {
+            box-shadow: 0px 4px 4px -4px #00000066;
+            color: black;
+            background: linear-gradient(to bottom, #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%);
+        }
+
+        hr {
+            background: linear-gradient(to right, transparent, #00000066, transparent);
+            height: 1px;
+            margin-top: 0.25em;
+             margin-bottom: 0.25em;
+            
+        }
+
+        header, button:hover  {
+background: linear-gradient(to bottom,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+box-shadow: 0px 4px 4px -4px #00000066;
+            color: white;
+        }
+    </p>
+</body>
+</html>

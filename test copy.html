@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+    <nav hstack>
+        <img src="/branding/logo/navbar_logo.webp"/>
+        <a>Home</a>
+        <a>What's new?</a>
+        <a>Popular</a>
+        <a>Random</a>
+    </nav>
+    <main hstack>
+        <nav vstack>
+            <a>Music</a>
+            <a>Videos</a>
+            <a>Live</a>
+            <a>Art</a>
+        <p>Your People</p>
+            <a>Taylor Switft</a>
+            <a>Xx_Qu1ck5cop0r_xX</a>
+            <a>Samsung</a>
+            <a>EminemVEVO</a>
+        </nav>
+            <section vstack>
+                <header>New stuff</header>
+                <article hstack>
+                    <img src="/users/345324574/videos/120/image"/>
+                    <p vstack>
+                        <span hstack><img src="/users/345324574/picture"/><a>Xx_Qu1ck5cop0r_xX</a></span>
+                        <span>Black ops 2 domination</span>
+                        <span sub>Streamed 1 day ago</span>
+                    </p>
+                </article>
+                <article hstack>
+                    <img src="/users/357423/videos/340/image"/>
+                    <p vstack>
+                        <span hstack><img src="/users/357423/picture"/><a>Samsung</a></span>
+                        <span>Galaxy Unpacked 2026</span>
+                        <span sub>1 day ago</span>
+                    </p>
+                </article>
+                <article hstack>
+                    <img src="/users/357427/videos/59/image"/>
+                    <p vstack>
+                        <span hstack><img src="/users/357427/picture"/><a>EminemVEVO</a></span>
+                        <span>Without Me [HQ]</span>
+                        <span sub>More than 6 months ago</span>
+                    </p>
+                </article>
+                <button full>Load more?</button>
+            </section>
+            <section vstack>
+                <header>What's happening?</header>
+                <article vstack>
+                    <span hstack><a><img src="/users/345324574/picture"/>Xx_Qu1ck5cop0r_xX</a></span>
+                    <span>I'm gna be live at 10pm killing some dirty scrubs</span>
+                    <span hstack><a>Reply</a><a>Share</a><a>React</a><a><span positive>20 points</span></a></span>
+                </article>
+                <article vstack>
+                    <span hstack><a><img src="/users/357423/picture"/>Samsung</a></span>
+                    <span>Beyond Galaxy</span>
+                    <img src="/users/357423/posts/492/image"/>
+                    <span hstack><a>Reply</a><a>Share</a><a>React</a><a><span positive>1.1k points</span></a></span>
+                </article>
+                <button full>Load more?</button>
+            </section>
+        </main>
+
+    <style>
+        :root {
+            --accent: #009bfb;
+            --accent-on: #39b1fb;
+            --accent-active: #237bb1;
+            --ui-text-positive: #0043fb;
+            --ui-text-negative: #fb8a00;
+            --ui-surface-primary: #3f3f3f;
+            --ui-surface-secondary: #222222;
+            --ui-surface-active: #656565;
+            --ui-surface-root: #f3f3f3;
+            --text-color-surface: #ececec;
+            --text-size-header: 1.5em;
+            --text-size-main: 1em;
+            --text-size-sub: 0.75em;
+            --ui-padding: 0.5em;
+        }
+
+        span, button {
+
+            &[positive] {
+                color: var(--ui-text-positive);
+            }
+
+            &[negative] {
+                color: var(--ui-text-negative);
+            }
+
+            &[sub] {
+                font-size: var(--text-size-sub);
+            }
+        }
+
+        button {
+            color: black;
+            background-color: transparent;
+            border: none;
+
+            &[full] {
+                background-color: var(--accent);
+                color: var(--text-color-surface);
+                border: none;
+                border-radius: var(--ui-padding);
+                &:hover {
+                    background-color: var(--accent-on);
+                }
+            }
+        }
+
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            background-color: var(--ui-surface-root);
+        }
+
+        header, h1 {
+            font-size: var(--text-size-header);
+        }
+
+        * {
+            box-sizing: border-box;
+           font-size: var(--text-size-main);
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+            &[hstack] {
+                display: flex;
+                flex-direction: row;
+            }
+
+            &[vstack] {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        section {
+            min-width: 25vw;
+        }
+
+        article, nav, a, button, header {
+            padding: var(--ui-padding);
+        }
+
+        nav[vstack], nav[hstack] { 
+            background-color: var(--ui-surface-primary);
+            color: var(--text-color-surface);
+
+            &>a {
+                border-bottom: 1px solid var(--ui-surface-secondary);
+                &:hover {
+                    background-color: var(--ui-surface-active);
+                }
+                &:active {
+                    background-color: var(--ui-surface-secondary);
+                }
+            }
+
+            &>p {
+                background-color: var(--accent);
+                font-size: var(--text-size-main);
+                padding: var(--ui-padding);
+            }
+        }
+
+        nav[hstack] > a {
+            border-bottom: none;
+        }
+
+    </style>
+</body>
+</html>
