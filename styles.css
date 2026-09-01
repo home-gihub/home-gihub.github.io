@@ -47,13 +47,28 @@ main > section {
 div.widget2x1 {
     width: calc(50vh + 15px);
     height: 25vh;
-    backdrop-filter: blur(4px);
-    background: radial-gradient(24em 10em at 5% 5%, #ccccccaa 0%, #cccccc22 29%, #00000000 30%);
-    border: 1px #cccccc solid;
-    box-shadow: inset 0px 0px 0px 1px #000000, 0px 0px 15px #0000005b;
+    position: relative;
+   background: linear-gradient(85deg,#00000000 5%, #cccccc22 8%, #cccccc22 11%, #00000000 20% , #cccccc22 23%, #cccccc22 26%, #00000000 29% );
+     background: linear-gradient(to bottom,#164060, #1f6d93);
     font-family: sans-serif;
     padding: 0.75em;
     color: white;
+        border-radius: 4px;
+}
+
+div.widget2x1::after {
+        width: calc(50vh - 15px);
+    height: calc(25vh - 25px);
+    position: absolute;
+    left: 0;
+    top: 0;
+   background: linear-gradient(85deg,#00000000 5%, #cccccc22 8%, #cccccc22 11%, #00000000 20% , #cccccc22 23%, #cccccc22 26%, #00000000 29% );
+    font-family: sans-serif;
+    padding: 0.75em;
+    display: flex;
+    color: white;
+        border-radius: 4px;
+            content: "";
 }
 
 div.empty {
@@ -72,8 +87,7 @@ div.welcome > p {
 main > section > div.tile > a {
     width: 25vh;
     height: 25vh;
-
-    backdrop-filter: blur(4px);
+    border-radius: 4px;
         display: flex;
          position: relative;
     align-items: center;
@@ -82,18 +96,21 @@ main > section > div.tile > a {
 
 
 main > section > div.tile > a::after {
+        border-radius: 4px;
     /* Create a glass reflection that goes over the content*/
     position: absolute;
     display: flex;
     content: "";
     width: 25vh;
     height: 25vh;
-    background: radial-gradient(24em 10em at 5% 5%, #ccccccaa 0%, #cccccc22 29%, #00000000 30%);
-    border: 1px #cccccc solid;
-    box-shadow: inset 0px 0px 0px 1px #000000, 0px 0px 15px #0000005b;
-    z-index: 1;
+    background: linear-gradient(85deg,#00000000 5%, #cccccc22 8%, #cccccc22 11%, #00000000 20% , #cccccc22 23%, #cccccc22 26%, #00000000 29% );
+   z-index: 1;
 }
-
+main > section > div.tile:hover > a::after {
+    box-shadow: 0px 0px 5vh #2490c1 inset,
+    0px 0px 2vh #407a98;
+    border: 2px #95dbf7 solid;
+}
 
 main > section > div.tile > a >  img {
     width: 19vh;
@@ -102,8 +119,10 @@ main > section > div.tile > a >  img {
 }
 
 main > section > div.tile {
+        border-radius: 4px;
     position: relative;
     text-align: center;
+    background: linear-gradient(to bottom,#164060, #1f6d93);
 }
 
 main > section > div.tile  > p {
@@ -117,8 +136,8 @@ main > section > div.tile  > p {
     font-family: sans-serif;
     padding: 0.75em;
     color: white;
-    background: radial-gradient(24em 10em at 5% 5%, #ccccccaa 0%, #cccccc22 29%, #00000000 30%);
-    border: 1px #cccccc solid;
+      background: linear-gradient(85deg,#00000000 5%, #cccccc22 8%, #cccccc22 11%, #00000000 20% , #cccccc22 23%, #cccccc22 26%, #00000000 29% );
+  border: 1px #cccccc solid;
     box-shadow: inset 0px 0px 0px 1px #000000, 0px 0px 15px #0000005b;
 }
 
@@ -154,7 +173,7 @@ main > section > div.tile:hover > p {
 }
 
 #lpbtn > p, #npbtn > p {
-    background: radial-gradient(4em 4em at top left, #ccccccaa 0%, #cccccc22 29%, #00000000 30%);
+    background: linear-gradient(4em 4em at top left, #ccccccaa 0%, #cccccc22 29%, #00000000 30%);
     border: 1px #cccccc solid;
     box-shadow: inset 0px 0px 0px 1px #000000, 0px 0px 15px #0000005b;
     border-radius: 100%;
@@ -182,8 +201,8 @@ main > section > div.tile:hover > p {
 .pagen {
     width: 2vw;
     height: 2vw;
-    background: radial-gradient(4em 4em at top left, #ffffff 0%, #c56d08 29%, #ff0000c6 30%);
-    border: 1px #cccccc solid;
+      background: radial-gradient(#164060, #1f6d93);
+     border: 1px #cccccc solid;
     border-radius: 100%;
     box-shadow: inset 0px 0px 0px 1px #000000, 0px 0px 15px #0000005b;
     margin: 1vh;
