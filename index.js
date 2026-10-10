@@ -1,92 +1,137 @@
-currPage = 0
-limitPage = 1
-document.getElementById("npbtn").onclick = () => {
-    if (currPage == limitPage) 
-        return
-
-    document.getElementById(`page${currPage}`).setAttribute("hidden", "")
-    document.getElementById(`pagen${currPage}`).setAttribute("inactive", "")
-    currPage++
-    document.getElementById(`page${currPage}`).removeAttribute("hidden")
-    document.getElementById(`pagen${currPage}`).removeAttribute("inactive")
-    
+disk = {
+    "creations": {
+        "checker.site": null,
+        "emmergencycheckatrade.site": null,
+        "evilspotify.site": null,
+        "imagewebpage.site": null,
+        "premium.site": null,
+        "ProtectedValue.site": null,
+        "shopbingbong.site": null,
+        "springfieldpolicedepartment.site": null,
+        "windowshops.site": null,
+        "zoommaker.site": null,
+},
+"README.txt": null,
 }
-
-document.getElementById("lpbtn").onclick = () => {
-    if (currPage == 0) 
-        return
-
-    document.getElementById(`page${currPage}`).setAttribute("hidden", "")
-    document.getElementById(`pagen${currPage}`).setAttribute("inactive", "")
-    currPage--
-    document.getElementById(`page${currPage}`).removeAttribute("hidden")
-      document.getElementById(`pagen${currPage}`).removeAttribute("inactive")
-    
-}
-
-
-
-pagination = document.createElement("div")
-pagination.classList.add("pagen")
-
-for (let i=0;i<=limitPage;i++){
-    let clone = pagination.cloneNode(true);
-    clone.id = `pagen${i}`
-    clone.setAttribute("inactive", "")
-    document.getElementById("pages").appendChild(clone)
-}
-
-document.getElementById(`pagen${currPage}`).removeAttribute("inactive")
-
-emptyapp = {"icon": "", "link": ""}
-
-function addblankapps(arr, num) {
-
-for (let i=0;i<=num;i++){
-    arr.push(emptyapp)
-}
-}
-
-// apps manifests
-apps = [
-    {"icon": "./3dtxtmkr.png", "link": "./creations/zoommaker/index.html", "title": "3D text maker"},
-    {"icon": "./shopbingb.png", "link": "./creations/shopbingbong/index.html", "title": "Shop chime sim"},
-    {"icon": "./srngfldpd.png", "link": "./creations/springfieldpolicedepartment/index.html", "title": "Springfield police deparment"},
-        {"widget": `<div class="widget2x1 welcome"><p>Welcome</p><hr>Welcome to my website! <br>
-Here, you can find all the things I have made. <br>
-Just click on an icon to open!</div>`},
-    null,
-    {"icon": "./evilspotify.png", "link": "./creations/evilspotify/index.html", "title": "Evil spotify"},
-    {"icon": "./echkatrd.png", "link": "./creations/emmergencycheckatrade/index.html", "title": "Emergency checkatrade"},
-     {"icon": "./premium.png", "link": "./creations/premium/premium.html", "title": "Premium"}
-]
-
-addblankapps(apps, 14 - apps.length )
-addblankapps(apps, 14)
-
-// just go through them all and add them
-let page = 0
-let i = 0
-let actuali = 0
-
-// ye totaly safe m9 trust me i am the kwik skoper 900
-while (true) {
-    if (actuali >= apps.length) 
-        break
-    else if (apps[actuali] === null) 
-        elm = `<div class="empty"></div>`
-    else if (apps[actuali]["widget"]) 
-        elm = apps[actuali]["widget"]
-    else if (apps[actuali]["link"] == "" ) 
-        elm = `<div class="tile"><a></a></div>`
-    else
-        elm = `<div class="tile"><a href="${apps[actuali]["link"]}"><img src="${apps[actuali]["icon"]}"></a><p>${apps[actuali]["title"]}</p></div>`
-    document.getElementById(`page${page}`)
-    .insertAdjacentHTML("beforeend", elm);
-    i++
-    actuali++ 
-    if (i >= 15) {
-        i=0;
-        page++
+path = ["creations"]
+Filehandlers = {
+    "site": (p,dir) => {
+            window.location = `./${p.join('/')}/${dir.substring(0,dir.length-5)}/index.html`
     }
 }
+
+function blobToBase64(blob) {
+  return new Promise((resolve, _) => {
+    const reader = new FileReader();
+    reader.onloadend = () => resolve(reader.result);
+    reader.readAsDataURL(blob);
+  });
+}
+
+FilePreviewhandlers = {
+    "site": async (p,dir) => {
+            let icon = await fetch(`./${p.join('/').substring(0,p.join('/').length - 5)}/icon.png`).then(
+                (resp) => {
+                    if(!resp.ok) {
+                        return null
+                    } else {
+                        return resp.blob()
+                    }
+                }
+            )
+        if (icon != null) { icon = await(blobToBase64(icon)) }
+
+            return `
+            ${icon != null ? `<img class="icon" src="${icon}"/>` : "[ Missing icon ]"}
+            <p>${dir}</p>
+            Site
+            `
+    },
+    "txt": async (p,dir) => {
+        let txt =  await fetch(`./${p.join('/')}`)
+        .then(resp => resp.text())
+
+            return `
+            <p class="filecontents">${txt}</p>
+            `
+    }
+}
+
+
+function getDir(p) {
+    let current = disk
+    for(let i=0;i<p.length;i++){
+        current = current[p[i]]
+    }
+    return current
+}
+
+function upddirlist() {
+    let el = document.getElementById("files")
+    let html = ``
+    let dir = getDir(path)
+    dir[".."] = -1
+    console.info(`Loading: ${path}, got ${JSON.stringify(dir)}`)
+    Object.keys(dir).forEach(element => {
+        html += `<li onmouseover="preview('${element}')" onclick="goto('${element}')">${element}</li>`
+    });
+    el.innerHTML=html
+}
+
+function updbreadcrumbs() {
+    let el = document.getElementById("path")
+    el.innerText = "root:/" + path.join("/")
+}
+
+// function to open a directoy relative to the current one
+function goto(dir) {
+    let p = path.slice()
+    p.push(dir)
+    if (getDir(p) == -1) {
+        path.pop()
+    } else if (getDir(p) == null) {
+        let ex = dir.split(".")
+        ex=ex[ex.length-1]
+        console.info(`finding a handler to open file with extention ${ex}`)
+        if (Filehandlers[ex]) {
+            Filehandlers[ex](path,dir)
+        } else {
+            alert("Cannot open: is a file; no handlers were found")
+        }
+    } else {
+        path.push(dir)
+    }
+
+    upddirlist()
+    updbreadcrumbs()
+}
+
+// function to grab the preview of a file
+// then place it in the dom
+async function preview(file) {
+    let el = document.getElementById("preview")
+    // p is the path of the file including the actual file itself
+    let p = path.slice()
+    p.push(file)
+    // if (file has extension) and (extension has preview)
+    // then set the preview to the found one
+    // else
+    // set the preview to a generic one
+    if(FilePreviewhandlers[file.split(".")[file.split(".").length-1] ]) {
+        text = await FilePreviewhandlers[file.split(".")[file.split(".").length-1] ](p, file)
+    } else {
+    text = `<p>${file}</p>
+    <p>
+Type: ${
+    
+    getDir(p) == null 
+    ? file.includes(".") 
+        ? file.split(".")[file.split(".").length-1] 
+            : "File"
+        : "Directory" } </p> `
+        }
+    el.innerHTML=text
+}
+
+upddirlist()
+updbreadcrumbs()

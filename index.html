@@ -7,23 +7,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body >
+<div id="container">
   <div>
-    <button id="npbtn"><p><span>→</span></p></button>
-    <main>
-        <section id="page0">
-
-        </section>
-        <section id="page1" hidden>
-
-
-        </section>
-    </main>
-
-    <button id="lpbtn"><p><span>←</span></p></button>
-    <nav id="pages">
-         
-    </nav>
+    <table>
+      <tr>
+        <td>
+          <ul id="files">
+            <li>Loading...</li>
+          </ul>
+        </td>
+        <td>
+          <div id="preview">
+            Nothing selected.
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div id="path">
+      root:/
     </div>
+  </div>
+</div>
     <script src="./index.js"></script>
   <script src="https://xemantic.github.io/shader-web-background/dist/shader-web-background.min.js"></script>
   <script type="x-shader/x-fragment" id="image">

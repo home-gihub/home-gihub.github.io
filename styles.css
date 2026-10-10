@@ -1,224 +1,79 @@
-* {box-sizing: border-box; padding: 0; margin: 0;}
-*[hidden] { display: none !important; }
-
-body, html {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    isolation: isolate;
-}
-
-body > canvas {
-    z-index: 0 !important;
-}
-
-body > div {
-    position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9;
-  width: 100vw;
-  height: 100vh;
-}
-
-hr {
-    width: 100%;
-    height: 2px;
-    border: none;
-    background: radial-gradient(closest-side, #cccccc, #00000000);
-}
-main {
-    width: 100%;
-    height: 100%;
-    display: flex;
-  align-items: center;
-    justify-content: center;
-}
-
-main > section {
-    display: grid;
-    gap: 15px;
-    isolation: isolate;
-
-    grid-template-rows: repeat(3, 25vh);
-     grid-template-columns: repeat(5, 25vh);
-}
-
-div.widget2x1 {
-    width: calc(50vh + 15px);
-    height: 25vh;
-    position: relative;
-   background: linear-gradient(85deg,#00000000 5%, #cccccc22 8%, #cccccc22 11%, #00000000 20% , #cccccc22 23%, #cccccc22 26%, #00000000 29% );
-     background: linear-gradient(to bottom,#164060, #1f6d93);
+* {
+    margin:0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
     font-family: sans-serif;
-    padding: 0.75em;
-    color: white;
-        border-radius: 4px;
 }
 
-div.widget2x1::after {
-        width: calc(50vh - 15px);
-    height: calc(25vh - 25px);
-    position: absolute;
-    left: 0;
-    top: 0;
-   background: linear-gradient(85deg,#00000000 5%, #cccccc22 8%, #cccccc22 11%, #00000000 20% , #cccccc22 23%, #cccccc22 26%, #00000000 29% );
-    font-family: sans-serif;
-    padding: 0.75em;
+body,html,div#container {
+    width: 100%;
+    height:100%; 
+}
+
+div#container {
     display: flex;
-    color: white;
-        border-radius: 4px;
-            content: "";
-}
-
-div.empty {
-    width: 25vh;
-    height: 25vh;
-}
-
-div.welcome > p {
-    color: white;
-    text-align: center;
-    border-radius: 1em;
-    text-align: center;
-
-}
-
-main > section > div.tile > a {
-    width: 25vh;
-    height: 25vh;
-    border-radius: 4px;
-        display: flex;
-         position: relative;
     align-items: center;
     justify-content: center;
 }
 
-
-main > section > div.tile > a::after {
-        border-radius: 4px;
-    /* Create a glass reflection that goes over the content*/
-    position: absolute;
-    display: flex;
-    content: "";
-    width: 25vh;
-    height: 25vh;
-    background: linear-gradient(85deg,#00000000 5%, #cccccc22 8%, #cccccc22 11%, #00000000 20% , #cccccc22 23%, #cccccc22 26%, #00000000 29% );
-   z-index: 1;
-}
-main > section > div.tile:hover > a::after {
-    box-shadow: 0px 0px 5vh #2490c1 inset,
-    0px 0px 2vh #407a98;
-    border: 2px #95dbf7 solid;
+div#container > div {
+    width: fit-content;
+    height: fit-content;
+        backdrop-filter: blur(8px);
+    padding: 0.5em;
+    border: 1px solid white;
+    box-shadow: inset 0px 0px 0px 1px black;
 }
 
-main > section > div.tile > a >  img {
-    width: 19vh;
-    height: 19vh;
-
+ul#files, div#preview {
+    width: 16em;
+    height: 20em;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-main > section > div.tile {
-        border-radius: 4px;
-    position: relative;
+div#preview {
+    width: 30em;
     text-align: center;
-    background: linear-gradient(to bottom,#164060, #1f6d93);
+    height: fit-content;
 }
 
-main > section > div.tile  > p {
-    display: none;
+ul#files {
+    overflow-y: scroll;
+    border-right: 1px solid transparent;
+    border-image: radial-gradient(ellipse at center center, #ffffff, #ffffff00);
+    border-image-slice: 1;
     text-decoration: none;
-    color: black;
-    position: absolute;
-    backdrop-filter: blur(6px);
-    top : 22vh;
-    width: 100%;
-    font-family: sans-serif;
-    padding: 0.75em;
-    color: white;
-      background: linear-gradient(85deg,#00000000 5%, #cccccc22 8%, #cccccc22 11%, #00000000 20% , #cccccc22 23%, #cccccc22 26%, #00000000 29% );
-  border: 1px #cccccc solid;
-    box-shadow: inset 0px 0px 0px 1px #000000, 0px 0px 15px #0000005b;
+    list-style: none;
 }
 
-main > section > div.tile:hover > p {
-    display: block;
-        z-index: 999;
+ul#files > li:hover {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3b679e+0,2b88d9+50,207cca+51,7db9e8+100;Blue+Gloss+%232 */
+background: linear-gradient(to bottom,  #3b679e 0%,#2b88d9 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
 }
 
-
-
-#npbtn {
-    height: 100vh;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 15vh;
-    margin-right: 5vh;
-    border: none;
-    background-color: transparent;
-    background-repeat: no-repeat;
+div#path {
+    border-top: 1px solid transparent;
+    border-image: radial-gradient(ellipse at center center, #ffffff, #ffffff00);
+    border-image-slice: 1;
+    margin-top: 0.5em;
+    padding: 0.5em
 }
 
-#lpbtn {
-    height: 100vh;
-    position: absolute;
-    left: 0;
-    top: 0;
-       margin-left: 5vh;
-    width: 15vh;
-    border: none;
-    background-color: transparent;
-    background-repeat: no-repeat;
+img.icon {
+    width: 4em;
+    height: auto;
 }
 
-#lpbtn > p, #npbtn > p {
-    background: linear-gradient(4em 4em at top left, #ccccccaa 0%, #cccccc22 29%, #00000000 30%);
-    border: 1px #cccccc solid;
-    box-shadow: inset 0px 0px 0px 1px #000000, 0px 0px 15px #0000005b;
-    border-radius: 100%;
-    display: inline-block;
-    width: 15vh;
-    height: 15vh;
-    display: flex;
-    text-align: center;
-    color: white;
-        align-items: center;
-    justify-content: center;
-    font-size: 10vh;
+p.filecontents {
+     white-space: pre-wrap;
+     text-align: left;
+    width: 30em;
+    height: 20em;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    overflow: scroll;
 }
-
-.pagen[inactive] {
-    width: 2vw;
-    height: 2vw;
-    background: radial-gradient(4em 4em at top left, #ccccccaa 0%, #cccccc22 29%, #00000000 30%);
-    border: 1px #cccccc solid;
-    box-shadow: inset 0px 0px 0px 1px #000000, 0px 0px 15px #0000005b;
-    border-radius: 100%;
-     transform: scale(1);
-}
-
-.pagen {
-    width: 2vw;
-    height: 2vw;
-      background: radial-gradient(#164060, #1f6d93);
-     border: 1px #cccccc solid;
-    border-radius: 100%;
-    box-shadow: inset 0px 0px 0px 1px #000000, 0px 0px 15px #0000005b;
-    margin: 1vh;
-    transform: scale(1.5);
-}
-
-#pages {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    display: flex;
-    height: 1vw;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3vh;
-}
-
-img[src=""] { display: none;}
