@@ -6,74 +6,39 @@
     font-family: sans-serif;
 }
 
-body,html,div#container {
+body,html,#container {
+    /* we didnt start this website! */
     width: 100%;
     height:100%; 
 }
 
-div#container {
+#container {
+    /* items content ??? */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-div#container > div {
+#content {
+    /* ti cho dj eban!? */
     width: fit-content;
+    max-width: 50vw;
     height: fit-content;
-        backdrop-filter: blur(8px);
+    max-height: 75vh;
+    overflow-y: auto;
+    /* da */
+    backdrop-filter: blur(8px);
     padding: 0.5em;
     border: 1px solid white;
+    /* DJ EBAN! */
     box-shadow: inset 0px 0px 0px 1px black;
 }
 
-ul#files, div#preview {
-    width: 16em;
-    height: 20em;
-    white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-div#preview {
-    width: 30em;
-    text-align: center;
-    height: fit-content;
-}
-
-ul#files {
-    overflow-y: scroll;
-    border-right: 1px solid transparent;
-    border-image: radial-gradient(ellipse at center center, #ffffff, #ffffff00);
-    border-image-slice: 1;
-    text-decoration: none;
+#content > ul > li {
     list-style: none;
 }
 
-ul#files > li:hover {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3b679e+0,2b88d9+50,207cca+51,7db9e8+100;Blue+Gloss+%232 */
-background: linear-gradient(to bottom,  #3b679e 0%,#2b88d9 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-}
-
-div#path {
-    border-top: 1px solid transparent;
-    border-image: radial-gradient(ellipse at center center, #ffffff, #ffffff00);
-    border-image-slice: 1;
-    margin-top: 0.5em;
-    padding: 0.5em
-}
-
-img.icon {
-    width: 4em;
-    height: auto;
-}
-
-p.filecontents {
-     white-space: pre-wrap;
-     text-align: left;
-    width: 30em;
-    height: 20em;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: black;
-    overflow: scroll;
+a {
+    cursor: alias;
+    text-decoration: underline;
 }
