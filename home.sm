@@ -1,0 +1,10 @@
+iWelcome to my website
+iThis is a very minimal format i call "simple menu"
+iWhich is similar to gopher
+bThings
+1Creations	./creations.sm
+iWebpages i have made
+1Games	./games.sm
+iWeb ports, Flash, HTML5. All the games I have found.
+1Simple menu format	./format.sm
+iHow to write (and read) the simple menu format
