@@ -42,3 +42,10 @@ a {
     cursor: alias;
     text-decoration: underline;
 }
+
+hr {
+    border: none;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+50,e1e1e1+51,f6f6f6+100;White+Gloss+%231 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0.75) 0%,rgba(241,241,241,0.5) 50%,rgba(225,225,225,0.25) 51%,rgba(246,246,246,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+height: 1em;
+}

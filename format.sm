@@ -27,6 +27,9 @@ iThis type means that the menu item is a Header, same as i but with bigger text
 i [e] Error
 iThis type means that the server has encountered an error, same as i but with an error indication
 i [j] Javascript
-iThis type executrs a javascript expression and replaces the item's content with it
+iThis type executrs a javascript expression and replaces the item's content with another item
+ii.e. this type executes javascript which computes another item
+iThis does not allow network requests. If a nettwork request is attempted, the client may do whatever it pleases.
+iWhich may include rendering an error element instead,
 i
 1See a sample here	./sample.sm

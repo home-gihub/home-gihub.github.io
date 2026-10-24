@@ -13,48 +13,53 @@ async function navTo(path) {
   document.getElementById("content").innerHTML = html
 }
 
+async function lineToHTML(line){
+  let items = line.split("\t")
+  let html = ``
+  switch (items[0][0]) {
+        case "i":
+         
+          if (items[0].length == 1) {
+             return `<li><hr></li>`
+          } else {
+            return `<li>${items[0].substring(1,items[0].length)}</li>`
+          }
+          break;
+        case "1":
+          return `<li>📁 <a onclick="navTo('${items[1]}')">${items[0].substring(1,items[0].length)}</a></li>`
+        break;
+        case "h":
+          return `<li>🔗 <a href="${items[1]}">${items[0].substring(1,items[0].length)}</a></li>`
+        break;
+        case "b":
+          return `<li><h2>${items[0].substring(1,items[0].length)}</h2></li>`
+        break;
+        case "p":
+          return `<li><img src="${items[0].substring(1,items[0].length)}" alt="${items[1]}"/></li>`
+        break;
+        case "e":
+          return `<li>⚠️ ${items[0].substring(1,items[0].length)}</li>`
+        break;
+        case "j":
+          if ((items[0].substring(1,items[0].length)).includes("fetch(")) {
+            return await lineToHTML(`eJS tried using fetch`)
+          }
+          let j = eval(items[0].substring(1,items[0].length))
+          return `<li>${await lineToHTML(j)}</li>`
+        break;
+        default:
+          return ``;
+      }
+}
+
 
 async function parseFile(blob,path) {
     let text = await blob.text()
     let lines = text.split("\n")
-    let items = [];
     let html = `<h2>${path}</h2><ul>`
-    lines.forEach(element => {
-      console.log(items)
-      items.push(element.split("\t"))
-    });
-    items.forEach(element => {
-      switch (element[0][0]) {
-        case "i":
-          if (element[0].length == 1) {
-             html+=`<li><hr></li>`
-          } else {
-            html+=`<li>${element[0].substring(1,element[0].length)}</li>`
-          }
-          break;
-        case "1":
-          html+=`<li>📁 <a onclick="navTo('${element[1]}')">${element[0].substring(1,element[0].length)}</a></li>`
-        break;
-        case "h":
-          html+=`<li>🔗 <a href="${element[1]}">${element[0].substring(1,element[0].length)}</a></li>`
-        break;
-        case "b":
-          html+=`<li><h2>${element[0].substring(1,element[0].length)}</h2></li>`
-        break;
-        case "p":
-          html+=`<li><img src="${element[0].substring(1,element[0].length)}" alt="${element[1]}"/></li>`
-        break;
-        case "e":
-          html+=`<li>⚠️ ${element[0].substring(1,element[0].length)}</li>`
-        break;
-        case "j":
-          let j = eval(element[0].substring(1,element[0].length))
-          html+=`<li>${j}</li>`
-        break;
-        default:
-          break;
-      }
-    });
+    for(let i=0;i<lines.length;i++) {
+      html += await lineToHTML(lines[i])
+    }
 
     html+= `</ul>`
     return html

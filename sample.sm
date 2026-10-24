@@ -8,4 +8,4 @@ eError text
 phttps://upload.wikimedia.org/wikipedia/commons/3/3b/Rgb-raster-image.svg	A demonstration of a raster image enlarged to show the individual pixels. 
 1Link to other menu	./home.sm
 hHyperlink	https://example.com
-j`Date is: ${Date.now()}`
+j`iDate is: ${Date.now()}`

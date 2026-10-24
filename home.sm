@@ -1,6 +1,8 @@
 iWelcome to my website
 iThis is a very minimal format i call "simple menu"
-iWhich is similar to gopher
+hWhich is similar to gopher	https://en.wikipedia.org/wiki/Gopher_(protocol)#Source_code_of_a_menu
+j`iThe date is: September ${Math.floor((Date.now() - Date.UTC(1993, 7, 31)) / (1000 * 3600 * 24))}, 1993`
+hWhat the hell does this mean?	https://en.wikipedia.org/wiki/Eternal_September#Legacy
 bThings
 1Creations	./creations.sm
 iWebpages i have made
