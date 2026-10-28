@@ -10,6 +10,16 @@ I like markdown as it is simple and removes boilerplate whilst not being too lim
 
 <br>
 
+## Buttons
+[![Web rating: PG](./buttons/Censor_PGc.gif)](https://www.mabsland.com/Adoption.html)
+[![Say no to web 3; keep the web free!](./buttons/roly-saynotoweb3.gif)](https://yesterweb.org/no-to-web3/)
+[![Internet Explorer is EVIL](./buttons/EvilExplorer.gif)](http://toastytech.com/evil/)
+[![Are you tired of this new Internet yet? Time to Get TheOldNet!](./buttons/theoldnetanimblur2.gif)](http://www.theoldnet.com/#frombadge)
+<iframe src="//incr.easrng.net/badge?key=home-gihub.github.io" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0"></iframe>
+<br>
+
+Although I prefer buttons that actaully link to stuff, some of these are just images.
+
 <p id="date" onclick="document.getElementById('date').textContent = `The date is: September ${Math.floor((Date.now() - Date.UTC(1993, 7, 31)) / (1000 * 3600 * 24))}, 1993`">Click to see the date in Eternal September format</p>
 
 [What does this mean?](https://en.wikipedia.org/wiki/Eternal_September#Legacy)
