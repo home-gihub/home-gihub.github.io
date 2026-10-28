@@ -12,7 +12,36 @@
   <div id="content">
   </div>
 </div>
-    <script src="./index.js"></script>
+   <!--
+Source - https://stackoverflow.com/a/70160293
+Posted by Chris, modified by community. See post 'Timeline' for change history
+Retrieved 2026-10-27, License - CC BY-SA 4.0
+-->
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  async function navagateTo(page) {
+    fetch(page)      // The path to the raw Markdown file
+    .then(response => response.blob())  // Unwrap to a blob...
+    .then(blob => blob.text())          // ...then to raw text...
+    .then(markdown => {                 // ...then pass the raw text into marked.parse
+      document.getElementById("content").innerHTML = marked.parse(markdown);
+      let links = Array.from(document.getElementsByTagName("a"))
+      
+      links.forEach(element => {
+        if(element.getAttribute("href").substring(element.getAttribute("href").length-3,element.getAttribute("href").length) == ".md") {
+          let href = element.getAttribute("href");
+           element.setAttribute("href", "#")
+           element.setAttribute("onclick",`navagateTo("${href}")`)
+        }
+
+      });
+    });
+  }
+
+  navagateTo("./home.md")
+</script>
+
   <script src="https://xemantic.github.io/shader-web-background/dist/shader-web-background.min.js"></script>
   <script type="x-shader/x-fragment" id="image">
 #extension GL_OES_standard_derivatives : enable
