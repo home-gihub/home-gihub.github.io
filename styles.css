@@ -34,8 +34,8 @@ body,html,#container {
     box-shadow: inset 0px 0px 0px 1px black;
 }
 
-#content > ul > li {
-    list-style: none;
+ul {
+    margin-left: 1em;
 }
 
 a {

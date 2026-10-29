@@ -1,6 +1,14 @@
 ![Spinning metalic text "https://home-gihub.github.io"](url.gif)
 
-Welcome to my website
+Welcome to my website.
+This is kind of a floating island in cyberspace since i dont like most things people like in this sort of "neo-classic" web.
+Examples of which are:
+ - Oneshot
+ - ":3"
+ - Furries (more of indifference than hatred)
+ - The whole... "cat" thing
+ - Deltarune
+
 
 <br>
 
@@ -18,15 +26,19 @@ I like markdown as it is simple and removes boilerplate whilst not being too lim
 [![The Onion](./buttons/theonion.gif)](https://theonion.com)
 [![Steam](./buttons/steam.gif)](https://store.steampowered.com)
 [![Get Firefox](./buttons/firefoxget.gif)](https://www.firefox.com/)
-[![uBlock NOW](./buttons/ubonow.gif)]()
+[![uBlock NOW](./buttons/ubonow.gif)](https://github.com/gorhill/uBlock)
+[![Wiby Search](./buttons/wiby.gif)](https://www.wiby.me)
+[![Powered by Dr. Pepper](./buttons/drpepper.gif)](https://www.drpepper.com/)
+[![Internet Archive](./buttons/netarchive.gif)](https://www.archive.org/)
 ![Got HTML?](./buttons/got_html.gif)
+![No Nazis](./buttons/nonazis.gif)
 <iframe src="//incr.easrng.net/badge?key=home-gihub.github.io" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0"></iframe>
 
 <br>
 
 |  | add my button to your site? |
 | --- | ------- |
-| Although I prefer buttons that actaully link to stuff, some of these are just images. | ![My button](./buttons/home.gif) <br> ```<a href="https://home-gihub.github.io"><img src="./home.gif" /></a>```|
+| Although I prefer buttons that actaully link to stuff, some of these are just images. <br> I will NOT add your button if you have ":3" anywhere on your website! | ![My button](./buttons/home.gif) <br> ```<a href="https://home-gihub.github.io"><img src="./home.gif" /></a>```|
 
 
 <span style="display:none;" id="eval">
