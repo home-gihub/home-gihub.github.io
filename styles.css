@@ -53,3 +53,8 @@ height: 1em;
 blockquote {
     margin-left: 1em !important;
 }
+
+code {
+    font-family: monospace;
+    background-color: #000000cc;
+}

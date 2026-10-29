@@ -20,22 +20,36 @@ Retrieved 2026-10-27, License - CC BY-SA 4.0
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
+  marked.use({
+    silent: false,
+  });
+
   async function navagateTo(page) {
     fetch(page)      // The path to the raw Markdown file
     .then(response => response.blob())  // Unwrap to a blob...
     .then(blob => blob.text())          // ...then to raw text...
     .then(markdown => {                 // ...then pass the raw text into marked.parse
+      
       document.getElementById("content").innerHTML = marked.parse(markdown);
       let links = Array.from(document.getElementsByTagName("a"))
       
       links.forEach(element => {
-        if(element.getAttribute("href").substring(element.getAttribute("href").length-3,element.getAttribute("href").length) == ".md") {
-          let href = element.getAttribute("href");
+        let href = element.getAttribute("href");
+        if(href.substring(href.length-3,href.length) == ".md") {
+          
            element.setAttribute("href", "#")
-           element.setAttribute("onclick",`navagateTo("${href}")`)
+           element.addEventListener('click', ()=>{
+            navagateTo(href)
+           })
         }
 
+       
       });
+
+      // little hack to get javascript in markdown land
+      if(document.getElementById("eval")) {
+        eval(document.getElementById("eval").innerText)
+      }
     });
   }
 

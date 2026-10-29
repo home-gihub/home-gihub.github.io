@@ -22,3 +22,6 @@ These are the webpages i have made
 
 [Zooming Text Maker](./creations/zoommaker/index.html)
 > YTMND throwback
+
+[XP Menu](./creations/xpmenu/index.html)
+> An interactive xp tarkbar without JavaScript

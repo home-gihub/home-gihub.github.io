@@ -18,6 +18,7 @@ I like markdown as it is simple and removes boilerplate whilst not being too lim
 [![The Onion](./buttons/theonion.gif)](https://theonion.com)
 [![Steam](./buttons/steam.gif)](https://store.steampowered.com)
 [![Get Firefox](./buttons/firefoxget.gif)](https://www.firefox.com/)
+[![uBlock NOW](./buttons/ubonow.gif)]()
 ![Got HTML?](./buttons/got_html.gif)
 <iframe src="//incr.easrng.net/badge?key=home-gihub.github.io" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0"></iframe>
 
@@ -28,8 +29,12 @@ I like markdown as it is simple and removes boilerplate whilst not being too lim
 | Although I prefer buttons that actaully link to stuff, some of these are just images. | ![My button](./buttons/home.gif) <br> ```<a href="https://home-gihub.github.io"><img src="./home.gif" /></a>```|
 
 
+<span style="display:none;" id="eval">
+document.getElementById('date').textContent = `The date is: September ${Math.floor((Date.now() - Date.UTC(1993, 7, 31)) / (1000 * 3600 * 24))}, 1993`
+</span>
 
-<p id="date" onclick="document.getElementById('date').textContent = `The date is: September ${Math.floor((Date.now() - Date.UTC(1993, 7, 31)) / (1000 * 3600 * 24))}, 1993`">Click to see the date in Eternal September format</p>
+
+<p id="date">Either your browser does not support javascript, or you have scripts disabled. <br> Ignore below.</p>
 
 [What does this mean?](https://en.wikipedia.org/wiki/Eternal_September#Legacy)
 
@@ -40,7 +45,11 @@ I like markdown as it is simple and removes boilerplate whilst not being too lim
 [Games](./games.md)
 > Web ports, Flash, HTML5. All the games I have found.
 
+[Guestbook](./guestbook.html)
+> Sign my guestbook!
+
 ## Webrings
 [<- Previous](https://hotlinewebring.club/home-gihub/previous) | [The Hotline Webring](https://hotlinewebring.club/) | [Next ->](https://hotlinewebring.club/home-gihub/next)
 
 [<- Previous](https://baccyflap.com/noai/?prv&s=hgh) | [The No AI Webring](https://baccyflap.com/noai) [( ∞ Random ∞ )](https://baccyflap.com/noai/?rnd) | [Next ->](https://baccyflap.com/noai/?nxt&s=hgh)
+
