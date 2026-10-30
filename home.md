@@ -4,7 +4,7 @@ Welcome to my website.
 This is kind of a floating island in cyberspace since i dont like most things people like in this sort of "neo-classic" web.
 Examples of which are:
  - Oneshot
- - ":3"
+ - ":3" (["But why! its just for fun!"](./whyhate.md))
  - Furries (more of indifference than hatred)
  - The whole... "cat" thing
  - Deltarune
