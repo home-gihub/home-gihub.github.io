@@ -1,4 +1,6 @@
-# Games
+Games
+=====
+
 ### [Go Back](./home.md)
 Games, games! Come get your web ports and html games!
 

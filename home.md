@@ -18,7 +18,8 @@ I like markdown as it is simple and removes boilerplate whilst not being too lim
 
 <br>
 
-## Buttons
+Buttons
+-------
 [![Web rating: PG](./buttons/Censor_PGc.gif)](https://www.mabsland.com/Adoption.html)
 [![Say no to web 3; keep the web free!](./buttons/roly-saynotoweb3.gif)](https://yesterweb.org/no-to-web3/)
 [![Internet Explorer is EVIL](./buttons/EvilExplorer.gif)](http://toastytech.com/evil/)
@@ -50,7 +51,8 @@ document.getElementById('date').textContent = `The date is: September ${Math.flo
 
 [What does this mean?](https://en.wikipedia.org/wiki/Eternal_September#Legacy)
 
-## Things
+Things
+------
 [Creations](./creations.md)
 > Webpages i have made
 
@@ -60,8 +62,11 @@ document.getElementById('date').textContent = `The date is: September ${Math.flo
 [Guestbook](./guestbook.html)
 > Sign my guestbook!
 
-## Webrings
+Webrings
+--------
 [<- Previous](https://hotlinewebring.club/home-gihub/previous) | [The Hotline Webring](https://hotlinewebring.club/) | [Next ->](https://hotlinewebring.club/home-gihub/next)
 
 [<- Previous](https://baccyflap.com/noai/?prv&s=hgh) | [The No AI Webring](https://baccyflap.com/noai) [( ∞ Random ∞ )](https://baccyflap.com/noai/?rnd) | [Next ->](https://baccyflap.com/noai/?nxt&s=hgh)
+
+[<- Previous](https://webring.bucketfish.me/redirect.html?to=prev&name=home) | [Bucket Webring](https://webring.bucketfish.me) [( ∞ Random ∞ )](https://webring.bucketfish.me/redirect.html?to=random&name=home) | [Next ->](https://webring.bucketfish.me/redirect.html?to=next&name=home)
 
